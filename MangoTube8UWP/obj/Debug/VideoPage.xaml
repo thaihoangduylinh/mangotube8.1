@@ -1,0 +1,313 @@
+﻿<Page
+    x:Class="MangoTube8UWP.VideoPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MangoTube8UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#f1f0ec">
+
+    <Page.Resources>
+
+        <Storyboard x:Name="BubbleLoadingAnimationRel" RepeatBehavior="Forever">
+            <DoubleAnimation Storyboard.TargetName="Bubble1Rel" Storyboard.TargetProperty="Opacity"
+                         From="0.0" To="1.0" Duration="0:0:1" AutoReverse="True"/>
+            <DoubleAnimation Storyboard.TargetName="Bubble2Rel" Storyboard.TargetProperty="Opacity"
+                         From="0.0" To="1.0" Duration="0:0:1.2" AutoReverse="True"/>
+            <DoubleAnimation Storyboard.TargetName="Bubble3Rel" Storyboard.TargetProperty="Opacity"
+                         From="0.0" To="1.0" Duration="0:0:1.4" AutoReverse="True"/>
+        </Storyboard>
+
+        <Storyboard x:Name="BubbleLoadingAnimationCom" RepeatBehavior="Forever">
+            <DoubleAnimation Storyboard.TargetName="Bubble1Com" Storyboard.TargetProperty="Opacity"
+                         From="0.0" To="1.0" Duration="0:0:1" AutoReverse="True"/>
+            <DoubleAnimation Storyboard.TargetName="Bubble2Com" Storyboard.TargetProperty="Opacity"
+                         From="0.0" To="1.0" Duration="0:0:1.2" AutoReverse="True"/>
+            <DoubleAnimation Storyboard.TargetName="Bubble3Com" Storyboard.TargetProperty="Opacity"
+                         From="0.0" To="1.0" Duration="0:0:1.4" AutoReverse="True"/>
+        </Storyboard>
+
+
+        <Storyboard x:Name="BubbleLoadingAnimationDel" RepeatBehavior="Forever">
+            <DoubleAnimation Storyboard.TargetName="Bubble1Del" Storyboard.TargetProperty="Opacity"
+                         From="0.0" To="1.0" Duration="0:0:1" AutoReverse="True"/>
+            <DoubleAnimation Storyboard.TargetName="Bubble2Del" Storyboard.TargetProperty="Opacity"
+                         From="0.0" To="1.0" Duration="0:0:1.2" AutoReverse="True"/>
+            <DoubleAnimation Storyboard.TargetName="Bubble3Del" Storyboard.TargetProperty="Opacity"
+                         From="0.0" To="1.0" Duration="0:0:1.4" AutoReverse="True"/>
+        </Storyboard>
+
+        <Storyboard x:Name="BubbleLoadingAnimationPlayer" RepeatBehavior="Forever">
+            <DoubleAnimation Storyboard.TargetName="Bubble1Player" Storyboard.TargetProperty="Opacity"
+                         From="0.0" To="1.0" Duration="0:0:1" AutoReverse="True"/>
+            <DoubleAnimation Storyboard.TargetName="Bubble2Player" Storyboard.TargetProperty="Opacity"
+                         From="0.0" To="1.0" Duration="0:0:1.2" AutoReverse="True"/>
+            <DoubleAnimation Storyboard.TargetName="Bubble3Player" Storyboard.TargetProperty="Opacity"
+                         From="0.0" To="1.0" Duration="0:0:1.4" AutoReverse="True"/>
+        </Storyboard>
+
+        <Storyboard x:Name="ShowSearchBox">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="YouTubeLogo" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SearchTextBox" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+
+            <DoubleAnimation
+                Storyboard.TargetName="SearchTextBox"
+                Storyboard.TargetProperty="(UIElement.Opacity)"
+                From="0" To="1" Duration="0:0:0.3"/>
+            <DoubleAnimation
+                Storyboard.TargetName="SearchTextBox"
+                Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+                From="200" To="0" Duration="0:0:0.3"/>
+        </Storyboard>
+
+        <Storyboard x:Name="HideSearchBox">
+            <DoubleAnimation x:ConnectionId='1'
+                Storyboard.TargetName="SearchTextBox"
+                Storyboard.TargetProperty="(UIElement.Opacity)"
+                From="1" To="0" Duration="0:0:0.3"
+                                                   />
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SearchTextBox" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.3">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="YouTubeLogo" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.3">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+
+        <Storyboard x:Name="ShowControlsAnimation">
+            <DoubleAnimation Storyboard.TargetName="IconAndStuffBackground"
+                         Storyboard.TargetProperty="Opacity"
+                         From="0" To="1" Duration="0:0:0.3"/>
+            <DoubleAnimation Storyboard.TargetName="IconAndStuff"
+                         Storyboard.TargetProperty="Opacity"
+                         From="0" To="1" Duration="0:0:0.3"/>
+        </Storyboard>
+
+        <Storyboard x:Name="HideControlsAnimation">
+            <DoubleAnimation Storyboard.TargetName="IconAndStuffBackground"
+                     Storyboard.TargetProperty="Opacity"
+                     From="1" To="0" Duration="0:0:0.7">
+                <DoubleAnimation.EasingFunction>
+                    <QuadraticEase EasingMode="EaseOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetName="IconAndStuff"
+                     Storyboard.TargetProperty="Opacity"
+                     From="1" To="0" Duration="0:0:0.7">
+                <DoubleAnimation.EasingFunction>
+                    <QuadraticEase EasingMode="EaseOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+
+    </Page.Resources>
+
+    <Grid Grid.Row="0" Background="#f1f0ec">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+
+        <Grid Name="Header" Background="#282828" Height="70" VerticalAlignment="Top" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Image x:ConnectionId='6'  
+            x:Name="YouTubeLogo" 
+            Source="/Assets/MangoTube8Logo.png" 
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Center" 
+            Grid.Column="1" 
+            Margin="0,0,40,0" 
+                                        
+            Width="Auto" 
+            Height="100" />
+
+            <Grid x:Name="SearchContainer" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10,0,55,0" Grid.Column="2">
+                <TextBox x:ConnectionId='8' 
+                x:Name="SearchTextBox" 
+                Width="330" Height="50" 
+                VerticalAlignment="Center"
+                Background="White" 
+                Foreground="Black"  
+                Opacity="1"  
+                RenderTransformOrigin="0.5,0.5"
+                Visibility="Collapsed"  
+                                               
+                Margin="10,0,0,0"/>
+            </Grid>
+
+            <Button x:ConnectionId='7' 
+            x:Name="SearchButton" 
+            Width="80" 
+            Height="76"
+            Background="Transparent"
+            BorderThickness="0"
+                                      
+            Margin="0,0,-25,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            Grid.Column="2">
+                <Image
+                x:Name="SearchIcon"
+                Source="/Assets/SearchIcon.png"
+                Width="80"  
+                Height="76" 
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center" />
+            </Button>
+        </Grid>
+
+
+        <Grid Grid.Row="1" Canvas.ZIndex="0">
+
+
+            <StackPanel x:Name="LoadingPanelPlayer" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Visibility="Collapsed">
+                <Ellipse x:Name="Bubble1Player" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                <Ellipse x:Name="Bubble2Player" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                <Ellipse x:Name="Bubble3Player" Width="15" Height="15" Fill="Gray" Margin="5"/>
+            </StackPanel>
+
+            <MediaElement x:ConnectionId='4' x:Name="AudioPlayer"
+                AutoPlay="False"
+                                                   
+            />
+
+            <MediaElement x:ConnectionId='5' 
+            x:Name="VideoPlayer" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Top" 
+            Width="Auto"
+            AutoPlay="True" 
+            Height="250"
+            Stretch="UniformToFill"  
+                                                  
+            AreTransportControlsEnabled="True"/>
+        </Grid>
+
+        <Pivot x:ConnectionId='2' Grid.Row="2" Height="Auto" Title="" Foreground="Black" Margin="0,0,0,0" FontWeight="Thin" Padding="0,0,0,0" Background="#f0f0ee" x:Name="VideoPivot"                                                                        >
+
+            <Pivot.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" FontWeight="Thin" FontSize="32" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="-10,0,0,0" Foreground="#222222"/>
+                </DataTemplate>
+            </Pivot.HeaderTemplate>
+
+
+            <PivotItem Header="details" Tag="details" Margin="14,0,10,0">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,0,0,0">
+                    <StackPanel Margin="0,-2,0,17">
+                        <TextBlock x:Name="VideoTitle" Margin="2,17,0,0" FontSize="16" TextWrapping="Wrap" FontWeight="Bold" Foreground="Black" Text=""/>
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,0" HorizontalAlignment="Right">
+                            <TextBlock x:Name="VideoViews" FontSize="11" FontWeight="Normal" Foreground="Gray" Text=""/>
+                        </StackPanel>
+
+                        <StackPanel x:Name="LoadingPanelDel" Margin="0,50,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Visibility="Collapsed">
+                            <Ellipse x:Name="Bubble1Del" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                            <Ellipse x:Name="Bubble2Del" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                            <Ellipse x:Name="Bubble3Del" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                        </StackPanel>
+
+                        <Border Name="StuffPanel" Background="#e5e6e8" Margin="0,10,0,0" Height="62.5" HorizontalAlignment="Stretch">
+                            <StackPanel Orientation="Horizontal" Margin="17,0,-17,0">
+                                <Image x:Name="ProfilePicture" Width="50" Height="50" Margin="0,0,10,0"/>
+                                <StackPanel VerticalAlignment="Center">
+                                    <TextBlock x:Name="Username" FontSize="14" FontWeight="Light" Foreground="Black" Text=""/>
+                                    <TextBlock x:Name="SubscriptionStatus" FontSize="12" Foreground="Gray" Text=""/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+
+                        <TextBlock x:Name="VideoUploadDate" FontSize="12"  FontWeight="ExtraLight" Foreground="Black" Margin="0,10,0,0" Text=""/>
+                        <RichTextBlock x:Name="VideoDescription" FontSize="12" FontFamily="Segoe UI Light" FontWeight="ExtraLight" Foreground="Black" Margin="0,10,0,0"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+
+
+            <PivotItem Header="comments" Tag="comments">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="-0,-12.5,0,28">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch">
+
+                        <ItemsControl Margin="0,0,0,0" x:Name="CommentsItemControl">
+                            <StackPanel x:Name="LoadingPanelCom" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Visibility="Collapsed">
+                                <Ellipse x:Name="Bubble1Com" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                                <Ellipse x:Name="Bubble2Com" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                                <Ellipse x:Name="Bubble3Com" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                            </StackPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+
+                        <Button x:ConnectionId='3' Content="more" 
+                            HorizontalAlignment="Stretch" 
+                            VerticalAlignment="Center"
+                            Background="#de8339"
+                            Foreground="White"
+                            Name="LoadMore"
+                            FontSize="18" 
+                            FontWeight="Medium"
+                                                        
+                            Margin="5,0,0,0"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+
+
+            <PivotItem Header="related videos" Tag="related videos">
+
+                <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="-20,-12.5,0,28">
+                    <ItemsControl Margin="0,0,0,0" x:Name="RealtedVideoItemControl">
+                        <StackPanel x:Name="LoadingPanelRel" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Visibility="Collapsed">
+                            <Ellipse x:Name="Bubble1Rel" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                            <Ellipse x:Name="Bubble2Rel" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                            <Ellipse x:Name="Bubble3Rel" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                        </StackPanel>
+
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+
+                </ScrollViewer>
+            </PivotItem>
+
+
+        </Pivot>
+    </Grid>
+</Page>
+

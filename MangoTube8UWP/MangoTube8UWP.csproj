@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F00E021-C67C-4250-B173-79B7DC043DE5}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MangoTube8UWP</RootNamespace>
+    <AssemblyName>MangoTube8UWP</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{76F1466A-8B6D-4E39-A767-685A06062A39};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchPage.xaml.cs">
+      <DependentUpon>SearchPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <Compile Include="VideoPage.xaml.cs">
+      <DependentUpon>VideoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="YouTubeFeed.cs" />
+    <Compile Include="YouTubeModal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\ApplicationIcon.png" />
+    <Content Include="Assets\BadgeLogo.scale-240.png" />
+    <Content Include="Assets\BaseCircle.png" />
+    <Content Include="Assets\DefaultAvatar.png" />
+    <Content Include="Assets\DefaultThumbnail.png" />
+    <Content Include="Assets\EduactionIcon.png" />
+    <Content Include="Assets\FullScreenExpend.png" />
+    <Content Include="Assets\FullScreenShrink.png" />
+    <Content Include="Assets\GamingIcon.png" />
+    <Content Include="Assets\Logo.scale-240.png" />
+    <Content Include="Assets\MangoTube8Logo.png" />
+    <Content Include="Assets\MangoTube8LogoDark.png" />
+    <Content Include="Assets\NewsIcon.png" />
+    <Content Include="Assets\PauseIcon.png" />
+    <Content Include="Assets\PlayIcon.png" />
+    <Content Include="Assets\PodcastIcon.png" />
+    <Content Include="Assets\PopularIcon.png" />
+    <Content Include="Assets\RefreshIcon.png" />
+    <Content Include="Assets\SearchIcon.png" />
+    <Content Include="Assets\ShareIcon.png" />
+    <Content Include="Assets\SmallLogo.scale-240.png" />
+    <Content Include="Assets\SplashScreen.scale-240.png" />
+    <Content Include="Assets\SportsIcon.png" />
+    <Content Include="Assets\Square71x71Logo.scale-240.png" />
+    <Content Include="Assets\StoreLogo.scale-240.png" />
+    <Content Include="Assets\VideoUnaviable.mp4" />
+    <Content Include="Assets\WideLogo.scale-240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SearchPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VideoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.3.5.0\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyToolkit, Version=2.5.16.0, Culture=neutral, PublicKeyToken=3e349a1360994d26, processorArchitecture=MSIL">
+      <HintPath>..\packages\MyToolkit.2.5.16\lib\portable-net45+wp8+win8+wpa81\MyToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyToolkit.Extended, Version=2.5.16.0, Culture=neutral, PublicKeyToken=3e349a1360994d26, processorArchitecture=MSIL">
+      <HintPath>..\packages\MyToolkit.Extended.2.5.16\lib\portable-wpa81+win8\MyToolkit.Extended.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net45+wp80+win8+wpa81+aspnetcore50\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SM.Media">
+      <HintPath>..\..\..\..\phonesm-1.5.3-beta\bin\Release\SM.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="SM.Media.Builder">
+      <HintPath>..\..\..\..\phonesm-1.5.3-beta\bin\Release\SM.Media.Builder.dll</HintPath>
+    </Reference>
+    <Reference Include="SM.Media.MediaPlayer.Win81">
+      <HintPath>..\..\..\..\fcwsf\SM.Media.MediaPlayer.Win81.dll</HintPath>
+    </Reference>
+    <Reference Include="SM.Media.Platform.WinRT">
+      <HintPath>..\..\..\..\phonesm-1.5.3-beta\bin\Release\WinRT\SM.Media.Platform.WinRT.dll</HintPath>
+    </Reference>
+    <Reference Include="SM.Media.Web.HttpClientReader">
+      <HintPath>..\..\..\..\phonesm-1.5.3-beta\bin\Release\SM.Media.Web.HttpClientReader.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.Media.AdaptiveStreamingClient, Version=1.0">
+      <Name>Microsoft Smooth Streaming Client SDK for Windows Phone 8.1</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.PlayerFramework.Advertising.Analytics.WP81, Version=3.0.0.4">
+      <Name>Microsoft Player Framework Advertising Analytics Adapter</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.PlayerFramework.Dash.WP81, Version=3.0.0.4">
+      <Name>Microsoft Player Framework Dash Plugin</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.PlayerFramework.Xaml.Adaptive.WP81, Version=3.0.0.4">
+      <Name>Microsoft Player Framework Adaptive Streaming Plugin</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.PlayerFramework.Xaml.Advertising.WP81, Version=3.0.0.4">
+      <Name>Microsoft Player Framework Advertising Plugin</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.PlayerFramework.Xaml.Analytics.WP81, Version=3.0.0.4">
+      <Name>Microsoft Player Framework Analytics Plugin</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.PlayerFramework.Xaml.CaptionSettings.WP81, Version=3.0.0.4">
+      <Name>Microsoft Player Framework Caption Settings Plugin</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.PlayerFramework.Xaml.TimedText.WP81, Version=3.0.0.4">
+      <Name>Microsoft Player Framework Timed Text Plugin</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.PlayerFramework.Xaml.TTML.Settings.WP81, Version=3.0.0.4">
+      <Name>Microsoft Player Framework TTML Caption Settings Plugin</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.PlayerFramework.Xaml.WebVTT.Settings.WP81, Version=3.0.0.4">
+      <Name>Microsoft Player Framework WebVTT Caption Settings Plugin</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.PlayerFramework.Xaml.WebVTT.WP81, Version=3.0.0.4">
+      <Name>Microsoft Player Framework WebVTT Plugin</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.PlayerFramework.Xaml.WP81, Version=3.0.0.4">
+      <Name>Microsoft Player Framework</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.VCLibs, Version=12.0">
+      <Name>Microsoft Visual C++ 2013 Runtime Package for Windows Phone</Name>
+    </SDKReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
