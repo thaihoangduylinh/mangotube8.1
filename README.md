@@ -52,7 +52,7 @@ https://github.com/erievs/mangotube8/
 
 - Bugs I know about that will be fixed next update, rewind/backwards has some audio issues (not super hard to fix I know why just gotta sync em up), some places video IDs don't save to storage, rarely on startup the recommended page doesn't load, not a bug but not no background audio support for now (It is hard to do for me).
 
-- Please report bugs in issues not on discord.
+- Please report bugs in issues not ONLY on a discord server.
 
 - Please don't have a list of a feature requsts, make one 'issue' for each, and please do not go overboard in feature requsts (I am not going to add TV playback or whatever THAT WOULD BE A LOT OF WORK AND LIKE IDK IF IT IS EVEN POSSIBLE).
 
@@ -65,6 +65,8 @@ https://github.com/erievs/mangotube8/
 - Will there be a 7.5 build or 7, maybe if I can figure out how to jailbreak by titan (if someone can help I'll do it).
 
 - Will there be a real UWP version, maybe idk.
+
+- I don't have a discord server but I hang out and talk about MangoTube on multiple Windows Phone realated server some more than other. 
 
 # Dependencies #
 
