@@ -58,6 +58,8 @@ https://github.com/erievs/mangotube8/
 
 - This is a hobby project, I may refuse to repsond to support requsts, I have to say this because this has happened before but if you keep calling me on discord (I never call anyone I don't know IRL on discord) or annoy me I will be pissed off at you, I do not get paid, I like what I like don't arugue about colours or else I will force piss mode.
 
+- I go by NCP,NCP3.0,Erie Valley Software,ErieVS.
+
 # Dependencies #
 
 ## User ##
