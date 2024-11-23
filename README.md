@@ -60,6 +60,12 @@ https://github.com/erievs/mangotube8/
 
 - I go by NCP,NCP3.0,Erie Valley Software,ErieVS.
 
+- Why Mango, because of Windows Phone 7.5 someone a discord server suggseted it (yes I know this doesn't 7.5 but I like the name).
+
+- Will there be a 7.5 build or 7, maybe if I can figure out how to jailbreak by titan (if someone can help I'll do it).
+
+- Will there be a real UWP version, maybe idk.
+
 # Dependencies #
 
 ## User ##
