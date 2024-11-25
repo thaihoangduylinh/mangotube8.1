@@ -33,7 +33,12 @@ using System.Xml;
 using System.Net;
 using System.IO;
 using Windows.UI.Xaml.Shapes;
-using MyToolkit.UI;
+using Windows.UI.Notifications;
+using Windows.Storage;
+using Windows.Networking.BackgroundTransfer;
+using Windows.Storage.Pickers;
+using Autofac.Core;
+using Windows.ApplicationModel.Activation;
 
 namespace MangoTube8UWP
 {
@@ -54,6 +59,21 @@ namespace MangoTube8UWP
         private bool IsLoadedForPivotRealted = false;
         private bool IsLoadedForPivotDetails = false;
         private DateTime lastTappedTime = DateTime.MinValue;
+
+        private static string videoURL;
+        private static string audioURL;
+        
+        private static string Description;
+        private static string Title;
+        private static string Subs;
+        private static string Views;
+        private static string AurthorPFPURL;
+        private static string ThumbnailURL;
+        private static string Aurthor;
+        private static string Date;
+
+        private FolderPicker picker;
+
 
         public VideoPage()
         {
@@ -91,6 +111,312 @@ namespace MangoTube8UWP
             LogOrientation();
         }
 
+        private async void DownloadButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            ShowToastNotification("Download Started", "Your download has begun, you'll get a notification when done...");
+
+            await StartDownloadAsync(localVideoId, Title, videoURL, audioURL);
+
+         
+        }
+
+
+        private void ShowToastNotification(string title, string message)
+        {
+            try
+            {
+
+                ToastTemplateType toastTemplate = ToastTemplateType.ToastText04;
+
+                XmlDocument toastXml = ToastNotificationManager.GetTemplateContent(toastTemplate);
+
+                XmlNodeList toastTextElements = toastXml.GetElementsByTagName("text");
+
+                if (toastTextElements.Length >= 3)
+                {
+
+                    toastTextElements[0].AppendChild(toastXml.CreateTextNode(message));
+
+                    toastTextElements[1].AppendChild(toastXml.CreateTextNode(""));
+
+                }
+                else
+                {
+                    Debug.WriteLine("Error: Not enough text elements in the template.");
+                }
+
+                IXmlNode toastNode = toastXml.SelectSingleNode("/toast");
+
+                ((XmlElement)toastNode).SetAttribute("duration", "long");
+
+                ToastNotification toast = new ToastNotification(toastXml);
+
+                toast.ExpirationTime = DateTimeOffset.UtcNow.AddSeconds(3600);
+
+                ToastNotificationManager.CreateToastNotifier().Show(toast);
+            }
+            catch (Exception ex)
+            {
+
+                Debug.WriteLine($"Error showing toast notification: {ex.Message}");
+            }
+        }
+
+        private void RewindButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (AudioPlayer.Position > TimeSpan.FromSeconds(10))
+            {
+                AudioPlayer.Position -= TimeSpan.FromSeconds(10);
+            }
+          
+ 
+        }
+
+        private void FastForwardButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (AudioPlayer.Position + TimeSpan.FromSeconds(10) < AudioPlayer.NaturalDuration)
+            {
+                AudioPlayer.Position += TimeSpan.FromSeconds(10);
+            }
+
+        }
+
+
+        private async Task StartDownloadAsync(string videoId, string title, string videoUrl, string audioUrl)
+        {
+            try
+            {
+
+                StorageFolder targetFolder = KnownFolders.VideosLibrary;
+
+                StorageFolder mangoTubeFolder;
+                try
+                {
+                    mangoTubeFolder = await targetFolder.GetFolderAsync("MangoTube");
+                }
+                catch (FileNotFoundException)
+                {
+                    mangoTubeFolder = await targetFolder.CreateFolderAsync("MangoTube", CreationCollisionOption.FailIfExists);
+                    Debug.WriteLine("MangoTube folder created.");
+                }
+
+                StorageFile videoFile = await mangoTubeFolder.CreateFileAsync($"{videoId}_video.mp4", CreationCollisionOption.ReplaceExisting);
+
+                Debug.WriteLine($"Starting video download for {videoId} from {videoUrl}...");
+                Debug.WriteLine($"Audio URL: {audioUrl}");
+
+                var videoDownloader = new BackgroundDownloader();
+                var videoDownloadOperation = videoDownloader.CreateDownload(new Uri(videoUrl), videoFile);
+
+                var videoProgress = new Progress<DownloadOperation>(operation =>
+                {
+                    var progress = operation.Progress;
+                    Debug.WriteLine($"Video download progress: {progress.BytesReceived} bytes downloaded of {progress.TotalBytesToReceive} bytes.");
+                });
+
+
+
+
+                var videoDownloadTask = videoDownloadOperation.StartAsync().AsTask();
+
+                StorageFile audioFile = null;
+                Task audioDownloadTask = null;
+
+                if (!string.IsNullOrEmpty(audioUrl))
+                {
+
+                    audioFile = await mangoTubeFolder.CreateFileAsync($"{videoId}_audio.mp4", CreationCollisionOption.ReplaceExisting);
+                    Debug.WriteLine($"Starting audio download for {videoId} from {audioUrl}...");
+
+                    var audioDownloader = new BackgroundDownloader();
+                    var audioDownloadOperation = audioDownloader.CreateDownload(new Uri(audioUrl), audioFile);
+
+                    var audioProgress = new Progress<DownloadOperation>(operation => LogDownloadProgress(operation, "Audio"));
+
+                    audioDownloadTask = audioDownloadOperation.StartAsync().AsTask();
+                }
+
+                var tasks = audioDownloadTask != null
+                    ? new Task[] { videoDownloadTask, audioDownloadTask }
+                    : new Task[] { videoDownloadTask };
+
+                await Task.WhenAll(tasks);
+
+                if (videoDownloadTask.IsFaulted)
+                {
+                    Debug.WriteLine($"Error downloading video {videoId}: {videoDownloadTask.Exception?.InnerException?.Message}");
+                }
+                else
+                {
+                    Debug.WriteLine($"Video download completed for {videoId}. File saved to: {videoFile.Path}");
+                    try
+                    {
+                        var properties = await videoFile.GetBasicPropertiesAsync();
+                        Debug.WriteLine($"Video file size: {properties.Size / 1024.0:F2} KB");
+                        await SaveDownloadMetadata(videoId, title, videoUrl, audioUrl, videoFile.Path, audioFile?.Path, Description, Subs, Views, AurthorPFPURL, ThumbnailURL, Aurthor);
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.WriteLine($"Error accessing video file properties: {ex.Message}");
+                    }
+                }
+
+                if (audioDownloadTask != null)
+                {
+                    if (audioDownloadTask.IsFaulted)
+                    {
+                        Debug.WriteLine($"Error downloading audio {videoId}: {audioDownloadTask.Exception?.InnerException?.Message}");
+                    }
+                    else
+                    {
+                        Debug.WriteLine($"Audio download completed for {videoId}. File saved to: {audioFile.Path}");
+                        try
+                        {
+                            var properties = await audioFile.GetBasicPropertiesAsync();
+                            Debug.WriteLine($"Audio file size: {properties.Size / 1024.0:F2} KB");
+                            await SaveDownloadMetadata(videoId, title, videoUrl, audioUrl, videoFile.Path, audioFile.Path, Description, Subs, Views, AurthorPFPURL, ThumbnailURL, Aurthor);
+                        }
+                        catch (Exception ex)
+                        {
+                            Debug.WriteLine($"Error accessing audio file properties: {ex.Message}");
+                        }
+                    }
+                }
+                else
+                {
+
+                    if (audioFile != null)
+                    {
+                        await audioFile.DeleteAsync();
+                        Debug.WriteLine("Audio URL was null. Audio file deleted.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error during download: {ex.Message}");
+            }
+            finally
+            {
+                ShowToastNotification("MangoTube8.1", "Your Download Has Finished!");
+            }
+        }
+
+        private void LogDownloadProgress(DownloadOperation downloadOperation, string fileType)
+        {
+
+            double percent = downloadOperation.Progress.BytesReceived * 100.0 / downloadOperation.Progress.TotalBytesToReceive;
+
+            Debug.WriteLine($"{fileType} download progress: {percent}% - Bytes Received: {downloadOperation.Progress.BytesReceived} / Total Bytes: {downloadOperation.Progress.TotalBytesToReceive}");
+
+            UpdateProgress(percent, fileType);
+        }
+
+        private void UpdateProgress(double percent, string fileType)
+        {
+
+            Debug.WriteLine($"{fileType} Progress: {percent}%");
+        }
+
+        private void UpdateProgress(BackgroundDownloadProgress progress)
+        {
+            if (progress.BytesReceived > 0)
+            {
+
+                double percent = (double)progress.BytesReceived / progress.TotalBytesToReceive * 100;
+
+                if (percent >= 10 && percent < 50)
+                {
+                    ShowToastNotification("Stage 1: Downloading", "10% downloaded...");
+                }
+                else if (percent >= 50 && percent < 75)
+                {
+                    ShowToastNotification("Stage 2: Downloading", "50% downloaded...");
+                }
+                else if (percent >= 75 && percent < 100)
+                {
+                    ShowToastNotification("Stage 3: Almost Done", "75% downloaded...");
+                }
+                else if (percent == 100)
+                {
+                    ShowToastNotification("Download Complete", "100% download complete!");
+                }
+            }
+        }
+
+        private void Downloads_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(DownloadsPage));
+        }
+
+
+        private async Task SaveDownloadMetadata(string videoId, string title, string videoUrl, string audioUrl,
+                                           string videoFilePath, string audioFilePath, string description,
+                                           string subs, string views, string authorPFPURL, string thumbnailURL, string aurthor)
+        {
+            try
+            {
+
+                StorageFile metadataFile = await ApplicationData.Current.LocalFolder.CreateFileAsync("downloads.json", CreationCollisionOption.OpenIfExists);
+
+                string json = await FileIO.ReadTextAsync(metadataFile);
+
+                var metadata = string.IsNullOrEmpty(json) ? new DownloadMetadata() : JsonConvert.DeserializeObject<DownloadMetadata>(json);
+
+                var newDownload = new DownloadDetails
+                {
+                    VideoId = videoId,
+                    Title = title,
+                    AudioURL = audioUrl,
+                    VideoURL = videoUrl,
+                    VideoFilePath = videoFilePath,
+                    AudioFilePath = audioFilePath,
+                    Description = description,
+                    Author = aurthor,
+                    Subs = subs,
+                    Views = views,
+                    AuthorPFPURL = authorPFPURL,
+                    Date = Date,
+                    ThumbnailURL = thumbnailURL
+                };
+
+                metadata.Downloads.Add(newDownload);
+
+                string updatedJson = JsonConvert.SerializeObject(metadata, Formatting.Indented);
+
+                await FileIO.WriteTextAsync(metadataFile, updatedJson);
+
+                Debug.WriteLine($"Download metadata saved successfully for Video ID: {videoId}");
+                Debug.WriteLine($"Saved Metadata: {updatedJson}");
+            }
+            catch (Exception ex)
+            {
+
+                Debug.WriteLine($"Error saving download metadata: {ex.Message}");
+            }
+        }
+
+        private async Task<List<DownloadDetails>> GetDownloadMetadataAsync()
+        {
+            try
+            {
+
+                StorageFile metadataFile = await ApplicationData.Current.LocalFolder.GetFileAsync("downloads.json");
+                string json = await FileIO.ReadTextAsync(metadataFile);
+                var metadata = JsonConvert.DeserializeObject<DownloadMetadata>(json);
+
+                return metadata?.Downloads ?? new List<DownloadDetails>();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error reading download metadata: {ex.Message}");
+                return new List<DownloadDetails>();
+            }
+        }
+
         private void LogOrientation()
         {
             var currentOrientation = DisplayInformation.GetForCurrentView().CurrentOrientation;
@@ -103,8 +429,9 @@ namespace MangoTube8UWP
                     Debug.WriteLine("Current Orientation: Portrait");
                     break;
 
-                case DisplayOrientations.Landscape:
+                case DisplayOrientations.Landscape:        
                     SetLandscapeMode();
+                    VideoPlayer.IsFullScreen = true;
                     Debug.WriteLine("Current Orientation: Landscape");
                     break;
 
@@ -116,6 +443,7 @@ namespace MangoTube8UWP
 
                 case DisplayOrientations.LandscapeFlipped:
                     SetLandscapeMode();
+                    VideoPlayer.IsFullScreen = true;
                     break;
 
                 default:
@@ -215,6 +543,17 @@ namespace MangoTube8UWP
                     AudioPlayer.IsMuted = false;
                 }
 
+                if (VideoPlayer.CurrentState == MediaElementState.Buffering)
+                {
+                    AudioPlayer.IsMuted = true;
+                    System.Diagnostics.Debug.WriteLine("Video is Buffering. Audio is muted.");
+                    return;
+                }
+                else
+                {
+                    AudioPlayer.IsMuted = false;
+                }
+
                 double positionDifference = Math.Abs(VideoPlayer.Position.TotalSeconds - AudioPlayer.Position.TotalSeconds);
 
                 if (positionDifference > 0.5)
@@ -248,6 +587,16 @@ namespace MangoTube8UWP
         {
             Debug.WriteLine($"Loading media: Video Source = {videoSource}, Audio Source = {audioSource}");
 
+            if (!string.IsNullOrEmpty(videoSource))
+            {
+                videoURL = videoSource; 
+            }
+
+            if (!string.IsNullOrEmpty(audioSource))
+            {
+                audioURL = audioSource; 
+            }
+
             if (isUsingAuto)
             {
                 Debug.WriteLine("Auto quality selected. Adding StreamingMediaPlugin...");
@@ -261,12 +610,12 @@ namespace MangoTube8UWP
 
                 VideoPlayer.Plugins.Add(asd);
                 VideoPlayer.Source = new Uri(videoSource);
-
-          
-
+         
                 AudioPlayer.Source = new Uri(audioSource);
-
+     
                 isUsingSeparateAudio = true;
+
+                AppBar.Visibility = Visibility.Collapsed;
 
                 return;
             }
@@ -362,9 +711,25 @@ namespace MangoTube8UWP
 
         private void HideSearchBox_Completed(object sender, object e)
         {
+            YouTubeLogo.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            AccountButton.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            SearchTextBox.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+        }
 
-            YouTubeLogo.Visibility = Visibility.Visible;
-            SearchTextBox.Visibility = Visibility.Collapsed;
+        private void AccountButton_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("AccountButton clicked");
+            if (DropDown.Visibility == Visibility.Collapsed)
+            {
+                Debug.WriteLine("DropDown is currently collapsed. Showing it now.");
+                DropDown.Visibility = Visibility.Visible;
+                ShowDropDown.Begin();
+            }
+            else
+            {
+                Debug.WriteLine("DropDown is currently visible. Hiding it now.");
+                HideDropDown.Begin();
+            }
         }
 
         private void YouTubeLogo_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
@@ -970,12 +1335,11 @@ namespace MangoTube8UWP
             var adaptiveFormats = streamingData.SelectToken("..adaptiveFormats");
             var formats = streamingData.SelectToken("..formats");
 
-
             if (adaptiveFormats != null && adaptiveFormats.HasValues)
             {
                 Debug.WriteLine($"Available adaptive formats: {adaptiveFormats.Count()}");
 
-                if (videoQuality == "Medium")
+                if (videoQuality == "medium (recommended)")
                 {
                     Debug.WriteLine("Looking for Medium quality format...");
 
@@ -987,85 +1351,69 @@ namespace MangoTube8UWP
                         Debug.WriteLine($"URL: {mediumQualityFormat["url"]}");
                         return mediumQualityFormat.ToObject<VideoStreamFormat>();
                     }
-                    else
+                }
+                else if (videoQuality == "low")
+                {
+                    Debug.WriteLine("Looking for Low quality format (240p)...");
+
+                    var lowQualityFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == "240p" || f["qualityLabel"].ToString() == "240");
+
+                    if (lowQualityFormat != null)
                     {
-                        Debug.WriteLine("itag 18 not found, looking for itag 134 as backup...");
-                        var backupFormat = adaptiveFormats.FirstOrDefault(f => f["itag"].ToString() == "134");
-                        if (backupFormat != null)
-                        {
-                            Debug.WriteLine("Backup format found.");
-                            Debug.WriteLine($"URL: {backupFormat["url"]}");
-                        }
-                        return backupFormat.ToObject<VideoStreamFormat>();
+                        Debug.WriteLine("Low quality (240p) format found.");
+                        Debug.WriteLine($"URL: {lowQualityFormat["url"]}");
+                        return lowQualityFormat.ToObject<VideoStreamFormat>();
+                    }
+                }
+                else if (videoQuality == "ultra low")
+                {
+                    Debug.WriteLine("Looking for Ultra Low quality format (144p)...");
+
+                    var ultraLowQualityFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == "144p" || f["qualityLabel"].ToString() == "144");
+
+                    if (ultraLowQualityFormat != null)
+                    {
+                        Debug.WriteLine("Ultra Low quality (144p) format found.");
+                        Debug.WriteLine($"URL: {ultraLowQualityFormat["url"]}");
+                        return ultraLowQualityFormat.ToObject<VideoStreamFormat>();
+                    }
+                }
+                else if (videoQuality == "HD1080")
+                {
+                    Debug.WriteLine("Looking for HD1080 quality format (1080p)...");
+
+                    var hd1080QualityFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == "1080p" || f["qualityLabel"].ToString() == "1080");
+
+                    if (hd1080QualityFormat != null)
+                    {
+                        Debug.WriteLine("HD1080 quality (1080p) format found.");
+                        Debug.WriteLine($"URL: {hd1080QualityFormat["url"]}");
+                        return hd1080QualityFormat.ToObject<VideoStreamFormat>();
+                    }
+                }
+                else if (videoQuality == "SD" || videoQuality == "480")
+                {
+                    Debug.WriteLine("Looking for SD quality format (480p)...");
+
+                    var sdQualityFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == "480p" || f["qualityLabel"].ToString() == "480");
+
+                    if (sdQualityFormat != null)
+                    {
+                        Debug.WriteLine("SD quality (480p) format found.");
+                        Debug.WriteLine($"URL: {sdQualityFormat["url"]}");
+                        return sdQualityFormat.ToObject<VideoStreamFormat>();
                     }
                 }
                 else if (videoQuality == "HD")
                 {
-                    Debug.WriteLine("Looking for HD quality format...");
+                    Debug.WriteLine("Looking for HD quality format (720p)...");
 
-                    var hdFormat = adaptiveFormats.FirstOrDefault(f => f["quality"].ToString() == "hd720" && f["mimeType"].ToString().Contains("avc1"));
+                    var hdFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == "720p" || f["qualityLabel"].ToString() == "hd720");
                     if (hdFormat != null)
                     {
                         Debug.WriteLine("HD format found.");
                         Debug.WriteLine($"URL: {hdFormat["url"]}");
                         return hdFormat.ToObject<VideoStreamFormat>();
-                    }
-                    else
-                    {
-                        var qualityLabels = new[] { "480p", "360p", "240p", "144p" };
-                        foreach (var label in qualityLabels)
-                        {
-                            Debug.WriteLine($"Looking for {label} format...");
-                            var fallbackFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == label);
-                            if (fallbackFormat != null)
-                            {
-                                Debug.WriteLine($"{label} format found.");
-                                Debug.WriteLine($"URL: {fallbackFormat["url"]}");
-                                return fallbackFormat.ToObject<VideoStreamFormat>();
-                            }
-                        }
-
-                        Debug.WriteLine("No specific quality found, trying to match ranges...");
-
-                        var possible720Format = adaptiveFormats.FirstOrDefault(f => (int)f["width"] >= 600 && (int)f["width"] <= 800);
-                        if (possible720Format != null)
-                        {
-                            Debug.WriteLine("Found a 720p-like format.");
-                            Debug.WriteLine($"URL: {possible720Format["url"]}");
-                            return possible720Format.ToObject<VideoStreamFormat>();
-                        }
-
-                        var possible480Format = adaptiveFormats.FirstOrDefault(f => (int)f["width"] >= 400 && (int)f["width"] <= 599);
-                        if (possible480Format != null)
-                        {
-                            Debug.WriteLine("Found a 480p-like format.");
-                            Debug.WriteLine($"URL: {possible480Format["url"]}");
-                            return possible480Format.ToObject<VideoStreamFormat>();
-                        }
-
-                        var possible360Format = adaptiveFormats.FirstOrDefault(f => (int)f["width"] >= 300 && (int)f["width"] <= 399);
-                        if (possible360Format != null)
-                        {
-                            Debug.WriteLine("Found a 360p-like format.");
-                            Debug.WriteLine($"URL: {possible360Format["url"]}");
-                            return possible360Format.ToObject<VideoStreamFormat>();
-                        }
-
-                        var possible240Format = adaptiveFormats.FirstOrDefault(f => (int)f["width"] >= 200 && (int)f["width"] <= 299);
-                        if (possible240Format != null)
-                        {
-                            Debug.WriteLine("Found a 240p-like format.");
-                            Debug.WriteLine($"URL: {possible240Format["url"]}");
-                            return possible240Format.ToObject<VideoStreamFormat>();
-                        }
-
-                        var possible144Format = adaptiveFormats.FirstOrDefault(f => (int)f["width"] >= 100 && (int)f["width"] <= 199);
-                        if (possible144Format != null)
-                        {
-                            Debug.WriteLine("Found a 144p-like format.");
-                            Debug.WriteLine($"URL: {possible144Format["url"]}");
-                            return possible144Format.ToObject<VideoStreamFormat>();
-                        }
                     }
                 }
 
@@ -1081,18 +1429,36 @@ namespace MangoTube8UWP
                         return audioFormat.ToObject<VideoStreamFormat>();
                     }
                 }
+            
+
+                var qualityLabels = new[] { "1080p", "720p", "480p", "360p", "240p", "144p" };
+
+                foreach (var label in qualityLabels)
+                {
+                    Debug.WriteLine($"Looking for {label} format...");
+
+                    var fallbackFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == label);
+                    if (fallbackFormat != null)
+                    {
+                        Debug.WriteLine($"{label} format found.");
+                        Debug.WriteLine($"URL: {fallbackFormat["url"]}");
+                        return fallbackFormat.ToObject<VideoStreamFormat>();
+                    }
+                }
+
+                Debug.WriteLine("No specific quality found, defaulting to Medium quality.");
+                var defaultFormat = formats.FirstOrDefault(f => f["itag"].ToString() == "18") ?? adaptiveFormats.FirstOrDefault(f => f["itag"].ToString() == "134");
+                if (defaultFormat != null)
+                {
+                    Debug.WriteLine($"URL: {defaultFormat["url"]}");
+                }
+                return defaultFormat.ToObject<VideoStreamFormat>();
             }
 
-            Debug.WriteLine("No specific format found, defaulting to Medium quality.");
-            var defaultFormat = formats.FirstOrDefault(f => f["itag"].ToString() == "18") ?? adaptiveFormats.FirstOrDefault(f => f["itag"].ToString() == "134");
-            if (defaultFormat != null)
-            {
-                Debug.WriteLine($"URL: {defaultFormat["url"]}");
-            }
-            return defaultFormat.ToObject<VideoStreamFormat>();
+            Debug.WriteLine("No adaptive formats found, defaulting to medium format.");
+            return formats.FirstOrDefault(f => f["itag"].ToString() == "18")?.ToObject<VideoStreamFormat>();
         }
 
-       
         private async Task PopulateRelatedVideos(string videoId)
         {
             string response = await FetchRealtedVideos(videoId);
@@ -1404,6 +1770,14 @@ namespace MangoTube8UWP
                     Name = authorJsonResponse.SelectToken("..videoOwnerRenderer.title.runs[0].text")?.ToString()
                 };
 
+                Title = videoDetailsTab.Title;
+                Description = videoDetailsTab.Description;
+                Views = videoDetailsTab.ViewCount;
+                Subs = videoDetailsTab.Subcribers;
+                ThumbnailURL = $"https://i.ytimg.com/vi/{videoId}/hqdefault.jpg";
+                AurthorPFPURL = authorDetails.AvatarUrl;
+                Aurthor = authorDetails.Name;
+
                 VideoTitle.Text = videoDetailsTab.Title;
 
                 string avatarUrl = authorDetails.AvatarUrl;
@@ -1413,6 +1787,8 @@ namespace MangoTube8UWP
                 ProfilePicture.Source = new BitmapImage(avatarUri);
 
                 VideoUploadDate.Text = "Published on " + videoDetailsTab.UploadDate;
+
+                Date = "Published on " + videoDetailsTab.UploadDate;
 
                 SetVideoDescriptionWithLinks(videoDetailsTab.Description);
 

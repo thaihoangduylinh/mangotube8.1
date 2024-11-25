@@ -148,131 +148,133 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[61];
+            _typeNameTable = new string[62];
             _typeNameTable[0] = "MangoTube8UWP.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "MangoTube8UWP.SearchPage";
             _typeNameTable[4] = "MangoTube8UWP.SettingsPage";
-            _typeNameTable[5] = "Microsoft.PlayerFramework.MediaPlayer";
+            _typeNameTable[5] = "Microsoft.PlayerFramework.BufferingView";
             _typeNameTable[6] = "Windows.UI.Xaml.Controls.Control";
-            _typeNameTable[7] = "Boolean";
-            _typeNameTable[8] = "Windows.UI.Xaml.Media.Stretch";
-            _typeNameTable[9] = "System.Collections.Generic.IList`1<System.Type>";
-            _typeNameTable[10] = "System.Type";
-            _typeNameTable[11] = "Object";
-            _typeNameTable[12] = "String";
-            _typeNameTable[13] = "Int32";
-            _typeNameTable[14] = "System.Type[]";
-            _typeNameTable[15] = "System.Array";
-            _typeNameTable[16] = "System.RuntimeTypeHandle";
-            _typeNameTable[17] = "System.ValueType";
-            _typeNameTable[18] = "System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.IPlugin>";
-            _typeNameTable[19] = "System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.IPlugin>";
-            _typeNameTable[20] = "Microsoft.PlayerFramework.IPlugin";
-            _typeNameTable[21] = "Windows.UI.Xaml.Data.IValueConverter";
-            _typeNameTable[22] = "System.Nullable`1<TimeSpan>";
-            _typeNameTable[23] = "System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.VisualMarker>";
-            _typeNameTable[24] = "System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.VisualMarker>";
-            _typeNameTable[25] = "Microsoft.PlayerFramework.VisualMarker";
-            _typeNameTable[26] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[27] = "TimeSpan";
-            _typeNameTable[28] = "Windows.UI.Xaml.Style";
-            _typeNameTable[29] = "Windows.UI.Xaml.Media.TimelineMarkerCollection";
-            _typeNameTable[30] = "Double";
-            _typeNameTable[31] = "Microsoft.PlayerFramework.MediaQuality";
-            _typeNameTable[32] = "System.Enum";
-            _typeNameTable[33] = "Microsoft.PlayerFramework.AdvertisingState";
-            _typeNameTable[34] = "Microsoft.PlayerFramework.MediaEndedBehavior";
-            _typeNameTable[35] = "System.Collections.Generic.List`1<Microsoft.PlayerFramework.Caption>";
-            _typeNameTable[36] = "Microsoft.PlayerFramework.Caption";
-            _typeNameTable[37] = "Windows.UI.Xaml.FrameworkElement";
-            _typeNameTable[38] = "System.Uri";
-            _typeNameTable[39] = "System.Collections.Generic.List`1<Microsoft.PlayerFramework.AudioStream>";
-            _typeNameTable[40] = "Microsoft.PlayerFramework.AudioStream";
-            _typeNameTable[41] = "Windows.UI.Xaml.Media.ImageSource";
-            _typeNameTable[42] = "Windows.Media.MediaExtensionManager";
-            _typeNameTable[43] = "Windows.UI.Xaml.Media.AudioCategory";
-            _typeNameTable[44] = "Windows.UI.Xaml.Media.AudioDeviceType";
-            _typeNameTable[45] = "Windows.Media.PlayTo.PlayToSource";
-            _typeNameTable[46] = "Windows.UI.Xaml.Media.Stereo3DVideoPackingMode";
-            _typeNameTable[47] = "Windows.UI.Xaml.Media.Stereo3DVideoRenderMode";
-            _typeNameTable[48] = "Windows.Media.Protection.MediaProtectionManager";
-            _typeNameTable[49] = "System.Nullable`1<Int32>";
-            _typeNameTable[50] = "Windows.UI.Xaml.Duration";
-            _typeNameTable[51] = "Windows.UI.Xaml.Media.MediaElementState";
-            _typeNameTable[52] = "System.Collections.Generic.IList`1<Double>";
-            _typeNameTable[53] = "Windows.UI.Xaml.Controls.ControlTemplate";
-            _typeNameTable[54] = "System.Collections.Generic.IList`1<Windows.UI.Xaml.UIElement>";
-            _typeNameTable[55] = "Windows.UI.Xaml.UIElement";
-            _typeNameTable[56] = "Microsoft.PlayerFramework.IInteractiveViewModel";
-            _typeNameTable[57] = "Microsoft.PlayerFramework.InteractionType";
-            _typeNameTable[58] = "Microsoft.PlayerFramework.AutoHideBehavior";
-            _typeNameTable[59] = "Microsoft.PlayerFramework.PlayerState";
-            _typeNameTable[60] = "MangoTube8UWP.VideoPage";
+            _typeNameTable[7] = "Microsoft.PlayerFramework.IInteractiveViewModel";
+            _typeNameTable[8] = "Microsoft.PlayerFramework.MediaPlayer";
+            _typeNameTable[9] = "Boolean";
+            _typeNameTable[10] = "Windows.UI.Xaml.Media.Stretch";
+            _typeNameTable[11] = "System.Collections.Generic.IList`1<System.Type>";
+            _typeNameTable[12] = "System.Type";
+            _typeNameTable[13] = "Object";
+            _typeNameTable[14] = "String";
+            _typeNameTable[15] = "Int32";
+            _typeNameTable[16] = "System.Type[]";
+            _typeNameTable[17] = "System.Array";
+            _typeNameTable[18] = "System.RuntimeTypeHandle";
+            _typeNameTable[19] = "System.ValueType";
+            _typeNameTable[20] = "System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.IPlugin>";
+            _typeNameTable[21] = "System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.IPlugin>";
+            _typeNameTable[22] = "Microsoft.PlayerFramework.IPlugin";
+            _typeNameTable[23] = "Windows.UI.Xaml.Data.IValueConverter";
+            _typeNameTable[24] = "System.Nullable`1<TimeSpan>";
+            _typeNameTable[25] = "System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.VisualMarker>";
+            _typeNameTable[26] = "System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.VisualMarker>";
+            _typeNameTable[27] = "Microsoft.PlayerFramework.VisualMarker";
+            _typeNameTable[28] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[29] = "TimeSpan";
+            _typeNameTable[30] = "Windows.UI.Xaml.Style";
+            _typeNameTable[31] = "Windows.UI.Xaml.Media.TimelineMarkerCollection";
+            _typeNameTable[32] = "Double";
+            _typeNameTable[33] = "Microsoft.PlayerFramework.MediaQuality";
+            _typeNameTable[34] = "System.Enum";
+            _typeNameTable[35] = "Microsoft.PlayerFramework.AdvertisingState";
+            _typeNameTable[36] = "Microsoft.PlayerFramework.MediaEndedBehavior";
+            _typeNameTable[37] = "System.Collections.Generic.List`1<Microsoft.PlayerFramework.Caption>";
+            _typeNameTable[38] = "Microsoft.PlayerFramework.Caption";
+            _typeNameTable[39] = "Windows.UI.Xaml.FrameworkElement";
+            _typeNameTable[40] = "System.Uri";
+            _typeNameTable[41] = "System.Collections.Generic.List`1<Microsoft.PlayerFramework.AudioStream>";
+            _typeNameTable[42] = "Microsoft.PlayerFramework.AudioStream";
+            _typeNameTable[43] = "Windows.UI.Xaml.Media.ImageSource";
+            _typeNameTable[44] = "Windows.Media.MediaExtensionManager";
+            _typeNameTable[45] = "Windows.UI.Xaml.Media.AudioCategory";
+            _typeNameTable[46] = "Windows.UI.Xaml.Media.AudioDeviceType";
+            _typeNameTable[47] = "Windows.Media.PlayTo.PlayToSource";
+            _typeNameTable[48] = "Windows.UI.Xaml.Media.Stereo3DVideoPackingMode";
+            _typeNameTable[49] = "Windows.UI.Xaml.Media.Stereo3DVideoRenderMode";
+            _typeNameTable[50] = "Windows.Media.Protection.MediaProtectionManager";
+            _typeNameTable[51] = "System.Nullable`1<Int32>";
+            _typeNameTable[52] = "Windows.UI.Xaml.Duration";
+            _typeNameTable[53] = "Windows.UI.Xaml.Media.MediaElementState";
+            _typeNameTable[54] = "System.Collections.Generic.IList`1<Double>";
+            _typeNameTable[55] = "Windows.UI.Xaml.Controls.ControlTemplate";
+            _typeNameTable[56] = "System.Collections.Generic.IList`1<Windows.UI.Xaml.UIElement>";
+            _typeNameTable[57] = "Windows.UI.Xaml.UIElement";
+            _typeNameTable[58] = "Microsoft.PlayerFramework.InteractionType";
+            _typeNameTable[59] = "Microsoft.PlayerFramework.AutoHideBehavior";
+            _typeNameTable[60] = "Microsoft.PlayerFramework.PlayerState";
+            _typeNameTable[61] = "MangoTube8UWP.VideoPage";
 
-            _typeTable = new global::System.Type[61];
+            _typeTable = new global::System.Type[62];
             _typeTable[0] = typeof(global::MangoTube8UWP.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::MangoTube8UWP.SearchPage);
             _typeTable[4] = typeof(global::MangoTube8UWP.SettingsPage);
-            _typeTable[5] = typeof(global::Microsoft.PlayerFramework.MediaPlayer);
+            _typeTable[5] = typeof(global::Microsoft.PlayerFramework.BufferingView);
             _typeTable[6] = typeof(global::Windows.UI.Xaml.Controls.Control);
-            _typeTable[7] = typeof(global::System.Boolean);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.Media.Stretch);
-            _typeTable[9] = typeof(global::System.Collections.Generic.IList<global::System.Type>);
-            _typeTable[10] = typeof(global::System.Type);
-            _typeTable[11] = typeof(global::System.Object);
-            _typeTable[12] = typeof(global::System.String);
-            _typeTable[13] = typeof(global::System.Int32);
-            _typeTable[14] = typeof(global::System.Type[]);
-            _typeTable[15] = typeof(global::System.Array);
-            _typeTable[16] = typeof(global::System.RuntimeTypeHandle);
-            _typeTable[17] = typeof(global::System.ValueType);
-            _typeTable[18] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.PlayerFramework.IPlugin>);
-            _typeTable[19] = typeof(global::System.Collections.ObjectModel.Collection<global::Microsoft.PlayerFramework.IPlugin>);
-            _typeTable[20] = typeof(global::Microsoft.PlayerFramework.IPlugin);
-            _typeTable[21] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
-            _typeTable[22] = typeof(global::System.Nullable<global::System.TimeSpan>);
-            _typeTable[23] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.PlayerFramework.VisualMarker>);
-            _typeTable[24] = typeof(global::System.Collections.ObjectModel.Collection<global::Microsoft.PlayerFramework.VisualMarker>);
-            _typeTable[25] = typeof(global::Microsoft.PlayerFramework.VisualMarker);
-            _typeTable[26] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[27] = typeof(global::System.TimeSpan);
-            _typeTable[28] = typeof(global::Windows.UI.Xaml.Style);
-            _typeTable[29] = typeof(global::Windows.UI.Xaml.Media.TimelineMarkerCollection);
-            _typeTable[30] = typeof(global::System.Double);
-            _typeTable[31] = typeof(global::Microsoft.PlayerFramework.MediaQuality);
-            _typeTable[32] = typeof(global::System.Enum);
-            _typeTable[33] = typeof(global::Microsoft.PlayerFramework.AdvertisingState);
-            _typeTable[34] = typeof(global::Microsoft.PlayerFramework.MediaEndedBehavior);
-            _typeTable[35] = typeof(global::System.Collections.Generic.List<global::Microsoft.PlayerFramework.Caption>);
-            _typeTable[36] = typeof(global::Microsoft.PlayerFramework.Caption);
-            _typeTable[37] = typeof(global::Windows.UI.Xaml.FrameworkElement);
-            _typeTable[38] = typeof(global::System.Uri);
-            _typeTable[39] = typeof(global::System.Collections.Generic.List<global::Microsoft.PlayerFramework.AudioStream>);
-            _typeTable[40] = typeof(global::Microsoft.PlayerFramework.AudioStream);
-            _typeTable[41] = typeof(global::Windows.UI.Xaml.Media.ImageSource);
-            _typeTable[42] = typeof(global::Windows.Media.MediaExtensionManager);
-            _typeTable[43] = typeof(global::Windows.UI.Xaml.Media.AudioCategory);
-            _typeTable[44] = typeof(global::Windows.UI.Xaml.Media.AudioDeviceType);
-            _typeTable[45] = typeof(global::Windows.Media.PlayTo.PlayToSource);
-            _typeTable[46] = typeof(global::Windows.UI.Xaml.Media.Stereo3DVideoPackingMode);
-            _typeTable[47] = typeof(global::Windows.UI.Xaml.Media.Stereo3DVideoRenderMode);
-            _typeTable[48] = typeof(global::Windows.Media.Protection.MediaProtectionManager);
-            _typeTable[49] = typeof(global::System.Nullable<global::System.Int32>);
-            _typeTable[50] = typeof(global::Windows.UI.Xaml.Duration);
-            _typeTable[51] = typeof(global::Windows.UI.Xaml.Media.MediaElementState);
-            _typeTable[52] = typeof(global::System.Collections.Generic.IList<global::System.Double>);
-            _typeTable[53] = typeof(global::Windows.UI.Xaml.Controls.ControlTemplate);
-            _typeTable[54] = typeof(global::System.Collections.Generic.IList<global::Windows.UI.Xaml.UIElement>);
-            _typeTable[55] = typeof(global::Windows.UI.Xaml.UIElement);
-            _typeTable[56] = typeof(global::Microsoft.PlayerFramework.IInteractiveViewModel);
-            _typeTable[57] = typeof(global::Microsoft.PlayerFramework.InteractionType);
-            _typeTable[58] = typeof(global::Microsoft.PlayerFramework.AutoHideBehavior);
-            _typeTable[59] = typeof(global::Microsoft.PlayerFramework.PlayerState);
-            _typeTable[60] = typeof(global::MangoTube8UWP.VideoPage);
+            _typeTable[7] = typeof(global::Microsoft.PlayerFramework.IInteractiveViewModel);
+            _typeTable[8] = typeof(global::Microsoft.PlayerFramework.MediaPlayer);
+            _typeTable[9] = typeof(global::System.Boolean);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.Media.Stretch);
+            _typeTable[11] = typeof(global::System.Collections.Generic.IList<global::System.Type>);
+            _typeTable[12] = typeof(global::System.Type);
+            _typeTable[13] = typeof(global::System.Object);
+            _typeTable[14] = typeof(global::System.String);
+            _typeTable[15] = typeof(global::System.Int32);
+            _typeTable[16] = typeof(global::System.Type[]);
+            _typeTable[17] = typeof(global::System.Array);
+            _typeTable[18] = typeof(global::System.RuntimeTypeHandle);
+            _typeTable[19] = typeof(global::System.ValueType);
+            _typeTable[20] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.PlayerFramework.IPlugin>);
+            _typeTable[21] = typeof(global::System.Collections.ObjectModel.Collection<global::Microsoft.PlayerFramework.IPlugin>);
+            _typeTable[22] = typeof(global::Microsoft.PlayerFramework.IPlugin);
+            _typeTable[23] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
+            _typeTable[24] = typeof(global::System.Nullable<global::System.TimeSpan>);
+            _typeTable[25] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.PlayerFramework.VisualMarker>);
+            _typeTable[26] = typeof(global::System.Collections.ObjectModel.Collection<global::Microsoft.PlayerFramework.VisualMarker>);
+            _typeTable[27] = typeof(global::Microsoft.PlayerFramework.VisualMarker);
+            _typeTable[28] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[29] = typeof(global::System.TimeSpan);
+            _typeTable[30] = typeof(global::Windows.UI.Xaml.Style);
+            _typeTable[31] = typeof(global::Windows.UI.Xaml.Media.TimelineMarkerCollection);
+            _typeTable[32] = typeof(global::System.Double);
+            _typeTable[33] = typeof(global::Microsoft.PlayerFramework.MediaQuality);
+            _typeTable[34] = typeof(global::System.Enum);
+            _typeTable[35] = typeof(global::Microsoft.PlayerFramework.AdvertisingState);
+            _typeTable[36] = typeof(global::Microsoft.PlayerFramework.MediaEndedBehavior);
+            _typeTable[37] = typeof(global::System.Collections.Generic.List<global::Microsoft.PlayerFramework.Caption>);
+            _typeTable[38] = typeof(global::Microsoft.PlayerFramework.Caption);
+            _typeTable[39] = typeof(global::Windows.UI.Xaml.FrameworkElement);
+            _typeTable[40] = typeof(global::System.Uri);
+            _typeTable[41] = typeof(global::System.Collections.Generic.List<global::Microsoft.PlayerFramework.AudioStream>);
+            _typeTable[42] = typeof(global::Microsoft.PlayerFramework.AudioStream);
+            _typeTable[43] = typeof(global::Windows.UI.Xaml.Media.ImageSource);
+            _typeTable[44] = typeof(global::Windows.Media.MediaExtensionManager);
+            _typeTable[45] = typeof(global::Windows.UI.Xaml.Media.AudioCategory);
+            _typeTable[46] = typeof(global::Windows.UI.Xaml.Media.AudioDeviceType);
+            _typeTable[47] = typeof(global::Windows.Media.PlayTo.PlayToSource);
+            _typeTable[48] = typeof(global::Windows.UI.Xaml.Media.Stereo3DVideoPackingMode);
+            _typeTable[49] = typeof(global::Windows.UI.Xaml.Media.Stereo3DVideoRenderMode);
+            _typeTable[50] = typeof(global::Windows.Media.Protection.MediaProtectionManager);
+            _typeTable[51] = typeof(global::System.Nullable<global::System.Int32>);
+            _typeTable[52] = typeof(global::Windows.UI.Xaml.Duration);
+            _typeTable[53] = typeof(global::Windows.UI.Xaml.Media.MediaElementState);
+            _typeTable[54] = typeof(global::System.Collections.Generic.IList<global::System.Double>);
+            _typeTable[55] = typeof(global::Windows.UI.Xaml.Controls.ControlTemplate);
+            _typeTable[56] = typeof(global::System.Collections.Generic.IList<global::Windows.UI.Xaml.UIElement>);
+            _typeTable[57] = typeof(global::Windows.UI.Xaml.UIElement);
+            _typeTable[58] = typeof(global::Microsoft.PlayerFramework.InteractionType);
+            _typeTable[59] = typeof(global::Microsoft.PlayerFramework.AutoHideBehavior);
+            _typeTable[60] = typeof(global::Microsoft.PlayerFramework.PlayerState);
+            _typeTable[61] = typeof(global::MangoTube8UWP.VideoPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -310,68 +312,69 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
         private object Activate_0_MainPage() { return new global::MangoTube8UWP.MainPage(); }
         private object Activate_3_SearchPage() { return new global::MangoTube8UWP.SearchPage(); }
         private object Activate_4_SettingsPage() { return new global::MangoTube8UWP.SettingsPage(); }
-        private object Activate_5_MediaPlayer() { return new global::Microsoft.PlayerFramework.MediaPlayer(); }
-        private object Activate_18_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.PlayerFramework.IPlugin>(); }
-        private object Activate_19_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Microsoft.PlayerFramework.IPlugin>(); }
-        private object Activate_23_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.PlayerFramework.VisualMarker>(); }
-        private object Activate_24_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Microsoft.PlayerFramework.VisualMarker>(); }
-        private object Activate_25_VisualMarker() { return new global::Microsoft.PlayerFramework.VisualMarker(); }
-        private object Activate_35_List() { return new global::System.Collections.Generic.List<global::Microsoft.PlayerFramework.Caption>(); }
-        private object Activate_36_Caption() { return new global::Microsoft.PlayerFramework.Caption(); }
-        private object Activate_39_List() { return new global::System.Collections.Generic.List<global::Microsoft.PlayerFramework.AudioStream>(); }
-        private object Activate_40_AudioStream() { return new global::Microsoft.PlayerFramework.AudioStream(); }
-        private object Activate_42_MediaExtensionManager() { return new global::Windows.Media.MediaExtensionManager(); }
-        private object Activate_48_MediaProtectionManager() { return new global::Windows.Media.Protection.MediaProtectionManager(); }
-        private object Activate_60_VideoPage() { return new global::MangoTube8UWP.VideoPage(); }
-        private void VectorAdd_9_IList(object instance, object item)
+        private object Activate_5_BufferingView() { return new global::Microsoft.PlayerFramework.BufferingView(); }
+        private object Activate_8_MediaPlayer() { return new global::Microsoft.PlayerFramework.MediaPlayer(); }
+        private object Activate_20_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.PlayerFramework.IPlugin>(); }
+        private object Activate_21_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Microsoft.PlayerFramework.IPlugin>(); }
+        private object Activate_25_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.PlayerFramework.VisualMarker>(); }
+        private object Activate_26_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Microsoft.PlayerFramework.VisualMarker>(); }
+        private object Activate_27_VisualMarker() { return new global::Microsoft.PlayerFramework.VisualMarker(); }
+        private object Activate_37_List() { return new global::System.Collections.Generic.List<global::Microsoft.PlayerFramework.Caption>(); }
+        private object Activate_38_Caption() { return new global::Microsoft.PlayerFramework.Caption(); }
+        private object Activate_41_List() { return new global::System.Collections.Generic.List<global::Microsoft.PlayerFramework.AudioStream>(); }
+        private object Activate_42_AudioStream() { return new global::Microsoft.PlayerFramework.AudioStream(); }
+        private object Activate_44_MediaExtensionManager() { return new global::Windows.Media.MediaExtensionManager(); }
+        private object Activate_50_MediaProtectionManager() { return new global::Windows.Media.Protection.MediaProtectionManager(); }
+        private object Activate_61_VideoPage() { return new global::MangoTube8UWP.VideoPage(); }
+        private void VectorAdd_11_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Type>)instance;
             var newItem = (global::System.Type)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_18_ObservableCollection(object instance, object item)
+        private void VectorAdd_20_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.PlayerFramework.IPlugin>)instance;
             var newItem = (global::Microsoft.PlayerFramework.IPlugin)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_19_Collection(object instance, object item)
+        private void VectorAdd_21_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.PlayerFramework.IPlugin>)instance;
             var newItem = (global::Microsoft.PlayerFramework.IPlugin)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_23_ObservableCollection(object instance, object item)
+        private void VectorAdd_25_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.PlayerFramework.VisualMarker>)instance;
             var newItem = (global::Microsoft.PlayerFramework.VisualMarker)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_24_Collection(object instance, object item)
+        private void VectorAdd_26_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.PlayerFramework.VisualMarker>)instance;
             var newItem = (global::Microsoft.PlayerFramework.VisualMarker)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_35_List(object instance, object item)
+        private void VectorAdd_37_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.PlayerFramework.Caption>)instance;
             var newItem = (global::Microsoft.PlayerFramework.Caption)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_39_List(object instance, object item)
+        private void VectorAdd_41_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.PlayerFramework.AudioStream>)instance;
             var newItem = (global::Microsoft.PlayerFramework.AudioStream)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_52_IList(object instance, object item)
+        private void VectorAdd_54_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Double>)instance;
             var newItem = (global::System.Double)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_54_IList(object instance, object item)
+        private void VectorAdd_56_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.UIElement>)instance;
             var newItem = (global::Windows.UI.Xaml.UIElement)item;
@@ -417,19 +420,41 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 5:   //  Microsoft.PlayerFramework.MediaPlayer
+            case 5:   //  Microsoft.PlayerFramework.BufferingView
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_5_MediaPlayer;
+                userType.Activator = Activate_5_BufferingView;
+                userType.AddMemberName("ViewModel");
+                xamlType = userType;
+                break;
+
+            case 6:   //  Windows.UI.Xaml.Controls.Control
+                xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  Microsoft.PlayerFramework.IInteractiveViewModel
+                userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 8:   //  Microsoft.PlayerFramework.MediaPlayer
+                userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_8_MediaPlayer;
                 userType.AddMemberName("AutoPlay");
+                userType.AddMemberName("IsFullScreenVisible");
+                userType.AddMemberName("IsFastForwardVisible");
+                userType.AddMemberName("IsRewindVisible");
+                userType.AddMemberName("IsInteractive");
                 userType.AddMemberName("Stretch");
-                userType.AddMemberName("IsFullScreenEnabled");
-                userType.AddMemberName("IsAudioSelectionEnabled");
-                userType.AddMemberName("IsCaptionSelectionEnabled");
-                userType.AddMemberName("IsSlowMotionEnabled");
+                userType.AddMemberName("IsPlayPauseVisible");
+                userType.AddMemberName("IsThumbnailVisible");
+                userType.AddMemberName("IsZoomVisible");
                 userType.AddMemberName("AutoLoadPluginTypes");
                 userType.AddMemberName("AutoLoadPlugins");
                 userType.AddMemberName("Plugins");
+                userType.AddMemberName("IsCaptionSelectionEnabled");
                 userType.AddMemberName("IsCaptionSelectionAllowed");
+                userType.AddMemberName("IsFullScreenEnabled");
                 userType.AddMemberName("IsZoomEnabled");
                 userType.AddMemberName("IsGoLiveEnabled");
                 userType.AddMemberName("IsGoLiveAllowed");
@@ -444,11 +469,13 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 userType.AddMemberName("IsStopAllowed");
                 userType.AddMemberName("IsReplayEnabled");
                 userType.AddMemberName("IsReplayAllowed");
+                userType.AddMemberName("IsAudioSelectionEnabled");
                 userType.AddMemberName("IsAudioSelectionAllowed");
                 userType.AddMemberName("IsRewindEnabled");
                 userType.AddMemberName("IsRewindAllowed");
                 userType.AddMemberName("IsFastForwardEnabled");
                 userType.AddMemberName("IsFastForwardAllowed");
+                userType.AddMemberName("IsSlowMotionEnabled");
                 userType.AddMemberName("IsSlowMotionAllowed");
                 userType.AddMemberName("IsSeekEnabled");
                 userType.AddMemberName("IsSeekAllowed");
@@ -466,18 +493,13 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 userType.AddMemberName("IsCaptionSelectionVisible");
                 userType.AddMemberName("IsDurationVisible");
                 userType.AddMemberName("IsTimeRemainingVisible");
-                userType.AddMemberName("IsFastForwardVisible");
-                userType.AddMemberName("IsFullScreenVisible");
-                userType.AddMemberName("IsZoomVisible");
                 userType.AddMemberName("IsGoLiveVisible");
                 userType.AddMemberName("IsInfoVisible");
                 userType.AddMemberName("IsMoreVisible");
-                userType.AddMemberName("IsPlayPauseVisible");
                 userType.AddMemberName("IsTimeElapsedVisible");
                 userType.AddMemberName("IsSkipBackVisible");
                 userType.AddMemberName("IsSkipAheadVisible");
                 userType.AddMemberName("IsReplayVisible");
-                userType.AddMemberName("IsRewindVisible");
                 userType.AddMemberName("IsSkipPreviousVisible");
                 userType.AddMemberName("IsSkipNextVisible");
                 userType.AddMemberName("IsSlowMotionVisible");
@@ -518,7 +540,6 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 userType.AddMemberName("AvailableAudioStreams");
                 userType.AddMemberName("SelectedAudioStream");
                 userType.AddMemberName("IsLive");
-                userType.AddMemberName("IsThumbnailVisible");
                 userType.AddMemberName("VirtualPosition");
                 userType.AddMemberName("ThumbnailImageSource");
                 userType.AddMemberName("TestForMediaPack");
@@ -571,31 +592,26 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 userType.AddMemberName("InteractiveDeactivationMode");
                 userType.AddMemberName("AutoHide");
                 userType.AddMemberName("AutoHideBehavior");
-                userType.AddMemberName("IsInteractive");
                 userType.AddMemberName("PlayerState");
                 xamlType = userType;
                 break;
 
-            case 6:   //  Windows.UI.Xaml.Controls.Control
+            case 9:   //  Boolean
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 7:   //  Boolean
+            case 10:   //  Windows.UI.Xaml.Media.Stretch
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  Windows.UI.Xaml.Media.Stretch
-                xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 9:   //  System.Collections.Generic.IList`1<System.Type>
+            case 11:   //  System.Collections.Generic.IList`1<System.Type>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_9_IList;
+                userType.CollectionAdd = VectorAdd_11_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 10:   //  System.Type
+            case 12:   //  System.Type
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("AssemblyQualifiedName");
                 userType.AddMemberName("FullName");
@@ -615,87 +631,87 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 11:   //  Object
+            case 13:   //  Object
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  String
+            case 14:   //  String
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 13:   //  Int32
+            case 15:   //  Int32
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 14:   //  System.Type[]
+            case 16:   //  System.Type[]
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Array"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 15:   //  System.Array
+            case 17:   //  System.Array
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 16:   //  System.RuntimeTypeHandle
+            case 18:   //  System.RuntimeTypeHandle
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 17:   //  System.ValueType
+            case 19:   //  System.ValueType
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 18:   //  System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.IPlugin>
+            case 20:   //  System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.IPlugin>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.IPlugin>"));
-                userType.CollectionAdd = VectorAdd_18_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_20_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 19:   //  System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.IPlugin>
+            case 21:   //  System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.IPlugin>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_19_Collection;
-                userType.CollectionAdd = VectorAdd_19_Collection;
+                userType.Activator = Activate_21_Collection;
+                userType.CollectionAdd = VectorAdd_21_Collection;
                 xamlType = userType;
                 break;
 
-            case 20:   //  Microsoft.PlayerFramework.IPlugin
+            case 22:   //  Microsoft.PlayerFramework.IPlugin
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.AddMemberName("MediaPlayer");
                 xamlType = userType;
                 break;
 
-            case 21:   //  Windows.UI.Xaml.Data.IValueConverter
+            case 23:   //  Windows.UI.Xaml.Data.IValueConverter
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 22:   //  System.Nullable`1<TimeSpan>
+            case 24:   //  System.Nullable`1<TimeSpan>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 23:   //  System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.VisualMarker>
+            case 25:   //  System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.VisualMarker>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.VisualMarker>"));
-                userType.CollectionAdd = VectorAdd_23_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_25_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 24:   //  System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.VisualMarker>
+            case 26:   //  System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.VisualMarker>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_24_Collection;
-                userType.CollectionAdd = VectorAdd_24_Collection;
+                userType.Activator = Activate_26_Collection;
+                userType.CollectionAdd = VectorAdd_26_Collection;
                 xamlType = userType;
                 break;
 
-            case 25:   //  Microsoft.PlayerFramework.VisualMarker
+            case 27:   //  Microsoft.PlayerFramework.VisualMarker
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_25_VisualMarker;
+                userType.Activator = Activate_27_VisualMarker;
                 userType.AddMemberName("Text");
                 userType.AddMemberName("Time");
                 userType.AddMemberName("IsSeekable");
@@ -703,41 +719,41 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 26:   //  Windows.UI.Xaml.DependencyObject
+            case 28:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 27:   //  TimeSpan
+            case 29:   //  TimeSpan
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 28:   //  Windows.UI.Xaml.Style
+            case 30:   //  Windows.UI.Xaml.Style
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 29:   //  Windows.UI.Xaml.Media.TimelineMarkerCollection
+            case 31:   //  Windows.UI.Xaml.Media.TimelineMarkerCollection
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 30:   //  Double
+            case 32:   //  Double
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 31:   //  Microsoft.PlayerFramework.MediaQuality
+            case 33:   //  Microsoft.PlayerFramework.MediaQuality
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("StandardDefinition", global::Microsoft.PlayerFramework.MediaQuality.StandardDefinition);
                 userType.AddEnumValue("HighDefinition", global::Microsoft.PlayerFramework.MediaQuality.HighDefinition);
                 xamlType = userType;
                 break;
 
-            case 32:   //  System.Enum
+            case 34:   //  System.Enum
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 33:   //  Microsoft.PlayerFramework.AdvertisingState
+            case 35:   //  Microsoft.PlayerFramework.AdvertisingState
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Microsoft.PlayerFramework.AdvertisingState.None);
                 userType.AddEnumValue("Loading", global::Microsoft.PlayerFramework.AdvertisingState.Loading);
@@ -746,7 +762,7 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 34:   //  Microsoft.PlayerFramework.MediaEndedBehavior
+            case 36:   //  Microsoft.PlayerFramework.MediaEndedBehavior
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Manual", global::Microsoft.PlayerFramework.MediaEndedBehavior.Manual);
                 userType.AddEnumValue("Stop", global::Microsoft.PlayerFramework.MediaEndedBehavior.Stop);
@@ -754,16 +770,16 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 35:   //  System.Collections.Generic.List`1<Microsoft.PlayerFramework.Caption>
+            case 37:   //  System.Collections.Generic.List`1<Microsoft.PlayerFramework.Caption>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_35_List;
+                userType.CollectionAdd = VectorAdd_37_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 36:   //  Microsoft.PlayerFramework.Caption
+            case 38:   //  Microsoft.PlayerFramework.Caption
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
-                userType.Activator = Activate_36_Caption;
+                userType.Activator = Activate_38_Caption;
                 userType.AddMemberName("Id");
                 userType.AddMemberName("Description");
                 userType.AddMemberName("Payload");
@@ -771,112 +787,106 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 37:   //  Windows.UI.Xaml.FrameworkElement
+            case 39:   //  Windows.UI.Xaml.FrameworkElement
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 38:   //  System.Uri
+            case 40:   //  System.Uri
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 39:   //  System.Collections.Generic.List`1<Microsoft.PlayerFramework.AudioStream>
+            case 41:   //  System.Collections.Generic.List`1<Microsoft.PlayerFramework.AudioStream>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_39_List;
+                userType.CollectionAdd = VectorAdd_41_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 40:   //  Microsoft.PlayerFramework.AudioStream
+            case 42:   //  Microsoft.PlayerFramework.AudioStream
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_40_AudioStream;
+                userType.Activator = Activate_42_AudioStream;
                 userType.AddMemberName("Name");
                 userType.AddMemberName("Language");
                 xamlType = userType;
                 break;
 
-            case 41:   //  Windows.UI.Xaml.Media.ImageSource
+            case 43:   //  Windows.UI.Xaml.Media.ImageSource
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 42:   //  Windows.Media.MediaExtensionManager
+            case 44:   //  Windows.Media.MediaExtensionManager
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 43:   //  Windows.UI.Xaml.Media.AudioCategory
+            case 45:   //  Windows.UI.Xaml.Media.AudioCategory
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 44:   //  Windows.UI.Xaml.Media.AudioDeviceType
+            case 46:   //  Windows.UI.Xaml.Media.AudioDeviceType
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 45:   //  Windows.Media.PlayTo.PlayToSource
+            case 47:   //  Windows.Media.PlayTo.PlayToSource
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 46:   //  Windows.UI.Xaml.Media.Stereo3DVideoPackingMode
+            case 48:   //  Windows.UI.Xaml.Media.Stereo3DVideoPackingMode
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 47:   //  Windows.UI.Xaml.Media.Stereo3DVideoRenderMode
+            case 49:   //  Windows.UI.Xaml.Media.Stereo3DVideoRenderMode
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 48:   //  Windows.Media.Protection.MediaProtectionManager
+            case 50:   //  Windows.Media.Protection.MediaProtectionManager
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 49:   //  System.Nullable`1<Int32>
+            case 51:   //  System.Nullable`1<Int32>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 50:   //  Windows.UI.Xaml.Duration
+            case 52:   //  Windows.UI.Xaml.Duration
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 51:   //  Windows.UI.Xaml.Media.MediaElementState
+            case 53:   //  Windows.UI.Xaml.Media.MediaElementState
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 52:   //  System.Collections.Generic.IList`1<Double>
-                userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_52_IList;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 53:   //  Windows.UI.Xaml.Controls.ControlTemplate
-                xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 54:   //  System.Collections.Generic.IList`1<Windows.UI.Xaml.UIElement>
+            case 54:   //  System.Collections.Generic.IList`1<Double>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.CollectionAdd = VectorAdd_54_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 55:   //  Windows.UI.Xaml.UIElement
+            case 55:   //  Windows.UI.Xaml.Controls.ControlTemplate
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 56:   //  Microsoft.PlayerFramework.IInteractiveViewModel
+            case 56:   //  System.Collections.Generic.IList`1<Windows.UI.Xaml.UIElement>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.CollectionAdd = VectorAdd_56_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 57:   //  Microsoft.PlayerFramework.InteractionType
+            case 57:   //  Windows.UI.Xaml.UIElement
+                xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 58:   //  Microsoft.PlayerFramework.InteractionType
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Microsoft.PlayerFramework.InteractionType.None);
                 userType.AddEnumValue("Soft", global::Microsoft.PlayerFramework.InteractionType.Soft);
@@ -885,7 +895,7 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 58:   //  Microsoft.PlayerFramework.AutoHideBehavior
+            case 59:   //  Microsoft.PlayerFramework.AutoHideBehavior
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Microsoft.PlayerFramework.AutoHideBehavior.None);
                 userType.AddEnumValue("AllowDuringPlaybackOnly", global::Microsoft.PlayerFramework.AutoHideBehavior.AllowDuringPlaybackOnly);
@@ -894,7 +904,7 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 59:   //  Microsoft.PlayerFramework.PlayerState
+            case 60:   //  Microsoft.PlayerFramework.PlayerState
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Unloaded", global::Microsoft.PlayerFramework.PlayerState.Unloaded);
                 userType.AddEnumValue("Pending", global::Microsoft.PlayerFramework.PlayerState.Pending);
@@ -908,9 +918,9 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 60:   //  MangoTube8UWP.VideoPage
+            case 61:   //  MangoTube8UWP.VideoPage
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_60_VideoPage;
+                userType.Activator = Activate_61_VideoPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -936,6 +946,8 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                     provider = new global::Microsoft.PlayerFramework.CaptionSettings.Microsoft_PlayerFramework_Phone_CaptionSettings_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     _otherProviders.Add(provider); 
                     provider = new global::Microsoft.PlayerFramework.Microsoft_PlayerFramework_Universal_Core_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
+                    _otherProviders.Add(provider); 
+                    provider = new global::MyToolkit.MyToolkit_Extended_WinRT_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     _otherProviders.Add(provider); 
                 }
                 return _otherProviders;
@@ -980,1487 +992,1497 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
             return foundXamlType;
         }
 
-        private object get_0_MediaPlayer_AutoPlay(object instance)
+        private object get_0_BufferingView_ViewModel(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.BufferingView)instance;
+            return that.ViewModel;
+        }
+        private void set_0_BufferingView_ViewModel(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.BufferingView)instance;
+            that.ViewModel = (global::Microsoft.PlayerFramework.IInteractiveViewModel)Value;
+        }
+        private object get_1_MediaPlayer_AutoPlay(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
             return that.AutoPlay;
         }
-        private void set_0_MediaPlayer_AutoPlay(object instance, object Value)
+        private void set_1_MediaPlayer_AutoPlay(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
             that.AutoPlay = (global::System.Boolean)Value;
         }
-        private object get_1_MediaPlayer_Stretch(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.Stretch;
-        }
-        private void set_1_MediaPlayer_Stretch(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.Stretch = (global::Windows.UI.Xaml.Media.Stretch)Value;
-        }
-        private object get_2_MediaPlayer_IsFullScreenEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsFullScreenEnabled;
-        }
-        private void set_2_MediaPlayer_IsFullScreenEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsFullScreenEnabled = (global::System.Boolean)Value;
-        }
-        private object get_3_MediaPlayer_IsAudioSelectionEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsAudioSelectionEnabled;
-        }
-        private void set_3_MediaPlayer_IsAudioSelectionEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsAudioSelectionEnabled = (global::System.Boolean)Value;
-        }
-        private object get_4_MediaPlayer_IsCaptionSelectionEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsCaptionSelectionEnabled;
-        }
-        private void set_4_MediaPlayer_IsCaptionSelectionEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsCaptionSelectionEnabled = (global::System.Boolean)Value;
-        }
-        private object get_5_MediaPlayer_IsSlowMotionEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSlowMotionEnabled;
-        }
-        private void set_5_MediaPlayer_IsSlowMotionEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsSlowMotionEnabled = (global::System.Boolean)Value;
-        }
-        private object get_6_MediaPlayer_AutoLoadPluginTypes(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AutoLoadPluginTypes;
-        }
-        private object get_7_Type_AssemblyQualifiedName(object instance)
-        {
-            var that = (global::System.Type)instance;
-            return that.AssemblyQualifiedName;
-        }
-        private object get_8_Type_FullName(object instance)
-        {
-            var that = (global::System.Type)instance;
-            return that.FullName;
-        }
-        private object get_9_Type_GenericParameterPosition(object instance)
-        {
-            var that = (global::System.Type)instance;
-            return that.GenericParameterPosition;
-        }
-        private object get_10_Type_GenericTypeArguments(object instance)
-        {
-            var that = (global::System.Type)instance;
-            return that.GenericTypeArguments;
-        }
-        private object get_11_Type_HasElementType(object instance)
-        {
-            var that = (global::System.Type)instance;
-            return that.HasElementType;
-        }
-        private object get_12_Type_IsArray(object instance)
-        {
-            var that = (global::System.Type)instance;
-            return that.IsArray;
-        }
-        private object get_13_Type_IsByRef(object instance)
-        {
-            var that = (global::System.Type)instance;
-            return that.IsByRef;
-        }
-        private object get_14_Type_IsConstructedGenericType(object instance)
-        {
-            var that = (global::System.Type)instance;
-            return that.IsConstructedGenericType;
-        }
-        private object get_15_Type_IsGenericParameter(object instance)
-        {
-            var that = (global::System.Type)instance;
-            return that.IsGenericParameter;
-        }
-        private object get_16_Type_IsNested(object instance)
-        {
-            var that = (global::System.Type)instance;
-            return that.IsNested;
-        }
-        private object get_17_Type_IsPointer(object instance)
-        {
-            var that = (global::System.Type)instance;
-            return that.IsPointer;
-        }
-        private object get_18_Type_Namespace(object instance)
-        {
-            var that = (global::System.Type)instance;
-            return that.Namespace;
-        }
-        private object get_19_Type_TypeHandle(object instance)
-        {
-            var that = (global::System.Type)instance;
-            return that.TypeHandle;
-        }
-        private object get_20_Type_DeclaringType(object instance)
-        {
-            var that = (global::System.Type)instance;
-            return that.DeclaringType;
-        }
-        private object get_21_Type_Name(object instance)
-        {
-            var that = (global::System.Type)instance;
-            return that.Name;
-        }
-        private object get_22_MediaPlayer_AutoLoadPlugins(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AutoLoadPlugins;
-        }
-        private void set_22_MediaPlayer_AutoLoadPlugins(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.AutoLoadPlugins = (global::System.Boolean)Value;
-        }
-        private object get_23_MediaPlayer_Plugins(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.Plugins;
-        }
-        private object get_24_IPlugin_MediaPlayer(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.IPlugin)instance;
-            return that.MediaPlayer;
-        }
-        private void set_24_IPlugin_MediaPlayer(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.IPlugin)instance;
-            that.MediaPlayer = (global::Microsoft.PlayerFramework.MediaPlayer)Value;
-        }
-        private object get_25_MediaPlayer_IsCaptionSelectionAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsCaptionSelectionAllowed;
-        }
-        private object get_26_MediaPlayer_IsZoomEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsZoomEnabled;
-        }
-        private void set_26_MediaPlayer_IsZoomEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsZoomEnabled = (global::System.Boolean)Value;
-        }
-        private object get_27_MediaPlayer_IsGoLiveEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsGoLiveEnabled;
-        }
-        private void set_27_MediaPlayer_IsGoLiveEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsGoLiveEnabled = (global::System.Boolean)Value;
-        }
-        private object get_28_MediaPlayer_IsGoLiveAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsGoLiveAllowed;
-        }
-        private object get_29_MediaPlayer_IsInfoEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsInfoEnabled;
-        }
-        private void set_29_MediaPlayer_IsInfoEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsInfoEnabled = (global::System.Boolean)Value;
-        }
-        private object get_30_MediaPlayer_IsInfoAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsInfoAllowed;
-        }
-        private object get_31_MediaPlayer_IsMoreEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsMoreEnabled;
-        }
-        private void set_31_MediaPlayer_IsMoreEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsMoreEnabled = (global::System.Boolean)Value;
-        }
-        private object get_32_MediaPlayer_IsPlayResumeEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsPlayResumeEnabled;
-        }
-        private void set_32_MediaPlayer_IsPlayResumeEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsPlayResumeEnabled = (global::System.Boolean)Value;
-        }
-        private object get_33_MediaPlayer_IsPlayResumeAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsPlayResumeAllowed;
-        }
-        private object get_34_MediaPlayer_IsPauseEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsPauseEnabled;
-        }
-        private void set_34_MediaPlayer_IsPauseEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsPauseEnabled = (global::System.Boolean)Value;
-        }
-        private object get_35_MediaPlayer_IsPauseAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsPauseAllowed;
-        }
-        private object get_36_MediaPlayer_IsStopEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsStopEnabled;
-        }
-        private void set_36_MediaPlayer_IsStopEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsStopEnabled = (global::System.Boolean)Value;
-        }
-        private object get_37_MediaPlayer_IsStopAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsStopAllowed;
-        }
-        private object get_38_MediaPlayer_IsReplayEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsReplayEnabled;
-        }
-        private void set_38_MediaPlayer_IsReplayEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsReplayEnabled = (global::System.Boolean)Value;
-        }
-        private object get_39_MediaPlayer_IsReplayAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsReplayAllowed;
-        }
-        private object get_40_MediaPlayer_IsAudioSelectionAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsAudioSelectionAllowed;
-        }
-        private object get_41_MediaPlayer_IsRewindEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsRewindEnabled;
-        }
-        private void set_41_MediaPlayer_IsRewindEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsRewindEnabled = (global::System.Boolean)Value;
-        }
-        private object get_42_MediaPlayer_IsRewindAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsRewindAllowed;
-        }
-        private object get_43_MediaPlayer_IsFastForwardEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsFastForwardEnabled;
-        }
-        private void set_43_MediaPlayer_IsFastForwardEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsFastForwardEnabled = (global::System.Boolean)Value;
-        }
-        private object get_44_MediaPlayer_IsFastForwardAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsFastForwardAllowed;
-        }
-        private object get_45_MediaPlayer_IsSlowMotionAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSlowMotionAllowed;
-        }
-        private object get_46_MediaPlayer_IsSeekEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSeekEnabled;
-        }
-        private void set_46_MediaPlayer_IsSeekEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsSeekEnabled = (global::System.Boolean)Value;
-        }
-        private object get_47_MediaPlayer_IsSeekAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSeekAllowed;
-        }
-        private object get_48_MediaPlayer_IsSkipPreviousEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSkipPreviousEnabled;
-        }
-        private void set_48_MediaPlayer_IsSkipPreviousEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsSkipPreviousEnabled = (global::System.Boolean)Value;
-        }
-        private object get_49_MediaPlayer_IsSkipPreviousAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSkipPreviousAllowed;
-        }
-        private object get_50_MediaPlayer_IsSkipNextEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSkipNextEnabled;
-        }
-        private void set_50_MediaPlayer_IsSkipNextEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsSkipNextEnabled = (global::System.Boolean)Value;
-        }
-        private object get_51_MediaPlayer_IsSkipNextAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSkipNextAllowed;
-        }
-        private object get_52_MediaPlayer_IsSkipBackEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSkipBackEnabled;
-        }
-        private void set_52_MediaPlayer_IsSkipBackEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsSkipBackEnabled = (global::System.Boolean)Value;
-        }
-        private object get_53_MediaPlayer_IsSkipBackAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSkipBackAllowed;
-        }
-        private object get_54_MediaPlayer_IsSkipAheadEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSkipAheadEnabled;
-        }
-        private void set_54_MediaPlayer_IsSkipAheadEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsSkipAheadEnabled = (global::System.Boolean)Value;
-        }
-        private object get_55_MediaPlayer_IsSkipAheadAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSkipAheadAllowed;
-        }
-        private object get_56_MediaPlayer_IsScrubbingEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsScrubbingEnabled;
-        }
-        private void set_56_MediaPlayer_IsScrubbingEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsScrubbingEnabled = (global::System.Boolean)Value;
-        }
-        private object get_57_MediaPlayer_IsScrubbingAllowed(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsScrubbingAllowed;
-        }
-        private object get_58_MediaPlayer_IsAudioSelectionVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsAudioSelectionVisible;
-        }
-        private void set_58_MediaPlayer_IsAudioSelectionVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsAudioSelectionVisible = (global::System.Boolean)Value;
-        }
-        private object get_59_MediaPlayer_IsCaptionSelectionVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsCaptionSelectionVisible;
-        }
-        private void set_59_MediaPlayer_IsCaptionSelectionVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsCaptionSelectionVisible = (global::System.Boolean)Value;
-        }
-        private object get_60_MediaPlayer_IsDurationVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsDurationVisible;
-        }
-        private void set_60_MediaPlayer_IsDurationVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsDurationVisible = (global::System.Boolean)Value;
-        }
-        private object get_61_MediaPlayer_IsTimeRemainingVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsTimeRemainingVisible;
-        }
-        private void set_61_MediaPlayer_IsTimeRemainingVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsTimeRemainingVisible = (global::System.Boolean)Value;
-        }
-        private object get_62_MediaPlayer_IsFastForwardVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsFastForwardVisible;
-        }
-        private void set_62_MediaPlayer_IsFastForwardVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsFastForwardVisible = (global::System.Boolean)Value;
-        }
-        private object get_63_MediaPlayer_IsFullScreenVisible(object instance)
+        private object get_2_MediaPlayer_IsFullScreenVisible(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
             return that.IsFullScreenVisible;
         }
-        private void set_63_MediaPlayer_IsFullScreenVisible(object instance, object Value)
+        private void set_2_MediaPlayer_IsFullScreenVisible(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
             that.IsFullScreenVisible = (global::System.Boolean)Value;
         }
-        private object get_64_MediaPlayer_IsZoomVisible(object instance)
+        private object get_3_MediaPlayer_IsFastForwardVisible(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsZoomVisible;
+            return that.IsFastForwardVisible;
         }
-        private void set_64_MediaPlayer_IsZoomVisible(object instance, object Value)
+        private void set_3_MediaPlayer_IsFastForwardVisible(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsZoomVisible = (global::System.Boolean)Value;
+            that.IsFastForwardVisible = (global::System.Boolean)Value;
         }
-        private object get_65_MediaPlayer_IsGoLiveVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsGoLiveVisible;
-        }
-        private void set_65_MediaPlayer_IsGoLiveVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsGoLiveVisible = (global::System.Boolean)Value;
-        }
-        private object get_66_MediaPlayer_IsInfoVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsInfoVisible;
-        }
-        private void set_66_MediaPlayer_IsInfoVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsInfoVisible = (global::System.Boolean)Value;
-        }
-        private object get_67_MediaPlayer_IsMoreVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsMoreVisible;
-        }
-        private void set_67_MediaPlayer_IsMoreVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsMoreVisible = (global::System.Boolean)Value;
-        }
-        private object get_68_MediaPlayer_IsPlayPauseVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsPlayPauseVisible;
-        }
-        private void set_68_MediaPlayer_IsPlayPauseVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsPlayPauseVisible = (global::System.Boolean)Value;
-        }
-        private object get_69_MediaPlayer_IsTimeElapsedVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsTimeElapsedVisible;
-        }
-        private void set_69_MediaPlayer_IsTimeElapsedVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsTimeElapsedVisible = (global::System.Boolean)Value;
-        }
-        private object get_70_MediaPlayer_IsSkipBackVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSkipBackVisible;
-        }
-        private void set_70_MediaPlayer_IsSkipBackVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsSkipBackVisible = (global::System.Boolean)Value;
-        }
-        private object get_71_MediaPlayer_IsSkipAheadVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSkipAheadVisible;
-        }
-        private void set_71_MediaPlayer_IsSkipAheadVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsSkipAheadVisible = (global::System.Boolean)Value;
-        }
-        private object get_72_MediaPlayer_IsReplayVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsReplayVisible;
-        }
-        private void set_72_MediaPlayer_IsReplayVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsReplayVisible = (global::System.Boolean)Value;
-        }
-        private object get_73_MediaPlayer_IsRewindVisible(object instance)
+        private object get_4_MediaPlayer_IsRewindVisible(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
             return that.IsRewindVisible;
         }
-        private void set_73_MediaPlayer_IsRewindVisible(object instance, object Value)
+        private void set_4_MediaPlayer_IsRewindVisible(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
             that.IsRewindVisible = (global::System.Boolean)Value;
         }
-        private object get_74_MediaPlayer_IsSkipPreviousVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSkipPreviousVisible;
-        }
-        private void set_74_MediaPlayer_IsSkipPreviousVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsSkipPreviousVisible = (global::System.Boolean)Value;
-        }
-        private object get_75_MediaPlayer_IsSkipNextVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSkipNextVisible;
-        }
-        private void set_75_MediaPlayer_IsSkipNextVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsSkipNextVisible = (global::System.Boolean)Value;
-        }
-        private object get_76_MediaPlayer_IsSlowMotionVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSlowMotionVisible;
-        }
-        private void set_76_MediaPlayer_IsSlowMotionVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsSlowMotionVisible = (global::System.Boolean)Value;
-        }
-        private object get_77_MediaPlayer_IsStopVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsStopVisible;
-        }
-        private void set_77_MediaPlayer_IsStopVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsStopVisible = (global::System.Boolean)Value;
-        }
-        private object get_78_MediaPlayer_IsTimelineVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsTimelineVisible;
-        }
-        private void set_78_MediaPlayer_IsTimelineVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsTimelineVisible = (global::System.Boolean)Value;
-        }
-        private object get_79_MediaPlayer_IsVolumeVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsVolumeVisible;
-        }
-        private void set_79_MediaPlayer_IsVolumeVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsVolumeVisible = (global::System.Boolean)Value;
-        }
-        private object get_80_MediaPlayer_IsSignalStrengthVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSignalStrengthVisible;
-        }
-        private void set_80_MediaPlayer_IsSignalStrengthVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsSignalStrengthVisible = (global::System.Boolean)Value;
-        }
-        private object get_81_MediaPlayer_IsResolutionIndicatorVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsResolutionIndicatorVisible;
-        }
-        private void set_81_MediaPlayer_IsResolutionIndicatorVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsResolutionIndicatorVisible = (global::System.Boolean)Value;
-        }
-        private object get_82_MediaPlayer_TimeFormatConverter(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.TimeFormatConverter;
-        }
-        private void set_82_MediaPlayer_TimeFormatConverter(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.TimeFormatConverter = (global::Windows.UI.Xaml.Data.IValueConverter)Value;
-        }
-        private object get_83_MediaPlayer_SkipBackInterval(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.SkipBackInterval;
-        }
-        private void set_83_MediaPlayer_SkipBackInterval(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.SkipBackInterval = (global::System.Nullable<global::System.TimeSpan>)Value;
-        }
-        private object get_84_MediaPlayer_SkipAheadInterval(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.SkipAheadInterval;
-        }
-        private void set_84_MediaPlayer_SkipAheadInterval(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.SkipAheadInterval = (global::System.Nullable<global::System.TimeSpan>)Value;
-        }
-        private object get_85_MediaPlayer_VisualMarkers(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.VisualMarkers;
-        }
-        private object get_86_VisualMarker_Text(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.VisualMarker)instance;
-            return that.Text;
-        }
-        private void set_86_VisualMarker_Text(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.VisualMarker)instance;
-            that.Text = (global::System.String)Value;
-        }
-        private object get_87_VisualMarker_Time(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.VisualMarker)instance;
-            return that.Time;
-        }
-        private void set_87_VisualMarker_Time(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.VisualMarker)instance;
-            that.Time = (global::System.TimeSpan)Value;
-        }
-        private object get_88_VisualMarker_IsSeekable(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.VisualMarker)instance;
-            return that.IsSeekable;
-        }
-        private void set_88_VisualMarker_IsSeekable(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.VisualMarker)instance;
-            that.IsSeekable = (global::System.Boolean)Value;
-        }
-        private object get_89_VisualMarker_Style(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.VisualMarker)instance;
-            return that.Style;
-        }
-        private void set_89_VisualMarker_Style(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.VisualMarker)instance;
-            that.Style = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_90_MediaPlayer_Markers(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.Markers;
-        }
-        private object get_91_MediaPlayer_AutoLoad(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AutoLoad;
-        }
-        private void set_91_MediaPlayer_AutoLoad(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.AutoLoad = (global::System.Boolean)Value;
-        }
-        private object get_92_MediaPlayer_SignalStrength(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.SignalStrength;
-        }
-        private void set_92_MediaPlayer_SignalStrength(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.SignalStrength = (global::System.Double)Value;
-        }
-        private object get_93_MediaPlayer_MediaQuality(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.MediaQuality;
-        }
-        private void set_93_MediaPlayer_MediaQuality(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.MediaQuality = (global::Microsoft.PlayerFramework.MediaQuality)Value;
-        }
-        private object get_94_MediaPlayer_LivePositionBuffer(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.LivePositionBuffer;
-        }
-        private void set_94_MediaPlayer_LivePositionBuffer(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.LivePositionBuffer = (global::System.TimeSpan)Value;
-        }
-        private object get_95_MediaPlayer_IsPositionLive(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsPositionLive;
-        }
-        private object get_96_MediaPlayer_LivePosition(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.LivePosition;
-        }
-        private void set_96_MediaPlayer_LivePosition(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.LivePosition = (global::System.Nullable<global::System.TimeSpan>)Value;
-        }
-        private object get_97_MediaPlayer_Duration(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.Duration;
-        }
-        private object get_98_MediaPlayer_IsStartTimeOffset(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsStartTimeOffset;
-        }
-        private void set_98_MediaPlayer_IsStartTimeOffset(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsStartTimeOffset = (global::System.Boolean)Value;
-        }
-        private object get_99_MediaPlayer_StartTime(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.StartTime;
-        }
-        private void set_99_MediaPlayer_StartTime(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.StartTime = (global::System.TimeSpan)Value;
-        }
-        private object get_100_MediaPlayer_EndTime(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.EndTime;
-        }
-        private void set_100_MediaPlayer_EndTime(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.EndTime = (global::System.TimeSpan)Value;
-        }
-        private object get_101_MediaPlayer_TimeRemaining(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.TimeRemaining;
-        }
-        private object get_102_MediaPlayer_SeekWhileScrubbing(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.SeekWhileScrubbing;
-        }
-        private void set_102_MediaPlayer_SeekWhileScrubbing(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.SeekWhileScrubbing = (global::System.Boolean)Value;
-        }
-        private object get_103_MediaPlayer_ReplayOffset(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.ReplayOffset;
-        }
-        private void set_103_MediaPlayer_ReplayOffset(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.ReplayOffset = (global::System.Nullable<global::System.TimeSpan>)Value;
-        }
-        private object get_104_MediaPlayer_SlowMotionPlaybackRate(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.SlowMotionPlaybackRate;
-        }
-        private void set_104_MediaPlayer_SlowMotionPlaybackRate(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.SlowMotionPlaybackRate = (global::System.Double)Value;
-        }
-        private object get_105_MediaPlayer_IsSlowMotion(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsSlowMotion;
-        }
-        private void set_105_MediaPlayer_IsSlowMotion(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsSlowMotion = (global::System.Boolean)Value;
-        }
-        private object get_106_MediaPlayer_IsCaptionsActive(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsCaptionsActive;
-        }
-        private void set_106_MediaPlayer_IsCaptionsActive(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsCaptionsActive = (global::System.Boolean)Value;
-        }
-        private object get_107_MediaPlayer_IsFullScreen(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsFullScreen;
-        }
-        private void set_107_MediaPlayer_IsFullScreen(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsFullScreen = (global::System.Boolean)Value;
-        }
-        private object get_108_MediaPlayer_AdvertisingState(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AdvertisingState;
-        }
-        private void set_108_MediaPlayer_AdvertisingState(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.AdvertisingState = (global::Microsoft.PlayerFramework.AdvertisingState)Value;
-        }
-        private object get_109_MediaPlayer_IsScrubbing(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsScrubbing;
-        }
-        private object get_110_MediaPlayer_StartupPosition(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.StartupPosition;
-        }
-        private void set_110_MediaPlayer_StartupPosition(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.StartupPosition = (global::System.Nullable<global::System.TimeSpan>)Value;
-        }
-        private object get_111_MediaPlayer_MediaEndedBehavior(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.MediaEndedBehavior;
-        }
-        private void set_111_MediaPlayer_MediaEndedBehavior(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.MediaEndedBehavior = (global::Microsoft.PlayerFramework.MediaEndedBehavior)Value;
-        }
-        private object get_112_MediaPlayer_UpdateInterval(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.UpdateInterval;
-        }
-        private void set_112_MediaPlayer_UpdateInterval(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.UpdateInterval = (global::System.TimeSpan)Value;
-        }
-        private object get_113_MediaPlayer_AvailableCaptions(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AvailableCaptions;
-        }
-        private object get_114_Caption_Id(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.Caption)instance;
-            return that.Id;
-        }
-        private void set_114_Caption_Id(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.Caption)instance;
-            that.Id = (global::System.String)Value;
-        }
-        private object get_115_Caption_Description(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.Caption)instance;
-            return that.Description;
-        }
-        private void set_115_Caption_Description(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.Caption)instance;
-            that.Description = (global::System.String)Value;
-        }
-        private object get_116_Caption_Payload(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.Caption)instance;
-            return that.Payload;
-        }
-        private void set_116_Caption_Payload(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.Caption)instance;
-            that.Payload = (global::System.Object)Value;
-        }
-        private object get_117_Caption_Source(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.Caption)instance;
-            return that.Source;
-        }
-        private void set_117_Caption_Source(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.Caption)instance;
-            that.Source = (global::System.Uri)Value;
-        }
-        private object get_118_MediaPlayer_SelectedCaption(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.SelectedCaption;
-        }
-        private void set_118_MediaPlayer_SelectedCaption(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.SelectedCaption = (global::Microsoft.PlayerFramework.Caption)Value;
-        }
-        private object get_119_MediaPlayer_AvailableAudioStreams(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AvailableAudioStreams;
-        }
-        private object get_120_AudioStream_Name(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.AudioStream)instance;
-            return that.Name;
-        }
-        private void set_120_AudioStream_Name(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.AudioStream)instance;
-            that.Name = (global::System.String)Value;
-        }
-        private object get_121_AudioStream_Language(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.AudioStream)instance;
-            return that.Language;
-        }
-        private void set_121_AudioStream_Language(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.AudioStream)instance;
-            that.Language = (global::System.String)Value;
-        }
-        private object get_122_MediaPlayer_SelectedAudioStream(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.SelectedAudioStream;
-        }
-        private void set_122_MediaPlayer_SelectedAudioStream(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.SelectedAudioStream = (global::Microsoft.PlayerFramework.AudioStream)Value;
-        }
-        private object get_123_MediaPlayer_IsLive(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsLive;
-        }
-        private void set_123_MediaPlayer_IsLive(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsLive = (global::System.Boolean)Value;
-        }
-        private object get_124_MediaPlayer_IsThumbnailVisible(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsThumbnailVisible;
-        }
-        private void set_124_MediaPlayer_IsThumbnailVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsThumbnailVisible = (global::System.Boolean)Value;
-        }
-        private object get_125_MediaPlayer_VirtualPosition(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.VirtualPosition;
-        }
-        private object get_126_MediaPlayer_ThumbnailImageSource(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.ThumbnailImageSource;
-        }
-        private void set_126_MediaPlayer_ThumbnailImageSource(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.ThumbnailImageSource = (global::Windows.UI.Xaml.Media.ImageSource)Value;
-        }
-        private object get_127_MediaPlayer_TestForMediaPack(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.TestForMediaPack;
-        }
-        private void set_127_MediaPlayer_TestForMediaPack(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.TestForMediaPack = (global::System.Boolean)Value;
-        }
-        private object get_128_MediaPlayer_MediaExtensionManager(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.MediaExtensionManager;
-        }
-        private void set_128_MediaPlayer_MediaExtensionManager(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.MediaExtensionManager = (global::Windows.Media.MediaExtensionManager)Value;
-        }
-        private object get_129_MediaPlayer_AspectRatioWidth(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AspectRatioWidth;
-        }
-        private object get_130_MediaPlayer_AspectRatioHeight(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AspectRatioHeight;
-        }
-        private object get_131_MediaPlayer_AudioCategory(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AudioCategory;
-        }
-        private void set_131_MediaPlayer_AudioCategory(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.AudioCategory = (global::Windows.UI.Xaml.Media.AudioCategory)Value;
-        }
-        private object get_132_MediaPlayer_AudioDeviceType(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AudioDeviceType;
-        }
-        private void set_132_MediaPlayer_AudioDeviceType(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.AudioDeviceType = (global::Windows.UI.Xaml.Media.AudioDeviceType)Value;
-        }
-        private object get_133_MediaPlayer_PlayToSource(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.PlayToSource;
-        }
-        private object get_134_MediaPlayer_DefaultPlaybackRate(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.DefaultPlaybackRate;
-        }
-        private void set_134_MediaPlayer_DefaultPlaybackRate(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.DefaultPlaybackRate = (global::System.Double)Value;
-        }
-        private object get_135_MediaPlayer_IsAudioOnly(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsAudioOnly;
-        }
-        private object get_136_MediaPlayer_IsLooping(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsLooping;
-        }
-        private void set_136_MediaPlayer_IsLooping(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsLooping = (global::System.Boolean)Value;
-        }
-        private object get_137_MediaPlayer_PosterSource(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.PosterSource;
-        }
-        private void set_137_MediaPlayer_PosterSource(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.PosterSource = (global::Windows.UI.Xaml.Media.ImageSource)Value;
-        }
-        private object get_138_MediaPlayer_ActualStereo3DVideoPackingMode(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.ActualStereo3DVideoPackingMode;
-        }
-        private object get_139_MediaPlayer_Stereo3DVideoPackingMode(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.Stereo3DVideoPackingMode;
-        }
-        private void set_139_MediaPlayer_Stereo3DVideoPackingMode(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.Stereo3DVideoPackingMode = (global::Windows.UI.Xaml.Media.Stereo3DVideoPackingMode)Value;
-        }
-        private object get_140_MediaPlayer_Stereo3DVideoRenderMode(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.Stereo3DVideoRenderMode;
-        }
-        private void set_140_MediaPlayer_Stereo3DVideoRenderMode(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.Stereo3DVideoRenderMode = (global::Windows.UI.Xaml.Media.Stereo3DVideoRenderMode)Value;
-        }
-        private object get_141_MediaPlayer_IsStereo3DVideo(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsStereo3DVideo;
-        }
-        private object get_142_MediaPlayer_RealTimePlayback(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.RealTimePlayback;
-        }
-        private void set_142_MediaPlayer_RealTimePlayback(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.RealTimePlayback = (global::System.Boolean)Value;
-        }
-        private object get_143_MediaPlayer_ProtectionManager(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.ProtectionManager;
-        }
-        private void set_143_MediaPlayer_ProtectionManager(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.ProtectionManager = (global::Windows.Media.Protection.MediaProtectionManager)Value;
-        }
-        private object get_144_MediaPlayer_AreTransportControlsEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AreTransportControlsEnabled;
-        }
-        private void set_144_MediaPlayer_AreTransportControlsEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.AreTransportControlsEnabled = (global::System.Boolean)Value;
-        }
-        private object get_145_MediaPlayer_IsFullWindow(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsFullWindow;
-        }
-        private void set_145_MediaPlayer_IsFullWindow(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsFullWindow = (global::System.Boolean)Value;
-        }
-        private object get_146_MediaPlayer_PlayToPreferredSourceUri(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.PlayToPreferredSourceUri;
-        }
-        private void set_146_MediaPlayer_PlayToPreferredSourceUri(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.PlayToPreferredSourceUri = (global::System.Uri)Value;
-        }
-        private object get_147_MediaPlayer_AudioStreamCount(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AudioStreamCount;
-        }
-        private object get_148_MediaPlayer_AudioStreamIndex(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AudioStreamIndex;
-        }
-        private void set_148_MediaPlayer_AudioStreamIndex(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.AudioStreamIndex = (global::System.Nullable<global::System.Int32>)Value;
-        }
-        private object get_149_MediaPlayer_BufferingProgress(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.BufferingProgress;
-        }
-        private object get_150_MediaPlayer_CanPause(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.CanPause;
-        }
-        private object get_151_MediaPlayer_CanSeek(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.CanSeek;
-        }
-        private object get_152_MediaPlayer_Balance(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.Balance;
-        }
-        private void set_152_MediaPlayer_Balance(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.Balance = (global::System.Double)Value;
-        }
-        private object get_153_MediaPlayer_DownloadProgress(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.DownloadProgress;
-        }
-        private object get_154_MediaPlayer_DownloadProgressOffset(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.DownloadProgressOffset;
-        }
-        private object get_155_MediaPlayer_IsMuted(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsMuted;
-        }
-        private void set_155_MediaPlayer_IsMuted(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsMuted = (global::System.Boolean)Value;
-        }
-        private object get_156_MediaPlayer_NaturalDuration(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.NaturalDuration;
-        }
-        private object get_157_MediaPlayer_NaturalVideoHeight(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.NaturalVideoHeight;
-        }
-        private object get_158_MediaPlayer_NaturalVideoWidth(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.NaturalVideoWidth;
-        }
-        private object get_159_MediaPlayer_PlaybackRate(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.PlaybackRate;
-        }
-        private void set_159_MediaPlayer_PlaybackRate(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.PlaybackRate = (global::System.Double)Value;
-        }
-        private object get_160_MediaPlayer_IsTrickPlayEnabled(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.IsTrickPlayEnabled;
-        }
-        private void set_160_MediaPlayer_IsTrickPlayEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.IsTrickPlayEnabled = (global::System.Boolean)Value;
-        }
-        private object get_161_MediaPlayer_Position(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.Position;
-        }
-        private void set_161_MediaPlayer_Position(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.Position = (global::System.TimeSpan)Value;
-        }
-        private object get_162_MediaPlayer_CurrentState(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.CurrentState;
-        }
-        private object get_163_MediaPlayer_Source(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.Source;
-        }
-        private void set_163_MediaPlayer_Source(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.Source = (global::System.Uri)Value;
-        }
-        private object get_164_MediaPlayer_Volume(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.Volume;
-        }
-        private void set_164_MediaPlayer_Volume(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.Volume = (global::System.Double)Value;
-        }
-        private object get_165_MediaPlayer_SupportedPlaybackRates(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.SupportedPlaybackRates;
-        }
-        private void set_165_MediaPlayer_SupportedPlaybackRates(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.SupportedPlaybackRates = (global::System.Collections.Generic.IList<global::System.Double>)Value;
-        }
-        private object get_166_MediaPlayer_AllowMediaStartingDeferrals(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AllowMediaStartingDeferrals;
-        }
-        private void set_166_MediaPlayer_AllowMediaStartingDeferrals(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.AllowMediaStartingDeferrals = (global::System.Boolean)Value;
-        }
-        private object get_167_MediaPlayer_ControlPanelTemplate(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.ControlPanelTemplate;
-        }
-        private void set_167_MediaPlayer_ControlPanelTemplate(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.ControlPanelTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
-        }
-        private object get_168_MediaPlayer_ControlPanel(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.ControlPanel;
-        }
-        private object get_169_MediaPlayer_AutoHideInterval(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AutoHideInterval;
-        }
-        private void set_169_MediaPlayer_AutoHideInterval(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.AutoHideInterval = (global::System.TimeSpan)Value;
-        }
-        private object get_170_MediaPlayer_Containers(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.Containers;
-        }
-        private void set_170_MediaPlayer_Containers(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.Containers = (global::System.Collections.Generic.IList<global::Windows.UI.Xaml.UIElement>)Value;
-        }
-        private object get_171_MediaPlayer_InteractiveViewModel(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.InteractiveViewModel;
-        }
-        private void set_171_MediaPlayer_InteractiveViewModel(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.InteractiveViewModel = (global::Microsoft.PlayerFramework.IInteractiveViewModel)Value;
-        }
-        private object get_172_MediaPlayer_DefaultInteractiveViewModel(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.DefaultInteractiveViewModel;
-        }
-        private void set_172_MediaPlayer_DefaultInteractiveViewModel(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.DefaultInteractiveViewModel = (global::Microsoft.PlayerFramework.IInteractiveViewModel)Value;
-        }
-        private object get_173_MediaPlayer_InteractiveActivationMode(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.InteractiveActivationMode;
-        }
-        private void set_173_MediaPlayer_InteractiveActivationMode(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.InteractiveActivationMode = (global::Microsoft.PlayerFramework.InteractionType)Value;
-        }
-        private object get_174_MediaPlayer_InteractiveDeactivationMode(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.InteractiveDeactivationMode;
-        }
-        private void set_174_MediaPlayer_InteractiveDeactivationMode(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.InteractiveDeactivationMode = (global::Microsoft.PlayerFramework.InteractionType)Value;
-        }
-        private object get_175_MediaPlayer_AutoHide(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AutoHide;
-        }
-        private void set_175_MediaPlayer_AutoHide(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.AutoHide = (global::System.Boolean)Value;
-        }
-        private object get_176_MediaPlayer_AutoHideBehavior(object instance)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            return that.AutoHideBehavior;
-        }
-        private void set_176_MediaPlayer_AutoHideBehavior(object instance, object Value)
-        {
-            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
-            that.AutoHideBehavior = (global::Microsoft.PlayerFramework.AutoHideBehavior)Value;
-        }
-        private object get_177_MediaPlayer_IsInteractive(object instance)
+        private object get_5_MediaPlayer_IsInteractive(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
             return that.IsInteractive;
         }
-        private void set_177_MediaPlayer_IsInteractive(object instance, object Value)
+        private void set_5_MediaPlayer_IsInteractive(object instance, object Value)
         {
             var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
             that.IsInteractive = (global::System.Boolean)Value;
         }
-        private object get_178_MediaPlayer_PlayerState(object instance)
+        private object get_6_MediaPlayer_Stretch(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.Stretch;
+        }
+        private void set_6_MediaPlayer_Stretch(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.Stretch = (global::Windows.UI.Xaml.Media.Stretch)Value;
+        }
+        private object get_7_MediaPlayer_IsPlayPauseVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsPlayPauseVisible;
+        }
+        private void set_7_MediaPlayer_IsPlayPauseVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsPlayPauseVisible = (global::System.Boolean)Value;
+        }
+        private object get_8_MediaPlayer_IsThumbnailVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsThumbnailVisible;
+        }
+        private void set_8_MediaPlayer_IsThumbnailVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsThumbnailVisible = (global::System.Boolean)Value;
+        }
+        private object get_9_MediaPlayer_IsZoomVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsZoomVisible;
+        }
+        private void set_9_MediaPlayer_IsZoomVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsZoomVisible = (global::System.Boolean)Value;
+        }
+        private object get_10_MediaPlayer_AutoLoadPluginTypes(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AutoLoadPluginTypes;
+        }
+        private object get_11_Type_AssemblyQualifiedName(object instance)
+        {
+            var that = (global::System.Type)instance;
+            return that.AssemblyQualifiedName;
+        }
+        private object get_12_Type_FullName(object instance)
+        {
+            var that = (global::System.Type)instance;
+            return that.FullName;
+        }
+        private object get_13_Type_GenericParameterPosition(object instance)
+        {
+            var that = (global::System.Type)instance;
+            return that.GenericParameterPosition;
+        }
+        private object get_14_Type_GenericTypeArguments(object instance)
+        {
+            var that = (global::System.Type)instance;
+            return that.GenericTypeArguments;
+        }
+        private object get_15_Type_HasElementType(object instance)
+        {
+            var that = (global::System.Type)instance;
+            return that.HasElementType;
+        }
+        private object get_16_Type_IsArray(object instance)
+        {
+            var that = (global::System.Type)instance;
+            return that.IsArray;
+        }
+        private object get_17_Type_IsByRef(object instance)
+        {
+            var that = (global::System.Type)instance;
+            return that.IsByRef;
+        }
+        private object get_18_Type_IsConstructedGenericType(object instance)
+        {
+            var that = (global::System.Type)instance;
+            return that.IsConstructedGenericType;
+        }
+        private object get_19_Type_IsGenericParameter(object instance)
+        {
+            var that = (global::System.Type)instance;
+            return that.IsGenericParameter;
+        }
+        private object get_20_Type_IsNested(object instance)
+        {
+            var that = (global::System.Type)instance;
+            return that.IsNested;
+        }
+        private object get_21_Type_IsPointer(object instance)
+        {
+            var that = (global::System.Type)instance;
+            return that.IsPointer;
+        }
+        private object get_22_Type_Namespace(object instance)
+        {
+            var that = (global::System.Type)instance;
+            return that.Namespace;
+        }
+        private object get_23_Type_TypeHandle(object instance)
+        {
+            var that = (global::System.Type)instance;
+            return that.TypeHandle;
+        }
+        private object get_24_Type_DeclaringType(object instance)
+        {
+            var that = (global::System.Type)instance;
+            return that.DeclaringType;
+        }
+        private object get_25_Type_Name(object instance)
+        {
+            var that = (global::System.Type)instance;
+            return that.Name;
+        }
+        private object get_26_MediaPlayer_AutoLoadPlugins(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AutoLoadPlugins;
+        }
+        private void set_26_MediaPlayer_AutoLoadPlugins(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.AutoLoadPlugins = (global::System.Boolean)Value;
+        }
+        private object get_27_MediaPlayer_Plugins(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.Plugins;
+        }
+        private object get_28_IPlugin_MediaPlayer(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.IPlugin)instance;
+            return that.MediaPlayer;
+        }
+        private void set_28_IPlugin_MediaPlayer(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.IPlugin)instance;
+            that.MediaPlayer = (global::Microsoft.PlayerFramework.MediaPlayer)Value;
+        }
+        private object get_29_MediaPlayer_IsCaptionSelectionEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsCaptionSelectionEnabled;
+        }
+        private void set_29_MediaPlayer_IsCaptionSelectionEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsCaptionSelectionEnabled = (global::System.Boolean)Value;
+        }
+        private object get_30_MediaPlayer_IsCaptionSelectionAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsCaptionSelectionAllowed;
+        }
+        private object get_31_MediaPlayer_IsFullScreenEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsFullScreenEnabled;
+        }
+        private void set_31_MediaPlayer_IsFullScreenEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsFullScreenEnabled = (global::System.Boolean)Value;
+        }
+        private object get_32_MediaPlayer_IsZoomEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsZoomEnabled;
+        }
+        private void set_32_MediaPlayer_IsZoomEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsZoomEnabled = (global::System.Boolean)Value;
+        }
+        private object get_33_MediaPlayer_IsGoLiveEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsGoLiveEnabled;
+        }
+        private void set_33_MediaPlayer_IsGoLiveEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsGoLiveEnabled = (global::System.Boolean)Value;
+        }
+        private object get_34_MediaPlayer_IsGoLiveAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsGoLiveAllowed;
+        }
+        private object get_35_MediaPlayer_IsInfoEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsInfoEnabled;
+        }
+        private void set_35_MediaPlayer_IsInfoEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsInfoEnabled = (global::System.Boolean)Value;
+        }
+        private object get_36_MediaPlayer_IsInfoAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsInfoAllowed;
+        }
+        private object get_37_MediaPlayer_IsMoreEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsMoreEnabled;
+        }
+        private void set_37_MediaPlayer_IsMoreEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsMoreEnabled = (global::System.Boolean)Value;
+        }
+        private object get_38_MediaPlayer_IsPlayResumeEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsPlayResumeEnabled;
+        }
+        private void set_38_MediaPlayer_IsPlayResumeEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsPlayResumeEnabled = (global::System.Boolean)Value;
+        }
+        private object get_39_MediaPlayer_IsPlayResumeAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsPlayResumeAllowed;
+        }
+        private object get_40_MediaPlayer_IsPauseEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsPauseEnabled;
+        }
+        private void set_40_MediaPlayer_IsPauseEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsPauseEnabled = (global::System.Boolean)Value;
+        }
+        private object get_41_MediaPlayer_IsPauseAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsPauseAllowed;
+        }
+        private object get_42_MediaPlayer_IsStopEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsStopEnabled;
+        }
+        private void set_42_MediaPlayer_IsStopEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsStopEnabled = (global::System.Boolean)Value;
+        }
+        private object get_43_MediaPlayer_IsStopAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsStopAllowed;
+        }
+        private object get_44_MediaPlayer_IsReplayEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsReplayEnabled;
+        }
+        private void set_44_MediaPlayer_IsReplayEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsReplayEnabled = (global::System.Boolean)Value;
+        }
+        private object get_45_MediaPlayer_IsReplayAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsReplayAllowed;
+        }
+        private object get_46_MediaPlayer_IsAudioSelectionEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsAudioSelectionEnabled;
+        }
+        private void set_46_MediaPlayer_IsAudioSelectionEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsAudioSelectionEnabled = (global::System.Boolean)Value;
+        }
+        private object get_47_MediaPlayer_IsAudioSelectionAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsAudioSelectionAllowed;
+        }
+        private object get_48_MediaPlayer_IsRewindEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsRewindEnabled;
+        }
+        private void set_48_MediaPlayer_IsRewindEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsRewindEnabled = (global::System.Boolean)Value;
+        }
+        private object get_49_MediaPlayer_IsRewindAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsRewindAllowed;
+        }
+        private object get_50_MediaPlayer_IsFastForwardEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsFastForwardEnabled;
+        }
+        private void set_50_MediaPlayer_IsFastForwardEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsFastForwardEnabled = (global::System.Boolean)Value;
+        }
+        private object get_51_MediaPlayer_IsFastForwardAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsFastForwardAllowed;
+        }
+        private object get_52_MediaPlayer_IsSlowMotionEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSlowMotionEnabled;
+        }
+        private void set_52_MediaPlayer_IsSlowMotionEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsSlowMotionEnabled = (global::System.Boolean)Value;
+        }
+        private object get_53_MediaPlayer_IsSlowMotionAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSlowMotionAllowed;
+        }
+        private object get_54_MediaPlayer_IsSeekEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSeekEnabled;
+        }
+        private void set_54_MediaPlayer_IsSeekEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsSeekEnabled = (global::System.Boolean)Value;
+        }
+        private object get_55_MediaPlayer_IsSeekAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSeekAllowed;
+        }
+        private object get_56_MediaPlayer_IsSkipPreviousEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSkipPreviousEnabled;
+        }
+        private void set_56_MediaPlayer_IsSkipPreviousEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsSkipPreviousEnabled = (global::System.Boolean)Value;
+        }
+        private object get_57_MediaPlayer_IsSkipPreviousAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSkipPreviousAllowed;
+        }
+        private object get_58_MediaPlayer_IsSkipNextEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSkipNextEnabled;
+        }
+        private void set_58_MediaPlayer_IsSkipNextEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsSkipNextEnabled = (global::System.Boolean)Value;
+        }
+        private object get_59_MediaPlayer_IsSkipNextAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSkipNextAllowed;
+        }
+        private object get_60_MediaPlayer_IsSkipBackEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSkipBackEnabled;
+        }
+        private void set_60_MediaPlayer_IsSkipBackEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsSkipBackEnabled = (global::System.Boolean)Value;
+        }
+        private object get_61_MediaPlayer_IsSkipBackAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSkipBackAllowed;
+        }
+        private object get_62_MediaPlayer_IsSkipAheadEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSkipAheadEnabled;
+        }
+        private void set_62_MediaPlayer_IsSkipAheadEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsSkipAheadEnabled = (global::System.Boolean)Value;
+        }
+        private object get_63_MediaPlayer_IsSkipAheadAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSkipAheadAllowed;
+        }
+        private object get_64_MediaPlayer_IsScrubbingEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsScrubbingEnabled;
+        }
+        private void set_64_MediaPlayer_IsScrubbingEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsScrubbingEnabled = (global::System.Boolean)Value;
+        }
+        private object get_65_MediaPlayer_IsScrubbingAllowed(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsScrubbingAllowed;
+        }
+        private object get_66_MediaPlayer_IsAudioSelectionVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsAudioSelectionVisible;
+        }
+        private void set_66_MediaPlayer_IsAudioSelectionVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsAudioSelectionVisible = (global::System.Boolean)Value;
+        }
+        private object get_67_MediaPlayer_IsCaptionSelectionVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsCaptionSelectionVisible;
+        }
+        private void set_67_MediaPlayer_IsCaptionSelectionVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsCaptionSelectionVisible = (global::System.Boolean)Value;
+        }
+        private object get_68_MediaPlayer_IsDurationVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsDurationVisible;
+        }
+        private void set_68_MediaPlayer_IsDurationVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsDurationVisible = (global::System.Boolean)Value;
+        }
+        private object get_69_MediaPlayer_IsTimeRemainingVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsTimeRemainingVisible;
+        }
+        private void set_69_MediaPlayer_IsTimeRemainingVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsTimeRemainingVisible = (global::System.Boolean)Value;
+        }
+        private object get_70_MediaPlayer_IsGoLiveVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsGoLiveVisible;
+        }
+        private void set_70_MediaPlayer_IsGoLiveVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsGoLiveVisible = (global::System.Boolean)Value;
+        }
+        private object get_71_MediaPlayer_IsInfoVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsInfoVisible;
+        }
+        private void set_71_MediaPlayer_IsInfoVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsInfoVisible = (global::System.Boolean)Value;
+        }
+        private object get_72_MediaPlayer_IsMoreVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsMoreVisible;
+        }
+        private void set_72_MediaPlayer_IsMoreVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsMoreVisible = (global::System.Boolean)Value;
+        }
+        private object get_73_MediaPlayer_IsTimeElapsedVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsTimeElapsedVisible;
+        }
+        private void set_73_MediaPlayer_IsTimeElapsedVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsTimeElapsedVisible = (global::System.Boolean)Value;
+        }
+        private object get_74_MediaPlayer_IsSkipBackVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSkipBackVisible;
+        }
+        private void set_74_MediaPlayer_IsSkipBackVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsSkipBackVisible = (global::System.Boolean)Value;
+        }
+        private object get_75_MediaPlayer_IsSkipAheadVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSkipAheadVisible;
+        }
+        private void set_75_MediaPlayer_IsSkipAheadVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsSkipAheadVisible = (global::System.Boolean)Value;
+        }
+        private object get_76_MediaPlayer_IsReplayVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsReplayVisible;
+        }
+        private void set_76_MediaPlayer_IsReplayVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsReplayVisible = (global::System.Boolean)Value;
+        }
+        private object get_77_MediaPlayer_IsSkipPreviousVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSkipPreviousVisible;
+        }
+        private void set_77_MediaPlayer_IsSkipPreviousVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsSkipPreviousVisible = (global::System.Boolean)Value;
+        }
+        private object get_78_MediaPlayer_IsSkipNextVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSkipNextVisible;
+        }
+        private void set_78_MediaPlayer_IsSkipNextVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsSkipNextVisible = (global::System.Boolean)Value;
+        }
+        private object get_79_MediaPlayer_IsSlowMotionVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSlowMotionVisible;
+        }
+        private void set_79_MediaPlayer_IsSlowMotionVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsSlowMotionVisible = (global::System.Boolean)Value;
+        }
+        private object get_80_MediaPlayer_IsStopVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsStopVisible;
+        }
+        private void set_80_MediaPlayer_IsStopVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsStopVisible = (global::System.Boolean)Value;
+        }
+        private object get_81_MediaPlayer_IsTimelineVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsTimelineVisible;
+        }
+        private void set_81_MediaPlayer_IsTimelineVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsTimelineVisible = (global::System.Boolean)Value;
+        }
+        private object get_82_MediaPlayer_IsVolumeVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsVolumeVisible;
+        }
+        private void set_82_MediaPlayer_IsVolumeVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsVolumeVisible = (global::System.Boolean)Value;
+        }
+        private object get_83_MediaPlayer_IsSignalStrengthVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSignalStrengthVisible;
+        }
+        private void set_83_MediaPlayer_IsSignalStrengthVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsSignalStrengthVisible = (global::System.Boolean)Value;
+        }
+        private object get_84_MediaPlayer_IsResolutionIndicatorVisible(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsResolutionIndicatorVisible;
+        }
+        private void set_84_MediaPlayer_IsResolutionIndicatorVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsResolutionIndicatorVisible = (global::System.Boolean)Value;
+        }
+        private object get_85_MediaPlayer_TimeFormatConverter(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.TimeFormatConverter;
+        }
+        private void set_85_MediaPlayer_TimeFormatConverter(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.TimeFormatConverter = (global::Windows.UI.Xaml.Data.IValueConverter)Value;
+        }
+        private object get_86_MediaPlayer_SkipBackInterval(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.SkipBackInterval;
+        }
+        private void set_86_MediaPlayer_SkipBackInterval(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.SkipBackInterval = (global::System.Nullable<global::System.TimeSpan>)Value;
+        }
+        private object get_87_MediaPlayer_SkipAheadInterval(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.SkipAheadInterval;
+        }
+        private void set_87_MediaPlayer_SkipAheadInterval(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.SkipAheadInterval = (global::System.Nullable<global::System.TimeSpan>)Value;
+        }
+        private object get_88_MediaPlayer_VisualMarkers(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.VisualMarkers;
+        }
+        private object get_89_VisualMarker_Text(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.VisualMarker)instance;
+            return that.Text;
+        }
+        private void set_89_VisualMarker_Text(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.VisualMarker)instance;
+            that.Text = (global::System.String)Value;
+        }
+        private object get_90_VisualMarker_Time(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.VisualMarker)instance;
+            return that.Time;
+        }
+        private void set_90_VisualMarker_Time(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.VisualMarker)instance;
+            that.Time = (global::System.TimeSpan)Value;
+        }
+        private object get_91_VisualMarker_IsSeekable(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.VisualMarker)instance;
+            return that.IsSeekable;
+        }
+        private void set_91_VisualMarker_IsSeekable(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.VisualMarker)instance;
+            that.IsSeekable = (global::System.Boolean)Value;
+        }
+        private object get_92_VisualMarker_Style(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.VisualMarker)instance;
+            return that.Style;
+        }
+        private void set_92_VisualMarker_Style(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.VisualMarker)instance;
+            that.Style = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_93_MediaPlayer_Markers(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.Markers;
+        }
+        private object get_94_MediaPlayer_AutoLoad(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AutoLoad;
+        }
+        private void set_94_MediaPlayer_AutoLoad(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.AutoLoad = (global::System.Boolean)Value;
+        }
+        private object get_95_MediaPlayer_SignalStrength(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.SignalStrength;
+        }
+        private void set_95_MediaPlayer_SignalStrength(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.SignalStrength = (global::System.Double)Value;
+        }
+        private object get_96_MediaPlayer_MediaQuality(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.MediaQuality;
+        }
+        private void set_96_MediaPlayer_MediaQuality(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.MediaQuality = (global::Microsoft.PlayerFramework.MediaQuality)Value;
+        }
+        private object get_97_MediaPlayer_LivePositionBuffer(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.LivePositionBuffer;
+        }
+        private void set_97_MediaPlayer_LivePositionBuffer(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.LivePositionBuffer = (global::System.TimeSpan)Value;
+        }
+        private object get_98_MediaPlayer_IsPositionLive(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsPositionLive;
+        }
+        private object get_99_MediaPlayer_LivePosition(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.LivePosition;
+        }
+        private void set_99_MediaPlayer_LivePosition(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.LivePosition = (global::System.Nullable<global::System.TimeSpan>)Value;
+        }
+        private object get_100_MediaPlayer_Duration(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.Duration;
+        }
+        private object get_101_MediaPlayer_IsStartTimeOffset(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsStartTimeOffset;
+        }
+        private void set_101_MediaPlayer_IsStartTimeOffset(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsStartTimeOffset = (global::System.Boolean)Value;
+        }
+        private object get_102_MediaPlayer_StartTime(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.StartTime;
+        }
+        private void set_102_MediaPlayer_StartTime(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.StartTime = (global::System.TimeSpan)Value;
+        }
+        private object get_103_MediaPlayer_EndTime(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.EndTime;
+        }
+        private void set_103_MediaPlayer_EndTime(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.EndTime = (global::System.TimeSpan)Value;
+        }
+        private object get_104_MediaPlayer_TimeRemaining(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.TimeRemaining;
+        }
+        private object get_105_MediaPlayer_SeekWhileScrubbing(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.SeekWhileScrubbing;
+        }
+        private void set_105_MediaPlayer_SeekWhileScrubbing(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.SeekWhileScrubbing = (global::System.Boolean)Value;
+        }
+        private object get_106_MediaPlayer_ReplayOffset(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.ReplayOffset;
+        }
+        private void set_106_MediaPlayer_ReplayOffset(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.ReplayOffset = (global::System.Nullable<global::System.TimeSpan>)Value;
+        }
+        private object get_107_MediaPlayer_SlowMotionPlaybackRate(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.SlowMotionPlaybackRate;
+        }
+        private void set_107_MediaPlayer_SlowMotionPlaybackRate(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.SlowMotionPlaybackRate = (global::System.Double)Value;
+        }
+        private object get_108_MediaPlayer_IsSlowMotion(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsSlowMotion;
+        }
+        private void set_108_MediaPlayer_IsSlowMotion(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsSlowMotion = (global::System.Boolean)Value;
+        }
+        private object get_109_MediaPlayer_IsCaptionsActive(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsCaptionsActive;
+        }
+        private void set_109_MediaPlayer_IsCaptionsActive(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsCaptionsActive = (global::System.Boolean)Value;
+        }
+        private object get_110_MediaPlayer_IsFullScreen(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsFullScreen;
+        }
+        private void set_110_MediaPlayer_IsFullScreen(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsFullScreen = (global::System.Boolean)Value;
+        }
+        private object get_111_MediaPlayer_AdvertisingState(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AdvertisingState;
+        }
+        private void set_111_MediaPlayer_AdvertisingState(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.AdvertisingState = (global::Microsoft.PlayerFramework.AdvertisingState)Value;
+        }
+        private object get_112_MediaPlayer_IsScrubbing(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsScrubbing;
+        }
+        private object get_113_MediaPlayer_StartupPosition(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.StartupPosition;
+        }
+        private void set_113_MediaPlayer_StartupPosition(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.StartupPosition = (global::System.Nullable<global::System.TimeSpan>)Value;
+        }
+        private object get_114_MediaPlayer_MediaEndedBehavior(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.MediaEndedBehavior;
+        }
+        private void set_114_MediaPlayer_MediaEndedBehavior(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.MediaEndedBehavior = (global::Microsoft.PlayerFramework.MediaEndedBehavior)Value;
+        }
+        private object get_115_MediaPlayer_UpdateInterval(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.UpdateInterval;
+        }
+        private void set_115_MediaPlayer_UpdateInterval(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.UpdateInterval = (global::System.TimeSpan)Value;
+        }
+        private object get_116_MediaPlayer_AvailableCaptions(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AvailableCaptions;
+        }
+        private object get_117_Caption_Id(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.Caption)instance;
+            return that.Id;
+        }
+        private void set_117_Caption_Id(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.Caption)instance;
+            that.Id = (global::System.String)Value;
+        }
+        private object get_118_Caption_Description(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.Caption)instance;
+            return that.Description;
+        }
+        private void set_118_Caption_Description(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.Caption)instance;
+            that.Description = (global::System.String)Value;
+        }
+        private object get_119_Caption_Payload(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.Caption)instance;
+            return that.Payload;
+        }
+        private void set_119_Caption_Payload(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.Caption)instance;
+            that.Payload = (global::System.Object)Value;
+        }
+        private object get_120_Caption_Source(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.Caption)instance;
+            return that.Source;
+        }
+        private void set_120_Caption_Source(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.Caption)instance;
+            that.Source = (global::System.Uri)Value;
+        }
+        private object get_121_MediaPlayer_SelectedCaption(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.SelectedCaption;
+        }
+        private void set_121_MediaPlayer_SelectedCaption(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.SelectedCaption = (global::Microsoft.PlayerFramework.Caption)Value;
+        }
+        private object get_122_MediaPlayer_AvailableAudioStreams(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AvailableAudioStreams;
+        }
+        private object get_123_AudioStream_Name(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.AudioStream)instance;
+            return that.Name;
+        }
+        private void set_123_AudioStream_Name(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.AudioStream)instance;
+            that.Name = (global::System.String)Value;
+        }
+        private object get_124_AudioStream_Language(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.AudioStream)instance;
+            return that.Language;
+        }
+        private void set_124_AudioStream_Language(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.AudioStream)instance;
+            that.Language = (global::System.String)Value;
+        }
+        private object get_125_MediaPlayer_SelectedAudioStream(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.SelectedAudioStream;
+        }
+        private void set_125_MediaPlayer_SelectedAudioStream(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.SelectedAudioStream = (global::Microsoft.PlayerFramework.AudioStream)Value;
+        }
+        private object get_126_MediaPlayer_IsLive(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsLive;
+        }
+        private void set_126_MediaPlayer_IsLive(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsLive = (global::System.Boolean)Value;
+        }
+        private object get_127_MediaPlayer_VirtualPosition(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.VirtualPosition;
+        }
+        private object get_128_MediaPlayer_ThumbnailImageSource(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.ThumbnailImageSource;
+        }
+        private void set_128_MediaPlayer_ThumbnailImageSource(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.ThumbnailImageSource = (global::Windows.UI.Xaml.Media.ImageSource)Value;
+        }
+        private object get_129_MediaPlayer_TestForMediaPack(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.TestForMediaPack;
+        }
+        private void set_129_MediaPlayer_TestForMediaPack(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.TestForMediaPack = (global::System.Boolean)Value;
+        }
+        private object get_130_MediaPlayer_MediaExtensionManager(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.MediaExtensionManager;
+        }
+        private void set_130_MediaPlayer_MediaExtensionManager(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.MediaExtensionManager = (global::Windows.Media.MediaExtensionManager)Value;
+        }
+        private object get_131_MediaPlayer_AspectRatioWidth(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AspectRatioWidth;
+        }
+        private object get_132_MediaPlayer_AspectRatioHeight(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AspectRatioHeight;
+        }
+        private object get_133_MediaPlayer_AudioCategory(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AudioCategory;
+        }
+        private void set_133_MediaPlayer_AudioCategory(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.AudioCategory = (global::Windows.UI.Xaml.Media.AudioCategory)Value;
+        }
+        private object get_134_MediaPlayer_AudioDeviceType(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AudioDeviceType;
+        }
+        private void set_134_MediaPlayer_AudioDeviceType(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.AudioDeviceType = (global::Windows.UI.Xaml.Media.AudioDeviceType)Value;
+        }
+        private object get_135_MediaPlayer_PlayToSource(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.PlayToSource;
+        }
+        private object get_136_MediaPlayer_DefaultPlaybackRate(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.DefaultPlaybackRate;
+        }
+        private void set_136_MediaPlayer_DefaultPlaybackRate(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.DefaultPlaybackRate = (global::System.Double)Value;
+        }
+        private object get_137_MediaPlayer_IsAudioOnly(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsAudioOnly;
+        }
+        private object get_138_MediaPlayer_IsLooping(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsLooping;
+        }
+        private void set_138_MediaPlayer_IsLooping(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsLooping = (global::System.Boolean)Value;
+        }
+        private object get_139_MediaPlayer_PosterSource(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.PosterSource;
+        }
+        private void set_139_MediaPlayer_PosterSource(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.PosterSource = (global::Windows.UI.Xaml.Media.ImageSource)Value;
+        }
+        private object get_140_MediaPlayer_ActualStereo3DVideoPackingMode(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.ActualStereo3DVideoPackingMode;
+        }
+        private object get_141_MediaPlayer_Stereo3DVideoPackingMode(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.Stereo3DVideoPackingMode;
+        }
+        private void set_141_MediaPlayer_Stereo3DVideoPackingMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.Stereo3DVideoPackingMode = (global::Windows.UI.Xaml.Media.Stereo3DVideoPackingMode)Value;
+        }
+        private object get_142_MediaPlayer_Stereo3DVideoRenderMode(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.Stereo3DVideoRenderMode;
+        }
+        private void set_142_MediaPlayer_Stereo3DVideoRenderMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.Stereo3DVideoRenderMode = (global::Windows.UI.Xaml.Media.Stereo3DVideoRenderMode)Value;
+        }
+        private object get_143_MediaPlayer_IsStereo3DVideo(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsStereo3DVideo;
+        }
+        private object get_144_MediaPlayer_RealTimePlayback(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.RealTimePlayback;
+        }
+        private void set_144_MediaPlayer_RealTimePlayback(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.RealTimePlayback = (global::System.Boolean)Value;
+        }
+        private object get_145_MediaPlayer_ProtectionManager(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.ProtectionManager;
+        }
+        private void set_145_MediaPlayer_ProtectionManager(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.ProtectionManager = (global::Windows.Media.Protection.MediaProtectionManager)Value;
+        }
+        private object get_146_MediaPlayer_AreTransportControlsEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AreTransportControlsEnabled;
+        }
+        private void set_146_MediaPlayer_AreTransportControlsEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.AreTransportControlsEnabled = (global::System.Boolean)Value;
+        }
+        private object get_147_MediaPlayer_IsFullWindow(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsFullWindow;
+        }
+        private void set_147_MediaPlayer_IsFullWindow(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsFullWindow = (global::System.Boolean)Value;
+        }
+        private object get_148_MediaPlayer_PlayToPreferredSourceUri(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.PlayToPreferredSourceUri;
+        }
+        private void set_148_MediaPlayer_PlayToPreferredSourceUri(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.PlayToPreferredSourceUri = (global::System.Uri)Value;
+        }
+        private object get_149_MediaPlayer_AudioStreamCount(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AudioStreamCount;
+        }
+        private object get_150_MediaPlayer_AudioStreamIndex(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AudioStreamIndex;
+        }
+        private void set_150_MediaPlayer_AudioStreamIndex(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.AudioStreamIndex = (global::System.Nullable<global::System.Int32>)Value;
+        }
+        private object get_151_MediaPlayer_BufferingProgress(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.BufferingProgress;
+        }
+        private object get_152_MediaPlayer_CanPause(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.CanPause;
+        }
+        private object get_153_MediaPlayer_CanSeek(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.CanSeek;
+        }
+        private object get_154_MediaPlayer_Balance(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.Balance;
+        }
+        private void set_154_MediaPlayer_Balance(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.Balance = (global::System.Double)Value;
+        }
+        private object get_155_MediaPlayer_DownloadProgress(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.DownloadProgress;
+        }
+        private object get_156_MediaPlayer_DownloadProgressOffset(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.DownloadProgressOffset;
+        }
+        private object get_157_MediaPlayer_IsMuted(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsMuted;
+        }
+        private void set_157_MediaPlayer_IsMuted(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsMuted = (global::System.Boolean)Value;
+        }
+        private object get_158_MediaPlayer_NaturalDuration(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.NaturalDuration;
+        }
+        private object get_159_MediaPlayer_NaturalVideoHeight(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.NaturalVideoHeight;
+        }
+        private object get_160_MediaPlayer_NaturalVideoWidth(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.NaturalVideoWidth;
+        }
+        private object get_161_MediaPlayer_PlaybackRate(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.PlaybackRate;
+        }
+        private void set_161_MediaPlayer_PlaybackRate(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.PlaybackRate = (global::System.Double)Value;
+        }
+        private object get_162_MediaPlayer_IsTrickPlayEnabled(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.IsTrickPlayEnabled;
+        }
+        private void set_162_MediaPlayer_IsTrickPlayEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.IsTrickPlayEnabled = (global::System.Boolean)Value;
+        }
+        private object get_163_MediaPlayer_Position(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.Position;
+        }
+        private void set_163_MediaPlayer_Position(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.Position = (global::System.TimeSpan)Value;
+        }
+        private object get_164_MediaPlayer_CurrentState(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.CurrentState;
+        }
+        private object get_165_MediaPlayer_Source(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.Source;
+        }
+        private void set_165_MediaPlayer_Source(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.Source = (global::System.Uri)Value;
+        }
+        private object get_166_MediaPlayer_Volume(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.Volume;
+        }
+        private void set_166_MediaPlayer_Volume(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.Volume = (global::System.Double)Value;
+        }
+        private object get_167_MediaPlayer_SupportedPlaybackRates(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.SupportedPlaybackRates;
+        }
+        private void set_167_MediaPlayer_SupportedPlaybackRates(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.SupportedPlaybackRates = (global::System.Collections.Generic.IList<global::System.Double>)Value;
+        }
+        private object get_168_MediaPlayer_AllowMediaStartingDeferrals(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AllowMediaStartingDeferrals;
+        }
+        private void set_168_MediaPlayer_AllowMediaStartingDeferrals(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.AllowMediaStartingDeferrals = (global::System.Boolean)Value;
+        }
+        private object get_169_MediaPlayer_ControlPanelTemplate(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.ControlPanelTemplate;
+        }
+        private void set_169_MediaPlayer_ControlPanelTemplate(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.ControlPanelTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
+        }
+        private object get_170_MediaPlayer_ControlPanel(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.ControlPanel;
+        }
+        private object get_171_MediaPlayer_AutoHideInterval(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AutoHideInterval;
+        }
+        private void set_171_MediaPlayer_AutoHideInterval(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.AutoHideInterval = (global::System.TimeSpan)Value;
+        }
+        private object get_172_MediaPlayer_Containers(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.Containers;
+        }
+        private void set_172_MediaPlayer_Containers(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.Containers = (global::System.Collections.Generic.IList<global::Windows.UI.Xaml.UIElement>)Value;
+        }
+        private object get_173_MediaPlayer_InteractiveViewModel(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.InteractiveViewModel;
+        }
+        private void set_173_MediaPlayer_InteractiveViewModel(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.InteractiveViewModel = (global::Microsoft.PlayerFramework.IInteractiveViewModel)Value;
+        }
+        private object get_174_MediaPlayer_DefaultInteractiveViewModel(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.DefaultInteractiveViewModel;
+        }
+        private void set_174_MediaPlayer_DefaultInteractiveViewModel(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.DefaultInteractiveViewModel = (global::Microsoft.PlayerFramework.IInteractiveViewModel)Value;
+        }
+        private object get_175_MediaPlayer_InteractiveActivationMode(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.InteractiveActivationMode;
+        }
+        private void set_175_MediaPlayer_InteractiveActivationMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.InteractiveActivationMode = (global::Microsoft.PlayerFramework.InteractionType)Value;
+        }
+        private object get_176_MediaPlayer_InteractiveDeactivationMode(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.InteractiveDeactivationMode;
+        }
+        private void set_176_MediaPlayer_InteractiveDeactivationMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.InteractiveDeactivationMode = (global::Microsoft.PlayerFramework.InteractionType)Value;
+        }
+        private object get_177_MediaPlayer_AutoHide(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AutoHide;
+        }
+        private void set_177_MediaPlayer_AutoHide(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.AutoHide = (global::System.Boolean)Value;
+        }
+        private object get_178_MediaPlayer_AutoHideBehavior(object instance)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            return that.AutoHideBehavior;
+        }
+        private void set_178_MediaPlayer_AutoHideBehavior(object instance, object Value)
+        {
+            var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
+            that.AutoHideBehavior = (global::Microsoft.PlayerFramework.AutoHideBehavior)Value;
+        }
+        private object get_179_MediaPlayer_PlayerState(object instance)
         {
             var that = (global::Microsoft.PlayerFramework.MediaPlayer)instance;
             return that.PlayerState;
@@ -2473,1212 +2495,1219 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "Microsoft.PlayerFramework.BufferingView.ViewModel":
+                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.BufferingView");
+                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "ViewModel", "Microsoft.PlayerFramework.IInteractiveViewModel");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_0_BufferingView_ViewModel;
+                xamlMember.Setter = set_0_BufferingView_ViewModel;
+                break;
             case "Microsoft.PlayerFramework.MediaPlayer.AutoPlay":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AutoPlay", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_0_MediaPlayer_AutoPlay;
-                xamlMember.Setter = set_0_MediaPlayer_AutoPlay;
+                xamlMember.Getter = get_1_MediaPlayer_AutoPlay;
+                xamlMember.Setter = set_1_MediaPlayer_AutoPlay;
+                break;
+            case "Microsoft.PlayerFramework.MediaPlayer.IsFullScreenVisible":
+                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
+                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsFullScreenVisible", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_2_MediaPlayer_IsFullScreenVisible;
+                xamlMember.Setter = set_2_MediaPlayer_IsFullScreenVisible;
+                break;
+            case "Microsoft.PlayerFramework.MediaPlayer.IsFastForwardVisible":
+                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
+                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsFastForwardVisible", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_3_MediaPlayer_IsFastForwardVisible;
+                xamlMember.Setter = set_3_MediaPlayer_IsFastForwardVisible;
+                break;
+            case "Microsoft.PlayerFramework.MediaPlayer.IsRewindVisible":
+                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
+                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsRewindVisible", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_4_MediaPlayer_IsRewindVisible;
+                xamlMember.Setter = set_4_MediaPlayer_IsRewindVisible;
+                break;
+            case "Microsoft.PlayerFramework.MediaPlayer.IsInteractive":
+                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
+                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsInteractive", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_5_MediaPlayer_IsInteractive;
+                xamlMember.Setter = set_5_MediaPlayer_IsInteractive;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.Stretch":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Stretch", "Windows.UI.Xaml.Media.Stretch");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_1_MediaPlayer_Stretch;
-                xamlMember.Setter = set_1_MediaPlayer_Stretch;
+                xamlMember.Getter = get_6_MediaPlayer_Stretch;
+                xamlMember.Setter = set_6_MediaPlayer_Stretch;
                 break;
-            case "Microsoft.PlayerFramework.MediaPlayer.IsFullScreenEnabled":
+            case "Microsoft.PlayerFramework.MediaPlayer.IsPlayPauseVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
-                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsFullScreenEnabled", "Boolean");
+                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsPlayPauseVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_2_MediaPlayer_IsFullScreenEnabled;
-                xamlMember.Setter = set_2_MediaPlayer_IsFullScreenEnabled;
+                xamlMember.Getter = get_7_MediaPlayer_IsPlayPauseVisible;
+                xamlMember.Setter = set_7_MediaPlayer_IsPlayPauseVisible;
                 break;
-            case "Microsoft.PlayerFramework.MediaPlayer.IsAudioSelectionEnabled":
+            case "Microsoft.PlayerFramework.MediaPlayer.IsThumbnailVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
-                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsAudioSelectionEnabled", "Boolean");
+                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsThumbnailVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_3_MediaPlayer_IsAudioSelectionEnabled;
-                xamlMember.Setter = set_3_MediaPlayer_IsAudioSelectionEnabled;
+                xamlMember.Getter = get_8_MediaPlayer_IsThumbnailVisible;
+                xamlMember.Setter = set_8_MediaPlayer_IsThumbnailVisible;
                 break;
-            case "Microsoft.PlayerFramework.MediaPlayer.IsCaptionSelectionEnabled":
+            case "Microsoft.PlayerFramework.MediaPlayer.IsZoomVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
-                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsCaptionSelectionEnabled", "Boolean");
+                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsZoomVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_4_MediaPlayer_IsCaptionSelectionEnabled;
-                xamlMember.Setter = set_4_MediaPlayer_IsCaptionSelectionEnabled;
-                break;
-            case "Microsoft.PlayerFramework.MediaPlayer.IsSlowMotionEnabled":
-                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
-                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSlowMotionEnabled", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_5_MediaPlayer_IsSlowMotionEnabled;
-                xamlMember.Setter = set_5_MediaPlayer_IsSlowMotionEnabled;
+                xamlMember.Getter = get_9_MediaPlayer_IsZoomVisible;
+                xamlMember.Setter = set_9_MediaPlayer_IsZoomVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AutoLoadPluginTypes":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AutoLoadPluginTypes", "System.Collections.Generic.IList`1<System.Type>");
-                xamlMember.Getter = get_6_MediaPlayer_AutoLoadPluginTypes;
+                xamlMember.Getter = get_10_MediaPlayer_AutoLoadPluginTypes;
                 xamlMember.SetIsReadOnly();
                 break;
             case "System.Type.AssemblyQualifiedName":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Type");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AssemblyQualifiedName", "String");
-                xamlMember.Getter = get_7_Type_AssemblyQualifiedName;
+                xamlMember.Getter = get_11_Type_AssemblyQualifiedName;
                 xamlMember.SetIsReadOnly();
                 break;
             case "System.Type.FullName":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Type");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "FullName", "String");
-                xamlMember.Getter = get_8_Type_FullName;
+                xamlMember.Getter = get_12_Type_FullName;
                 xamlMember.SetIsReadOnly();
                 break;
             case "System.Type.GenericParameterPosition":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Type");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "GenericParameterPosition", "Int32");
-                xamlMember.Getter = get_9_Type_GenericParameterPosition;
+                xamlMember.Getter = get_13_Type_GenericParameterPosition;
                 xamlMember.SetIsReadOnly();
                 break;
             case "System.Type.GenericTypeArguments":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Type");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "GenericTypeArguments", "System.Type[]");
-                xamlMember.Getter = get_10_Type_GenericTypeArguments;
+                xamlMember.Getter = get_14_Type_GenericTypeArguments;
                 xamlMember.SetIsReadOnly();
                 break;
             case "System.Type.HasElementType":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Type");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "HasElementType", "Boolean");
-                xamlMember.Getter = get_11_Type_HasElementType;
+                xamlMember.Getter = get_15_Type_HasElementType;
                 xamlMember.SetIsReadOnly();
                 break;
             case "System.Type.IsArray":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Type");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsArray", "Boolean");
-                xamlMember.Getter = get_12_Type_IsArray;
+                xamlMember.Getter = get_16_Type_IsArray;
                 xamlMember.SetIsReadOnly();
                 break;
             case "System.Type.IsByRef":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Type");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsByRef", "Boolean");
-                xamlMember.Getter = get_13_Type_IsByRef;
+                xamlMember.Getter = get_17_Type_IsByRef;
                 xamlMember.SetIsReadOnly();
                 break;
             case "System.Type.IsConstructedGenericType":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Type");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsConstructedGenericType", "Boolean");
-                xamlMember.Getter = get_14_Type_IsConstructedGenericType;
+                xamlMember.Getter = get_18_Type_IsConstructedGenericType;
                 xamlMember.SetIsReadOnly();
                 break;
             case "System.Type.IsGenericParameter":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Type");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsGenericParameter", "Boolean");
-                xamlMember.Getter = get_15_Type_IsGenericParameter;
+                xamlMember.Getter = get_19_Type_IsGenericParameter;
                 xamlMember.SetIsReadOnly();
                 break;
             case "System.Type.IsNested":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Type");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsNested", "Boolean");
-                xamlMember.Getter = get_16_Type_IsNested;
+                xamlMember.Getter = get_20_Type_IsNested;
                 xamlMember.SetIsReadOnly();
                 break;
             case "System.Type.IsPointer":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Type");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsPointer", "Boolean");
-                xamlMember.Getter = get_17_Type_IsPointer;
+                xamlMember.Getter = get_21_Type_IsPointer;
                 xamlMember.SetIsReadOnly();
                 break;
             case "System.Type.Namespace":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Type");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Namespace", "String");
-                xamlMember.Getter = get_18_Type_Namespace;
+                xamlMember.Getter = get_22_Type_Namespace;
                 xamlMember.SetIsReadOnly();
                 break;
             case "System.Type.TypeHandle":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Type");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "TypeHandle", "System.RuntimeTypeHandle");
-                xamlMember.Getter = get_19_Type_TypeHandle;
+                xamlMember.Getter = get_23_Type_TypeHandle;
                 xamlMember.SetIsReadOnly();
                 break;
             case "System.Type.DeclaringType":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Type");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "DeclaringType", "System.Type");
-                xamlMember.Getter = get_20_Type_DeclaringType;
+                xamlMember.Getter = get_24_Type_DeclaringType;
                 xamlMember.SetIsReadOnly();
                 break;
             case "System.Type.Name":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Type");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_21_Type_Name;
+                xamlMember.Getter = get_25_Type_Name;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AutoLoadPlugins":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AutoLoadPlugins", "Boolean");
-                xamlMember.Getter = get_22_MediaPlayer_AutoLoadPlugins;
-                xamlMember.Setter = set_22_MediaPlayer_AutoLoadPlugins;
+                xamlMember.Getter = get_26_MediaPlayer_AutoLoadPlugins;
+                xamlMember.Setter = set_26_MediaPlayer_AutoLoadPlugins;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.Plugins":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Plugins", "System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.IPlugin>");
-                xamlMember.Getter = get_23_MediaPlayer_Plugins;
+                xamlMember.Getter = get_27_MediaPlayer_Plugins;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.IPlugin.MediaPlayer":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.IPlugin");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "MediaPlayer", "Microsoft.PlayerFramework.MediaPlayer");
-                xamlMember.Getter = get_24_IPlugin_MediaPlayer;
-                xamlMember.Setter = set_24_IPlugin_MediaPlayer;
+                xamlMember.Getter = get_28_IPlugin_MediaPlayer;
+                xamlMember.Setter = set_28_IPlugin_MediaPlayer;
+                break;
+            case "Microsoft.PlayerFramework.MediaPlayer.IsCaptionSelectionEnabled":
+                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
+                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsCaptionSelectionEnabled", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_29_MediaPlayer_IsCaptionSelectionEnabled;
+                xamlMember.Setter = set_29_MediaPlayer_IsCaptionSelectionEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsCaptionSelectionAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsCaptionSelectionAllowed", "Boolean");
-                xamlMember.Getter = get_25_MediaPlayer_IsCaptionSelectionAllowed;
+                xamlMember.Getter = get_30_MediaPlayer_IsCaptionSelectionAllowed;
                 xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.PlayerFramework.MediaPlayer.IsFullScreenEnabled":
+                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
+                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsFullScreenEnabled", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_31_MediaPlayer_IsFullScreenEnabled;
+                xamlMember.Setter = set_31_MediaPlayer_IsFullScreenEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsZoomEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsZoomEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_26_MediaPlayer_IsZoomEnabled;
-                xamlMember.Setter = set_26_MediaPlayer_IsZoomEnabled;
+                xamlMember.Getter = get_32_MediaPlayer_IsZoomEnabled;
+                xamlMember.Setter = set_32_MediaPlayer_IsZoomEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsGoLiveEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsGoLiveEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_27_MediaPlayer_IsGoLiveEnabled;
-                xamlMember.Setter = set_27_MediaPlayer_IsGoLiveEnabled;
+                xamlMember.Getter = get_33_MediaPlayer_IsGoLiveEnabled;
+                xamlMember.Setter = set_33_MediaPlayer_IsGoLiveEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsGoLiveAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsGoLiveAllowed", "Boolean");
-                xamlMember.Getter = get_28_MediaPlayer_IsGoLiveAllowed;
+                xamlMember.Getter = get_34_MediaPlayer_IsGoLiveAllowed;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsInfoEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsInfoEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_MediaPlayer_IsInfoEnabled;
-                xamlMember.Setter = set_29_MediaPlayer_IsInfoEnabled;
+                xamlMember.Getter = get_35_MediaPlayer_IsInfoEnabled;
+                xamlMember.Setter = set_35_MediaPlayer_IsInfoEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsInfoAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsInfoAllowed", "Boolean");
-                xamlMember.Getter = get_30_MediaPlayer_IsInfoAllowed;
+                xamlMember.Getter = get_36_MediaPlayer_IsInfoAllowed;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsMoreEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsMoreEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_31_MediaPlayer_IsMoreEnabled;
-                xamlMember.Setter = set_31_MediaPlayer_IsMoreEnabled;
+                xamlMember.Getter = get_37_MediaPlayer_IsMoreEnabled;
+                xamlMember.Setter = set_37_MediaPlayer_IsMoreEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsPlayResumeEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsPlayResumeEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_32_MediaPlayer_IsPlayResumeEnabled;
-                xamlMember.Setter = set_32_MediaPlayer_IsPlayResumeEnabled;
+                xamlMember.Getter = get_38_MediaPlayer_IsPlayResumeEnabled;
+                xamlMember.Setter = set_38_MediaPlayer_IsPlayResumeEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsPlayResumeAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsPlayResumeAllowed", "Boolean");
-                xamlMember.Getter = get_33_MediaPlayer_IsPlayResumeAllowed;
+                xamlMember.Getter = get_39_MediaPlayer_IsPlayResumeAllowed;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsPauseEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsPauseEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_34_MediaPlayer_IsPauseEnabled;
-                xamlMember.Setter = set_34_MediaPlayer_IsPauseEnabled;
+                xamlMember.Getter = get_40_MediaPlayer_IsPauseEnabled;
+                xamlMember.Setter = set_40_MediaPlayer_IsPauseEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsPauseAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsPauseAllowed", "Boolean");
-                xamlMember.Getter = get_35_MediaPlayer_IsPauseAllowed;
+                xamlMember.Getter = get_41_MediaPlayer_IsPauseAllowed;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsStopEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsStopEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_36_MediaPlayer_IsStopEnabled;
-                xamlMember.Setter = set_36_MediaPlayer_IsStopEnabled;
+                xamlMember.Getter = get_42_MediaPlayer_IsStopEnabled;
+                xamlMember.Setter = set_42_MediaPlayer_IsStopEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsStopAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsStopAllowed", "Boolean");
-                xamlMember.Getter = get_37_MediaPlayer_IsStopAllowed;
+                xamlMember.Getter = get_43_MediaPlayer_IsStopAllowed;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsReplayEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsReplayEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_38_MediaPlayer_IsReplayEnabled;
-                xamlMember.Setter = set_38_MediaPlayer_IsReplayEnabled;
+                xamlMember.Getter = get_44_MediaPlayer_IsReplayEnabled;
+                xamlMember.Setter = set_44_MediaPlayer_IsReplayEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsReplayAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsReplayAllowed", "Boolean");
-                xamlMember.Getter = get_39_MediaPlayer_IsReplayAllowed;
+                xamlMember.Getter = get_45_MediaPlayer_IsReplayAllowed;
                 xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.PlayerFramework.MediaPlayer.IsAudioSelectionEnabled":
+                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
+                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsAudioSelectionEnabled", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_46_MediaPlayer_IsAudioSelectionEnabled;
+                xamlMember.Setter = set_46_MediaPlayer_IsAudioSelectionEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsAudioSelectionAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsAudioSelectionAllowed", "Boolean");
-                xamlMember.Getter = get_40_MediaPlayer_IsAudioSelectionAllowed;
+                xamlMember.Getter = get_47_MediaPlayer_IsAudioSelectionAllowed;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsRewindEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsRewindEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_41_MediaPlayer_IsRewindEnabled;
-                xamlMember.Setter = set_41_MediaPlayer_IsRewindEnabled;
+                xamlMember.Getter = get_48_MediaPlayer_IsRewindEnabled;
+                xamlMember.Setter = set_48_MediaPlayer_IsRewindEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsRewindAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsRewindAllowed", "Boolean");
-                xamlMember.Getter = get_42_MediaPlayer_IsRewindAllowed;
+                xamlMember.Getter = get_49_MediaPlayer_IsRewindAllowed;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsFastForwardEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsFastForwardEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_43_MediaPlayer_IsFastForwardEnabled;
-                xamlMember.Setter = set_43_MediaPlayer_IsFastForwardEnabled;
+                xamlMember.Getter = get_50_MediaPlayer_IsFastForwardEnabled;
+                xamlMember.Setter = set_50_MediaPlayer_IsFastForwardEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsFastForwardAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsFastForwardAllowed", "Boolean");
-                xamlMember.Getter = get_44_MediaPlayer_IsFastForwardAllowed;
+                xamlMember.Getter = get_51_MediaPlayer_IsFastForwardAllowed;
                 xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.PlayerFramework.MediaPlayer.IsSlowMotionEnabled":
+                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
+                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSlowMotionEnabled", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_52_MediaPlayer_IsSlowMotionEnabled;
+                xamlMember.Setter = set_52_MediaPlayer_IsSlowMotionEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSlowMotionAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSlowMotionAllowed", "Boolean");
-                xamlMember.Getter = get_45_MediaPlayer_IsSlowMotionAllowed;
+                xamlMember.Getter = get_53_MediaPlayer_IsSlowMotionAllowed;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSeekEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSeekEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_46_MediaPlayer_IsSeekEnabled;
-                xamlMember.Setter = set_46_MediaPlayer_IsSeekEnabled;
+                xamlMember.Getter = get_54_MediaPlayer_IsSeekEnabled;
+                xamlMember.Setter = set_54_MediaPlayer_IsSeekEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSeekAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSeekAllowed", "Boolean");
-                xamlMember.Getter = get_47_MediaPlayer_IsSeekAllowed;
+                xamlMember.Getter = get_55_MediaPlayer_IsSeekAllowed;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSkipPreviousEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSkipPreviousEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_48_MediaPlayer_IsSkipPreviousEnabled;
-                xamlMember.Setter = set_48_MediaPlayer_IsSkipPreviousEnabled;
+                xamlMember.Getter = get_56_MediaPlayer_IsSkipPreviousEnabled;
+                xamlMember.Setter = set_56_MediaPlayer_IsSkipPreviousEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSkipPreviousAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSkipPreviousAllowed", "Boolean");
-                xamlMember.Getter = get_49_MediaPlayer_IsSkipPreviousAllowed;
+                xamlMember.Getter = get_57_MediaPlayer_IsSkipPreviousAllowed;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSkipNextEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSkipNextEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_50_MediaPlayer_IsSkipNextEnabled;
-                xamlMember.Setter = set_50_MediaPlayer_IsSkipNextEnabled;
+                xamlMember.Getter = get_58_MediaPlayer_IsSkipNextEnabled;
+                xamlMember.Setter = set_58_MediaPlayer_IsSkipNextEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSkipNextAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSkipNextAllowed", "Boolean");
-                xamlMember.Getter = get_51_MediaPlayer_IsSkipNextAllowed;
+                xamlMember.Getter = get_59_MediaPlayer_IsSkipNextAllowed;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSkipBackEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSkipBackEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_52_MediaPlayer_IsSkipBackEnabled;
-                xamlMember.Setter = set_52_MediaPlayer_IsSkipBackEnabled;
+                xamlMember.Getter = get_60_MediaPlayer_IsSkipBackEnabled;
+                xamlMember.Setter = set_60_MediaPlayer_IsSkipBackEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSkipBackAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSkipBackAllowed", "Boolean");
-                xamlMember.Getter = get_53_MediaPlayer_IsSkipBackAllowed;
+                xamlMember.Getter = get_61_MediaPlayer_IsSkipBackAllowed;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSkipAheadEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSkipAheadEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_54_MediaPlayer_IsSkipAheadEnabled;
-                xamlMember.Setter = set_54_MediaPlayer_IsSkipAheadEnabled;
+                xamlMember.Getter = get_62_MediaPlayer_IsSkipAheadEnabled;
+                xamlMember.Setter = set_62_MediaPlayer_IsSkipAheadEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSkipAheadAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSkipAheadAllowed", "Boolean");
-                xamlMember.Getter = get_55_MediaPlayer_IsSkipAheadAllowed;
+                xamlMember.Getter = get_63_MediaPlayer_IsSkipAheadAllowed;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsScrubbingEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsScrubbingEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_56_MediaPlayer_IsScrubbingEnabled;
-                xamlMember.Setter = set_56_MediaPlayer_IsScrubbingEnabled;
+                xamlMember.Getter = get_64_MediaPlayer_IsScrubbingEnabled;
+                xamlMember.Setter = set_64_MediaPlayer_IsScrubbingEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsScrubbingAllowed":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsScrubbingAllowed", "Boolean");
-                xamlMember.Getter = get_57_MediaPlayer_IsScrubbingAllowed;
+                xamlMember.Getter = get_65_MediaPlayer_IsScrubbingAllowed;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsAudioSelectionVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsAudioSelectionVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_58_MediaPlayer_IsAudioSelectionVisible;
-                xamlMember.Setter = set_58_MediaPlayer_IsAudioSelectionVisible;
+                xamlMember.Getter = get_66_MediaPlayer_IsAudioSelectionVisible;
+                xamlMember.Setter = set_66_MediaPlayer_IsAudioSelectionVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsCaptionSelectionVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsCaptionSelectionVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_59_MediaPlayer_IsCaptionSelectionVisible;
-                xamlMember.Setter = set_59_MediaPlayer_IsCaptionSelectionVisible;
+                xamlMember.Getter = get_67_MediaPlayer_IsCaptionSelectionVisible;
+                xamlMember.Setter = set_67_MediaPlayer_IsCaptionSelectionVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsDurationVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsDurationVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_60_MediaPlayer_IsDurationVisible;
-                xamlMember.Setter = set_60_MediaPlayer_IsDurationVisible;
+                xamlMember.Getter = get_68_MediaPlayer_IsDurationVisible;
+                xamlMember.Setter = set_68_MediaPlayer_IsDurationVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsTimeRemainingVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsTimeRemainingVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_61_MediaPlayer_IsTimeRemainingVisible;
-                xamlMember.Setter = set_61_MediaPlayer_IsTimeRemainingVisible;
-                break;
-            case "Microsoft.PlayerFramework.MediaPlayer.IsFastForwardVisible":
-                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
-                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsFastForwardVisible", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_62_MediaPlayer_IsFastForwardVisible;
-                xamlMember.Setter = set_62_MediaPlayer_IsFastForwardVisible;
-                break;
-            case "Microsoft.PlayerFramework.MediaPlayer.IsFullScreenVisible":
-                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
-                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsFullScreenVisible", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_63_MediaPlayer_IsFullScreenVisible;
-                xamlMember.Setter = set_63_MediaPlayer_IsFullScreenVisible;
-                break;
-            case "Microsoft.PlayerFramework.MediaPlayer.IsZoomVisible":
-                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
-                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsZoomVisible", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_64_MediaPlayer_IsZoomVisible;
-                xamlMember.Setter = set_64_MediaPlayer_IsZoomVisible;
+                xamlMember.Getter = get_69_MediaPlayer_IsTimeRemainingVisible;
+                xamlMember.Setter = set_69_MediaPlayer_IsTimeRemainingVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsGoLiveVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsGoLiveVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_65_MediaPlayer_IsGoLiveVisible;
-                xamlMember.Setter = set_65_MediaPlayer_IsGoLiveVisible;
+                xamlMember.Getter = get_70_MediaPlayer_IsGoLiveVisible;
+                xamlMember.Setter = set_70_MediaPlayer_IsGoLiveVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsInfoVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsInfoVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_66_MediaPlayer_IsInfoVisible;
-                xamlMember.Setter = set_66_MediaPlayer_IsInfoVisible;
+                xamlMember.Getter = get_71_MediaPlayer_IsInfoVisible;
+                xamlMember.Setter = set_71_MediaPlayer_IsInfoVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsMoreVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsMoreVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_67_MediaPlayer_IsMoreVisible;
-                xamlMember.Setter = set_67_MediaPlayer_IsMoreVisible;
-                break;
-            case "Microsoft.PlayerFramework.MediaPlayer.IsPlayPauseVisible":
-                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
-                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsPlayPauseVisible", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_68_MediaPlayer_IsPlayPauseVisible;
-                xamlMember.Setter = set_68_MediaPlayer_IsPlayPauseVisible;
+                xamlMember.Getter = get_72_MediaPlayer_IsMoreVisible;
+                xamlMember.Setter = set_72_MediaPlayer_IsMoreVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsTimeElapsedVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsTimeElapsedVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_69_MediaPlayer_IsTimeElapsedVisible;
-                xamlMember.Setter = set_69_MediaPlayer_IsTimeElapsedVisible;
+                xamlMember.Getter = get_73_MediaPlayer_IsTimeElapsedVisible;
+                xamlMember.Setter = set_73_MediaPlayer_IsTimeElapsedVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSkipBackVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSkipBackVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_70_MediaPlayer_IsSkipBackVisible;
-                xamlMember.Setter = set_70_MediaPlayer_IsSkipBackVisible;
+                xamlMember.Getter = get_74_MediaPlayer_IsSkipBackVisible;
+                xamlMember.Setter = set_74_MediaPlayer_IsSkipBackVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSkipAheadVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSkipAheadVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_71_MediaPlayer_IsSkipAheadVisible;
-                xamlMember.Setter = set_71_MediaPlayer_IsSkipAheadVisible;
+                xamlMember.Getter = get_75_MediaPlayer_IsSkipAheadVisible;
+                xamlMember.Setter = set_75_MediaPlayer_IsSkipAheadVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsReplayVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsReplayVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_72_MediaPlayer_IsReplayVisible;
-                xamlMember.Setter = set_72_MediaPlayer_IsReplayVisible;
-                break;
-            case "Microsoft.PlayerFramework.MediaPlayer.IsRewindVisible":
-                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
-                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsRewindVisible", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_73_MediaPlayer_IsRewindVisible;
-                xamlMember.Setter = set_73_MediaPlayer_IsRewindVisible;
+                xamlMember.Getter = get_76_MediaPlayer_IsReplayVisible;
+                xamlMember.Setter = set_76_MediaPlayer_IsReplayVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSkipPreviousVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSkipPreviousVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_74_MediaPlayer_IsSkipPreviousVisible;
-                xamlMember.Setter = set_74_MediaPlayer_IsSkipPreviousVisible;
+                xamlMember.Getter = get_77_MediaPlayer_IsSkipPreviousVisible;
+                xamlMember.Setter = set_77_MediaPlayer_IsSkipPreviousVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSkipNextVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSkipNextVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_75_MediaPlayer_IsSkipNextVisible;
-                xamlMember.Setter = set_75_MediaPlayer_IsSkipNextVisible;
+                xamlMember.Getter = get_78_MediaPlayer_IsSkipNextVisible;
+                xamlMember.Setter = set_78_MediaPlayer_IsSkipNextVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSlowMotionVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSlowMotionVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_76_MediaPlayer_IsSlowMotionVisible;
-                xamlMember.Setter = set_76_MediaPlayer_IsSlowMotionVisible;
+                xamlMember.Getter = get_79_MediaPlayer_IsSlowMotionVisible;
+                xamlMember.Setter = set_79_MediaPlayer_IsSlowMotionVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsStopVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsStopVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_77_MediaPlayer_IsStopVisible;
-                xamlMember.Setter = set_77_MediaPlayer_IsStopVisible;
+                xamlMember.Getter = get_80_MediaPlayer_IsStopVisible;
+                xamlMember.Setter = set_80_MediaPlayer_IsStopVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsTimelineVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsTimelineVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_78_MediaPlayer_IsTimelineVisible;
-                xamlMember.Setter = set_78_MediaPlayer_IsTimelineVisible;
+                xamlMember.Getter = get_81_MediaPlayer_IsTimelineVisible;
+                xamlMember.Setter = set_81_MediaPlayer_IsTimelineVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsVolumeVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsVolumeVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_79_MediaPlayer_IsVolumeVisible;
-                xamlMember.Setter = set_79_MediaPlayer_IsVolumeVisible;
+                xamlMember.Getter = get_82_MediaPlayer_IsVolumeVisible;
+                xamlMember.Setter = set_82_MediaPlayer_IsVolumeVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSignalStrengthVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSignalStrengthVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_80_MediaPlayer_IsSignalStrengthVisible;
-                xamlMember.Setter = set_80_MediaPlayer_IsSignalStrengthVisible;
+                xamlMember.Getter = get_83_MediaPlayer_IsSignalStrengthVisible;
+                xamlMember.Setter = set_83_MediaPlayer_IsSignalStrengthVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsResolutionIndicatorVisible":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsResolutionIndicatorVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_81_MediaPlayer_IsResolutionIndicatorVisible;
-                xamlMember.Setter = set_81_MediaPlayer_IsResolutionIndicatorVisible;
+                xamlMember.Getter = get_84_MediaPlayer_IsResolutionIndicatorVisible;
+                xamlMember.Setter = set_84_MediaPlayer_IsResolutionIndicatorVisible;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.TimeFormatConverter":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "TimeFormatConverter", "Windows.UI.Xaml.Data.IValueConverter");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_82_MediaPlayer_TimeFormatConverter;
-                xamlMember.Setter = set_82_MediaPlayer_TimeFormatConverter;
+                xamlMember.Getter = get_85_MediaPlayer_TimeFormatConverter;
+                xamlMember.Setter = set_85_MediaPlayer_TimeFormatConverter;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.SkipBackInterval":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "SkipBackInterval", "System.Nullable`1<TimeSpan>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_83_MediaPlayer_SkipBackInterval;
-                xamlMember.Setter = set_83_MediaPlayer_SkipBackInterval;
+                xamlMember.Getter = get_86_MediaPlayer_SkipBackInterval;
+                xamlMember.Setter = set_86_MediaPlayer_SkipBackInterval;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.SkipAheadInterval":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "SkipAheadInterval", "System.Nullable`1<TimeSpan>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_84_MediaPlayer_SkipAheadInterval;
-                xamlMember.Setter = set_84_MediaPlayer_SkipAheadInterval;
+                xamlMember.Getter = get_87_MediaPlayer_SkipAheadInterval;
+                xamlMember.Setter = set_87_MediaPlayer_SkipAheadInterval;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.VisualMarkers":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "VisualMarkers", "System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.VisualMarker>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_85_MediaPlayer_VisualMarkers;
+                xamlMember.Getter = get_88_MediaPlayer_VisualMarkers;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.VisualMarker.Text":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.VisualMarker");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Text", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_86_VisualMarker_Text;
-                xamlMember.Setter = set_86_VisualMarker_Text;
+                xamlMember.Getter = get_89_VisualMarker_Text;
+                xamlMember.Setter = set_89_VisualMarker_Text;
                 break;
             case "Microsoft.PlayerFramework.VisualMarker.Time":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.VisualMarker");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Time", "TimeSpan");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_87_VisualMarker_Time;
-                xamlMember.Setter = set_87_VisualMarker_Time;
+                xamlMember.Getter = get_90_VisualMarker_Time;
+                xamlMember.Setter = set_90_VisualMarker_Time;
                 break;
             case "Microsoft.PlayerFramework.VisualMarker.IsSeekable":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.VisualMarker");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSeekable", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_88_VisualMarker_IsSeekable;
-                xamlMember.Setter = set_88_VisualMarker_IsSeekable;
+                xamlMember.Getter = get_91_VisualMarker_IsSeekable;
+                xamlMember.Setter = set_91_VisualMarker_IsSeekable;
                 break;
             case "Microsoft.PlayerFramework.VisualMarker.Style":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.VisualMarker");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Style", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_89_VisualMarker_Style;
-                xamlMember.Setter = set_89_VisualMarker_Style;
+                xamlMember.Getter = get_92_VisualMarker_Style;
+                xamlMember.Setter = set_92_VisualMarker_Style;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.Markers":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Markers", "Windows.UI.Xaml.Media.TimelineMarkerCollection");
-                xamlMember.Getter = get_90_MediaPlayer_Markers;
+                xamlMember.Getter = get_93_MediaPlayer_Markers;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AutoLoad":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AutoLoad", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_91_MediaPlayer_AutoLoad;
-                xamlMember.Setter = set_91_MediaPlayer_AutoLoad;
+                xamlMember.Getter = get_94_MediaPlayer_AutoLoad;
+                xamlMember.Setter = set_94_MediaPlayer_AutoLoad;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.SignalStrength":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "SignalStrength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_92_MediaPlayer_SignalStrength;
-                xamlMember.Setter = set_92_MediaPlayer_SignalStrength;
+                xamlMember.Getter = get_95_MediaPlayer_SignalStrength;
+                xamlMember.Setter = set_95_MediaPlayer_SignalStrength;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.MediaQuality":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "MediaQuality", "Microsoft.PlayerFramework.MediaQuality");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_93_MediaPlayer_MediaQuality;
-                xamlMember.Setter = set_93_MediaPlayer_MediaQuality;
+                xamlMember.Getter = get_96_MediaPlayer_MediaQuality;
+                xamlMember.Setter = set_96_MediaPlayer_MediaQuality;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.LivePositionBuffer":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "LivePositionBuffer", "TimeSpan");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_94_MediaPlayer_LivePositionBuffer;
-                xamlMember.Setter = set_94_MediaPlayer_LivePositionBuffer;
+                xamlMember.Getter = get_97_MediaPlayer_LivePositionBuffer;
+                xamlMember.Setter = set_97_MediaPlayer_LivePositionBuffer;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsPositionLive":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsPositionLive", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_95_MediaPlayer_IsPositionLive;
+                xamlMember.Getter = get_98_MediaPlayer_IsPositionLive;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.LivePosition":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "LivePosition", "System.Nullable`1<TimeSpan>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_96_MediaPlayer_LivePosition;
-                xamlMember.Setter = set_96_MediaPlayer_LivePosition;
+                xamlMember.Getter = get_99_MediaPlayer_LivePosition;
+                xamlMember.Setter = set_99_MediaPlayer_LivePosition;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.Duration":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Duration", "TimeSpan");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_97_MediaPlayer_Duration;
+                xamlMember.Getter = get_100_MediaPlayer_Duration;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsStartTimeOffset":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsStartTimeOffset", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_98_MediaPlayer_IsStartTimeOffset;
-                xamlMember.Setter = set_98_MediaPlayer_IsStartTimeOffset;
+                xamlMember.Getter = get_101_MediaPlayer_IsStartTimeOffset;
+                xamlMember.Setter = set_101_MediaPlayer_IsStartTimeOffset;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.StartTime":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "StartTime", "TimeSpan");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_99_MediaPlayer_StartTime;
-                xamlMember.Setter = set_99_MediaPlayer_StartTime;
+                xamlMember.Getter = get_102_MediaPlayer_StartTime;
+                xamlMember.Setter = set_102_MediaPlayer_StartTime;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.EndTime":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "EndTime", "TimeSpan");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_100_MediaPlayer_EndTime;
-                xamlMember.Setter = set_100_MediaPlayer_EndTime;
+                xamlMember.Getter = get_103_MediaPlayer_EndTime;
+                xamlMember.Setter = set_103_MediaPlayer_EndTime;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.TimeRemaining":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "TimeRemaining", "TimeSpan");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_101_MediaPlayer_TimeRemaining;
+                xamlMember.Getter = get_104_MediaPlayer_TimeRemaining;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.SeekWhileScrubbing":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "SeekWhileScrubbing", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_102_MediaPlayer_SeekWhileScrubbing;
-                xamlMember.Setter = set_102_MediaPlayer_SeekWhileScrubbing;
+                xamlMember.Getter = get_105_MediaPlayer_SeekWhileScrubbing;
+                xamlMember.Setter = set_105_MediaPlayer_SeekWhileScrubbing;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.ReplayOffset":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "ReplayOffset", "System.Nullable`1<TimeSpan>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_103_MediaPlayer_ReplayOffset;
-                xamlMember.Setter = set_103_MediaPlayer_ReplayOffset;
+                xamlMember.Getter = get_106_MediaPlayer_ReplayOffset;
+                xamlMember.Setter = set_106_MediaPlayer_ReplayOffset;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.SlowMotionPlaybackRate":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "SlowMotionPlaybackRate", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_104_MediaPlayer_SlowMotionPlaybackRate;
-                xamlMember.Setter = set_104_MediaPlayer_SlowMotionPlaybackRate;
+                xamlMember.Getter = get_107_MediaPlayer_SlowMotionPlaybackRate;
+                xamlMember.Setter = set_107_MediaPlayer_SlowMotionPlaybackRate;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsSlowMotion":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsSlowMotion", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_105_MediaPlayer_IsSlowMotion;
-                xamlMember.Setter = set_105_MediaPlayer_IsSlowMotion;
+                xamlMember.Getter = get_108_MediaPlayer_IsSlowMotion;
+                xamlMember.Setter = set_108_MediaPlayer_IsSlowMotion;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsCaptionsActive":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsCaptionsActive", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_106_MediaPlayer_IsCaptionsActive;
-                xamlMember.Setter = set_106_MediaPlayer_IsCaptionsActive;
+                xamlMember.Getter = get_109_MediaPlayer_IsCaptionsActive;
+                xamlMember.Setter = set_109_MediaPlayer_IsCaptionsActive;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsFullScreen":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsFullScreen", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_107_MediaPlayer_IsFullScreen;
-                xamlMember.Setter = set_107_MediaPlayer_IsFullScreen;
+                xamlMember.Getter = get_110_MediaPlayer_IsFullScreen;
+                xamlMember.Setter = set_110_MediaPlayer_IsFullScreen;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AdvertisingState":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AdvertisingState", "Microsoft.PlayerFramework.AdvertisingState");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_108_MediaPlayer_AdvertisingState;
-                xamlMember.Setter = set_108_MediaPlayer_AdvertisingState;
+                xamlMember.Getter = get_111_MediaPlayer_AdvertisingState;
+                xamlMember.Setter = set_111_MediaPlayer_AdvertisingState;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsScrubbing":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsScrubbing", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_109_MediaPlayer_IsScrubbing;
+                xamlMember.Getter = get_112_MediaPlayer_IsScrubbing;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.StartupPosition":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "StartupPosition", "System.Nullable`1<TimeSpan>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_110_MediaPlayer_StartupPosition;
-                xamlMember.Setter = set_110_MediaPlayer_StartupPosition;
+                xamlMember.Getter = get_113_MediaPlayer_StartupPosition;
+                xamlMember.Setter = set_113_MediaPlayer_StartupPosition;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.MediaEndedBehavior":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "MediaEndedBehavior", "Microsoft.PlayerFramework.MediaEndedBehavior");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_111_MediaPlayer_MediaEndedBehavior;
-                xamlMember.Setter = set_111_MediaPlayer_MediaEndedBehavior;
+                xamlMember.Getter = get_114_MediaPlayer_MediaEndedBehavior;
+                xamlMember.Setter = set_114_MediaPlayer_MediaEndedBehavior;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.UpdateInterval":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "UpdateInterval", "TimeSpan");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_112_MediaPlayer_UpdateInterval;
-                xamlMember.Setter = set_112_MediaPlayer_UpdateInterval;
+                xamlMember.Getter = get_115_MediaPlayer_UpdateInterval;
+                xamlMember.Setter = set_115_MediaPlayer_UpdateInterval;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AvailableCaptions":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AvailableCaptions", "System.Collections.Generic.List`1<Microsoft.PlayerFramework.Caption>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_113_MediaPlayer_AvailableCaptions;
+                xamlMember.Getter = get_116_MediaPlayer_AvailableCaptions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.Caption.Id":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.Caption");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Id", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_114_Caption_Id;
-                xamlMember.Setter = set_114_Caption_Id;
+                xamlMember.Getter = get_117_Caption_Id;
+                xamlMember.Setter = set_117_Caption_Id;
                 break;
             case "Microsoft.PlayerFramework.Caption.Description":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.Caption");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Description", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_115_Caption_Description;
-                xamlMember.Setter = set_115_Caption_Description;
+                xamlMember.Getter = get_118_Caption_Description;
+                xamlMember.Setter = set_118_Caption_Description;
                 break;
             case "Microsoft.PlayerFramework.Caption.Payload":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.Caption");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Payload", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_116_Caption_Payload;
-                xamlMember.Setter = set_116_Caption_Payload;
+                xamlMember.Getter = get_119_Caption_Payload;
+                xamlMember.Setter = set_119_Caption_Payload;
                 break;
             case "Microsoft.PlayerFramework.Caption.Source":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.Caption");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Source", "System.Uri");
-                xamlMember.Getter = get_117_Caption_Source;
-                xamlMember.Setter = set_117_Caption_Source;
+                xamlMember.Getter = get_120_Caption_Source;
+                xamlMember.Setter = set_120_Caption_Source;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.SelectedCaption":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "SelectedCaption", "Microsoft.PlayerFramework.Caption");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_118_MediaPlayer_SelectedCaption;
-                xamlMember.Setter = set_118_MediaPlayer_SelectedCaption;
+                xamlMember.Getter = get_121_MediaPlayer_SelectedCaption;
+                xamlMember.Setter = set_121_MediaPlayer_SelectedCaption;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AvailableAudioStreams":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AvailableAudioStreams", "System.Collections.Generic.List`1<Microsoft.PlayerFramework.AudioStream>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_119_MediaPlayer_AvailableAudioStreams;
+                xamlMember.Getter = get_122_MediaPlayer_AvailableAudioStreams;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.AudioStream.Name":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.AudioStream");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_120_AudioStream_Name;
-                xamlMember.Setter = set_120_AudioStream_Name;
+                xamlMember.Getter = get_123_AudioStream_Name;
+                xamlMember.Setter = set_123_AudioStream_Name;
                 break;
             case "Microsoft.PlayerFramework.AudioStream.Language":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.AudioStream");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Language", "String");
-                xamlMember.Getter = get_121_AudioStream_Language;
-                xamlMember.Setter = set_121_AudioStream_Language;
+                xamlMember.Getter = get_124_AudioStream_Language;
+                xamlMember.Setter = set_124_AudioStream_Language;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.SelectedAudioStream":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "SelectedAudioStream", "Microsoft.PlayerFramework.AudioStream");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_122_MediaPlayer_SelectedAudioStream;
-                xamlMember.Setter = set_122_MediaPlayer_SelectedAudioStream;
+                xamlMember.Getter = get_125_MediaPlayer_SelectedAudioStream;
+                xamlMember.Setter = set_125_MediaPlayer_SelectedAudioStream;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsLive":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsLive", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_123_MediaPlayer_IsLive;
-                xamlMember.Setter = set_123_MediaPlayer_IsLive;
-                break;
-            case "Microsoft.PlayerFramework.MediaPlayer.IsThumbnailVisible":
-                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
-                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsThumbnailVisible", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_124_MediaPlayer_IsThumbnailVisible;
-                xamlMember.Setter = set_124_MediaPlayer_IsThumbnailVisible;
+                xamlMember.Getter = get_126_MediaPlayer_IsLive;
+                xamlMember.Setter = set_126_MediaPlayer_IsLive;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.VirtualPosition":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "VirtualPosition", "TimeSpan");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_125_MediaPlayer_VirtualPosition;
+                xamlMember.Getter = get_127_MediaPlayer_VirtualPosition;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.ThumbnailImageSource":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "ThumbnailImageSource", "Windows.UI.Xaml.Media.ImageSource");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_126_MediaPlayer_ThumbnailImageSource;
-                xamlMember.Setter = set_126_MediaPlayer_ThumbnailImageSource;
+                xamlMember.Getter = get_128_MediaPlayer_ThumbnailImageSource;
+                xamlMember.Setter = set_128_MediaPlayer_ThumbnailImageSource;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.TestForMediaPack":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "TestForMediaPack", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_127_MediaPlayer_TestForMediaPack;
-                xamlMember.Setter = set_127_MediaPlayer_TestForMediaPack;
+                xamlMember.Getter = get_129_MediaPlayer_TestForMediaPack;
+                xamlMember.Setter = set_129_MediaPlayer_TestForMediaPack;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.MediaExtensionManager":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "MediaExtensionManager", "Windows.Media.MediaExtensionManager");
-                xamlMember.Getter = get_128_MediaPlayer_MediaExtensionManager;
-                xamlMember.Setter = set_128_MediaPlayer_MediaExtensionManager;
+                xamlMember.Getter = get_130_MediaPlayer_MediaExtensionManager;
+                xamlMember.Setter = set_130_MediaPlayer_MediaExtensionManager;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AspectRatioWidth":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AspectRatioWidth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_129_MediaPlayer_AspectRatioWidth;
+                xamlMember.Getter = get_131_MediaPlayer_AspectRatioWidth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AspectRatioHeight":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AspectRatioHeight", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_130_MediaPlayer_AspectRatioHeight;
+                xamlMember.Getter = get_132_MediaPlayer_AspectRatioHeight;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AudioCategory":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AudioCategory", "Windows.UI.Xaml.Media.AudioCategory");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_131_MediaPlayer_AudioCategory;
-                xamlMember.Setter = set_131_MediaPlayer_AudioCategory;
+                xamlMember.Getter = get_133_MediaPlayer_AudioCategory;
+                xamlMember.Setter = set_133_MediaPlayer_AudioCategory;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AudioDeviceType":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AudioDeviceType", "Windows.UI.Xaml.Media.AudioDeviceType");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_132_MediaPlayer_AudioDeviceType;
-                xamlMember.Setter = set_132_MediaPlayer_AudioDeviceType;
+                xamlMember.Getter = get_134_MediaPlayer_AudioDeviceType;
+                xamlMember.Setter = set_134_MediaPlayer_AudioDeviceType;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.PlayToSource":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "PlayToSource", "Windows.Media.PlayTo.PlayToSource");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_133_MediaPlayer_PlayToSource;
+                xamlMember.Getter = get_135_MediaPlayer_PlayToSource;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.DefaultPlaybackRate":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "DefaultPlaybackRate", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_134_MediaPlayer_DefaultPlaybackRate;
-                xamlMember.Setter = set_134_MediaPlayer_DefaultPlaybackRate;
+                xamlMember.Getter = get_136_MediaPlayer_DefaultPlaybackRate;
+                xamlMember.Setter = set_136_MediaPlayer_DefaultPlaybackRate;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsAudioOnly":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsAudioOnly", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_135_MediaPlayer_IsAudioOnly;
+                xamlMember.Getter = get_137_MediaPlayer_IsAudioOnly;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsLooping":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsLooping", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_136_MediaPlayer_IsLooping;
-                xamlMember.Setter = set_136_MediaPlayer_IsLooping;
+                xamlMember.Getter = get_138_MediaPlayer_IsLooping;
+                xamlMember.Setter = set_138_MediaPlayer_IsLooping;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.PosterSource":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "PosterSource", "Windows.UI.Xaml.Media.ImageSource");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_137_MediaPlayer_PosterSource;
-                xamlMember.Setter = set_137_MediaPlayer_PosterSource;
+                xamlMember.Getter = get_139_MediaPlayer_PosterSource;
+                xamlMember.Setter = set_139_MediaPlayer_PosterSource;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.ActualStereo3DVideoPackingMode":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "ActualStereo3DVideoPackingMode", "Windows.UI.Xaml.Media.Stereo3DVideoPackingMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_138_MediaPlayer_ActualStereo3DVideoPackingMode;
+                xamlMember.Getter = get_140_MediaPlayer_ActualStereo3DVideoPackingMode;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.Stereo3DVideoPackingMode":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Stereo3DVideoPackingMode", "Windows.UI.Xaml.Media.Stereo3DVideoPackingMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_139_MediaPlayer_Stereo3DVideoPackingMode;
-                xamlMember.Setter = set_139_MediaPlayer_Stereo3DVideoPackingMode;
+                xamlMember.Getter = get_141_MediaPlayer_Stereo3DVideoPackingMode;
+                xamlMember.Setter = set_141_MediaPlayer_Stereo3DVideoPackingMode;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.Stereo3DVideoRenderMode":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Stereo3DVideoRenderMode", "Windows.UI.Xaml.Media.Stereo3DVideoRenderMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_140_MediaPlayer_Stereo3DVideoRenderMode;
-                xamlMember.Setter = set_140_MediaPlayer_Stereo3DVideoRenderMode;
+                xamlMember.Getter = get_142_MediaPlayer_Stereo3DVideoRenderMode;
+                xamlMember.Setter = set_142_MediaPlayer_Stereo3DVideoRenderMode;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsStereo3DVideo":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsStereo3DVideo", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_141_MediaPlayer_IsStereo3DVideo;
+                xamlMember.Getter = get_143_MediaPlayer_IsStereo3DVideo;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.RealTimePlayback":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "RealTimePlayback", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_142_MediaPlayer_RealTimePlayback;
-                xamlMember.Setter = set_142_MediaPlayer_RealTimePlayback;
+                xamlMember.Getter = get_144_MediaPlayer_RealTimePlayback;
+                xamlMember.Setter = set_144_MediaPlayer_RealTimePlayback;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.ProtectionManager":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "ProtectionManager", "Windows.Media.Protection.MediaProtectionManager");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_143_MediaPlayer_ProtectionManager;
-                xamlMember.Setter = set_143_MediaPlayer_ProtectionManager;
+                xamlMember.Getter = get_145_MediaPlayer_ProtectionManager;
+                xamlMember.Setter = set_145_MediaPlayer_ProtectionManager;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AreTransportControlsEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AreTransportControlsEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_144_MediaPlayer_AreTransportControlsEnabled;
-                xamlMember.Setter = set_144_MediaPlayer_AreTransportControlsEnabled;
+                xamlMember.Getter = get_146_MediaPlayer_AreTransportControlsEnabled;
+                xamlMember.Setter = set_146_MediaPlayer_AreTransportControlsEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsFullWindow":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsFullWindow", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_145_MediaPlayer_IsFullWindow;
-                xamlMember.Setter = set_145_MediaPlayer_IsFullWindow;
+                xamlMember.Getter = get_147_MediaPlayer_IsFullWindow;
+                xamlMember.Setter = set_147_MediaPlayer_IsFullWindow;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.PlayToPreferredSourceUri":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "PlayToPreferredSourceUri", "System.Uri");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_146_MediaPlayer_PlayToPreferredSourceUri;
-                xamlMember.Setter = set_146_MediaPlayer_PlayToPreferredSourceUri;
+                xamlMember.Getter = get_148_MediaPlayer_PlayToPreferredSourceUri;
+                xamlMember.Setter = set_148_MediaPlayer_PlayToPreferredSourceUri;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AudioStreamCount":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AudioStreamCount", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_147_MediaPlayer_AudioStreamCount;
+                xamlMember.Getter = get_149_MediaPlayer_AudioStreamCount;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AudioStreamIndex":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AudioStreamIndex", "System.Nullable`1<Int32>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_148_MediaPlayer_AudioStreamIndex;
-                xamlMember.Setter = set_148_MediaPlayer_AudioStreamIndex;
+                xamlMember.Getter = get_150_MediaPlayer_AudioStreamIndex;
+                xamlMember.Setter = set_150_MediaPlayer_AudioStreamIndex;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.BufferingProgress":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "BufferingProgress", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_149_MediaPlayer_BufferingProgress;
+                xamlMember.Getter = get_151_MediaPlayer_BufferingProgress;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.CanPause":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "CanPause", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_150_MediaPlayer_CanPause;
+                xamlMember.Getter = get_152_MediaPlayer_CanPause;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.CanSeek":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "CanSeek", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_151_MediaPlayer_CanSeek;
+                xamlMember.Getter = get_153_MediaPlayer_CanSeek;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.Balance":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Balance", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_152_MediaPlayer_Balance;
-                xamlMember.Setter = set_152_MediaPlayer_Balance;
+                xamlMember.Getter = get_154_MediaPlayer_Balance;
+                xamlMember.Setter = set_154_MediaPlayer_Balance;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.DownloadProgress":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "DownloadProgress", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_153_MediaPlayer_DownloadProgress;
+                xamlMember.Getter = get_155_MediaPlayer_DownloadProgress;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.DownloadProgressOffset":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "DownloadProgressOffset", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_154_MediaPlayer_DownloadProgressOffset;
+                xamlMember.Getter = get_156_MediaPlayer_DownloadProgressOffset;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsMuted":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsMuted", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_155_MediaPlayer_IsMuted;
-                xamlMember.Setter = set_155_MediaPlayer_IsMuted;
+                xamlMember.Getter = get_157_MediaPlayer_IsMuted;
+                xamlMember.Setter = set_157_MediaPlayer_IsMuted;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.NaturalDuration":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "NaturalDuration", "Windows.UI.Xaml.Duration");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_156_MediaPlayer_NaturalDuration;
+                xamlMember.Getter = get_158_MediaPlayer_NaturalDuration;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.NaturalVideoHeight":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "NaturalVideoHeight", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_157_MediaPlayer_NaturalVideoHeight;
+                xamlMember.Getter = get_159_MediaPlayer_NaturalVideoHeight;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.NaturalVideoWidth":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "NaturalVideoWidth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_158_MediaPlayer_NaturalVideoWidth;
+                xamlMember.Getter = get_160_MediaPlayer_NaturalVideoWidth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.PlaybackRate":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "PlaybackRate", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_159_MediaPlayer_PlaybackRate;
-                xamlMember.Setter = set_159_MediaPlayer_PlaybackRate;
+                xamlMember.Getter = get_161_MediaPlayer_PlaybackRate;
+                xamlMember.Setter = set_161_MediaPlayer_PlaybackRate;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.IsTrickPlayEnabled":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsTrickPlayEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_160_MediaPlayer_IsTrickPlayEnabled;
-                xamlMember.Setter = set_160_MediaPlayer_IsTrickPlayEnabled;
+                xamlMember.Getter = get_162_MediaPlayer_IsTrickPlayEnabled;
+                xamlMember.Setter = set_162_MediaPlayer_IsTrickPlayEnabled;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.Position":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Position", "TimeSpan");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_161_MediaPlayer_Position;
-                xamlMember.Setter = set_161_MediaPlayer_Position;
+                xamlMember.Getter = get_163_MediaPlayer_Position;
+                xamlMember.Setter = set_163_MediaPlayer_Position;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.CurrentState":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "CurrentState", "Windows.UI.Xaml.Media.MediaElementState");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_162_MediaPlayer_CurrentState;
+                xamlMember.Getter = get_164_MediaPlayer_CurrentState;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.Source":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Source", "System.Uri");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_163_MediaPlayer_Source;
-                xamlMember.Setter = set_163_MediaPlayer_Source;
+                xamlMember.Getter = get_165_MediaPlayer_Source;
+                xamlMember.Setter = set_165_MediaPlayer_Source;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.Volume":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Volume", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_164_MediaPlayer_Volume;
-                xamlMember.Setter = set_164_MediaPlayer_Volume;
+                xamlMember.Getter = get_166_MediaPlayer_Volume;
+                xamlMember.Setter = set_166_MediaPlayer_Volume;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.SupportedPlaybackRates":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "SupportedPlaybackRates", "System.Collections.Generic.IList`1<Double>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_165_MediaPlayer_SupportedPlaybackRates;
-                xamlMember.Setter = set_165_MediaPlayer_SupportedPlaybackRates;
+                xamlMember.Getter = get_167_MediaPlayer_SupportedPlaybackRates;
+                xamlMember.Setter = set_167_MediaPlayer_SupportedPlaybackRates;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AllowMediaStartingDeferrals":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AllowMediaStartingDeferrals", "Boolean");
-                xamlMember.Getter = get_166_MediaPlayer_AllowMediaStartingDeferrals;
-                xamlMember.Setter = set_166_MediaPlayer_AllowMediaStartingDeferrals;
+                xamlMember.Getter = get_168_MediaPlayer_AllowMediaStartingDeferrals;
+                xamlMember.Setter = set_168_MediaPlayer_AllowMediaStartingDeferrals;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.ControlPanelTemplate":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "ControlPanelTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_167_MediaPlayer_ControlPanelTemplate;
-                xamlMember.Setter = set_167_MediaPlayer_ControlPanelTemplate;
+                xamlMember.Getter = get_169_MediaPlayer_ControlPanelTemplate;
+                xamlMember.Setter = set_169_MediaPlayer_ControlPanelTemplate;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.ControlPanel":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "ControlPanel", "Windows.UI.Xaml.Controls.Control");
-                xamlMember.Getter = get_168_MediaPlayer_ControlPanel;
+                xamlMember.Getter = get_170_MediaPlayer_ControlPanel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AutoHideInterval":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AutoHideInterval", "TimeSpan");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_169_MediaPlayer_AutoHideInterval;
-                xamlMember.Setter = set_169_MediaPlayer_AutoHideInterval;
+                xamlMember.Getter = get_171_MediaPlayer_AutoHideInterval;
+                xamlMember.Setter = set_171_MediaPlayer_AutoHideInterval;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.Containers":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "Containers", "System.Collections.Generic.IList`1<Windows.UI.Xaml.UIElement>");
-                xamlMember.Getter = get_170_MediaPlayer_Containers;
-                xamlMember.Setter = set_170_MediaPlayer_Containers;
+                xamlMember.Getter = get_172_MediaPlayer_Containers;
+                xamlMember.Setter = set_172_MediaPlayer_Containers;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.InteractiveViewModel":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "InteractiveViewModel", "Microsoft.PlayerFramework.IInteractiveViewModel");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_171_MediaPlayer_InteractiveViewModel;
-                xamlMember.Setter = set_171_MediaPlayer_InteractiveViewModel;
+                xamlMember.Getter = get_173_MediaPlayer_InteractiveViewModel;
+                xamlMember.Setter = set_173_MediaPlayer_InteractiveViewModel;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.DefaultInteractiveViewModel":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "DefaultInteractiveViewModel", "Microsoft.PlayerFramework.IInteractiveViewModel");
-                xamlMember.Getter = get_172_MediaPlayer_DefaultInteractiveViewModel;
-                xamlMember.Setter = set_172_MediaPlayer_DefaultInteractiveViewModel;
+                xamlMember.Getter = get_174_MediaPlayer_DefaultInteractiveViewModel;
+                xamlMember.Setter = set_174_MediaPlayer_DefaultInteractiveViewModel;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.InteractiveActivationMode":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "InteractiveActivationMode", "Microsoft.PlayerFramework.InteractionType");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_173_MediaPlayer_InteractiveActivationMode;
-                xamlMember.Setter = set_173_MediaPlayer_InteractiveActivationMode;
+                xamlMember.Getter = get_175_MediaPlayer_InteractiveActivationMode;
+                xamlMember.Setter = set_175_MediaPlayer_InteractiveActivationMode;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.InteractiveDeactivationMode":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "InteractiveDeactivationMode", "Microsoft.PlayerFramework.InteractionType");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_174_MediaPlayer_InteractiveDeactivationMode;
-                xamlMember.Setter = set_174_MediaPlayer_InteractiveDeactivationMode;
+                xamlMember.Getter = get_176_MediaPlayer_InteractiveDeactivationMode;
+                xamlMember.Setter = set_176_MediaPlayer_InteractiveDeactivationMode;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AutoHide":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AutoHide", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_175_MediaPlayer_AutoHide;
-                xamlMember.Setter = set_175_MediaPlayer_AutoHide;
+                xamlMember.Getter = get_177_MediaPlayer_AutoHide;
+                xamlMember.Setter = set_177_MediaPlayer_AutoHide;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.AutoHideBehavior":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "AutoHideBehavior", "Microsoft.PlayerFramework.AutoHideBehavior");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_176_MediaPlayer_AutoHideBehavior;
-                xamlMember.Setter = set_176_MediaPlayer_AutoHideBehavior;
-                break;
-            case "Microsoft.PlayerFramework.MediaPlayer.IsInteractive":
-                userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
-                xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "IsInteractive", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_177_MediaPlayer_IsInteractive;
-                xamlMember.Setter = set_177_MediaPlayer_IsInteractive;
+                xamlMember.Getter = get_178_MediaPlayer_AutoHideBehavior;
+                xamlMember.Setter = set_178_MediaPlayer_AutoHideBehavior;
                 break;
             case "Microsoft.PlayerFramework.MediaPlayer.PlayerState":
                 userType = (global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.PlayerFramework.MediaPlayer");
                 xamlMember = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlMember(this, "PlayerState", "Microsoft.PlayerFramework.PlayerState");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_178_MediaPlayer_PlayerState;
+                xamlMember.Getter = get_179_MediaPlayer_PlayerState;
                 xamlMember.SetIsReadOnly();
                 break;
             }

@@ -61,6 +61,21 @@ namespace MangoTube8UWP
             }
         }
 
+        private void AccountButton_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("AccountButton clicked");
+            if (DropDown.Visibility == Visibility.Collapsed)
+            {
+                Debug.WriteLine("DropDown is currently collapsed. Showing it now.");
+                DropDown.Visibility = Visibility.Visible;
+                ShowDropDown.Begin();
+            }
+            else
+            {
+                Debug.WriteLine("DropDown is currently visible. Hiding it now.");
+                HideDropDown.Begin();
+            }
+        }
 
         private async Task ShowMessageAsync(string message)
         {
@@ -97,10 +112,11 @@ namespace MangoTube8UWP
             }
         }
 
-        private void HideSearchBox_Completed(object sender, EventArgs e)
+        private void HideSearchBox_Completed(object sender, object e)
         {
-            YouTubeLogo.Visibility = Visibility.Visible;
-            SearchTextBox.Visibility = Visibility.Collapsed;
+            YouTubeLogo.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            AccountButton.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            SearchTextBox.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
         }
 
         private void RefreshButton_Click(object sender, RoutedEventArgs e)
@@ -305,6 +321,12 @@ namespace MangoTube8UWP
             itemsControl.Items.Add(videoCard);
         }
 
+        private void Downloads_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(DownloadsPage));
+        }
+
+
         private void Border_Tap(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
         {
             try
@@ -445,12 +467,7 @@ namespace MangoTube8UWP
             return videoCardBorder;
         }
 
-        private void HideSearchBox_Completed(object sender, object e)
-        {
 
-            YouTubeLogo.Visibility = Visibility.Visible;
-            SearchTextBox.Visibility = Visibility.Collapsed;
-        }
 
     }
 }

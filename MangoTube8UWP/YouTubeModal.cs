@@ -100,5 +100,36 @@ namespace MangoTube8UWP
             public bool IsAudio { get; set; }
         }
 
+        public class DownloadMetadata
+        {
+            public List<DownloadDetails> Downloads { get; set; } = new List<DownloadDetails>();
+        }
+
+        public class DownloadVideoDetail {
+            public string ThumbnailURL { get; set; }
+            public string Title { get; set; }
+            public string Author { get; set; }
+            public string VideoId { get; set; }
+        }
+        
+        public class DownloadDetails
+        {
+            public string Title { get; set; }
+            public string VideoId { get; set; }
+            public string Downloads { get; set; }
+            public string AudioURL { get; set; }
+            public string VideoURL { get; set; }
+            public string Subs { get; set; }
+            public string Views { get; set; }
+            public string Description { get; set; }
+            public string AuthorPFPURL { get; set; }
+            public string Author { get; set; }
+            public string ThumbnailURL { get; set; }
+            public string Date { get; set; }
+            public string VideoFilePath { get; set; }
+            public string AudioFilePath { get; set; }
+        }
+
+
     }
 }

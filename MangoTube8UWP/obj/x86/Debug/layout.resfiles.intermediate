@@ -1,8 +1,10 @@
+Assets\AccountIcon.png
 Assets\ApplicationIcon.png
 Assets\BadgeLogo.scale-240.png
 Assets\BaseCircle.png
 Assets\DefaultAvatar.png
 Assets\DefaultThumbnail.png
+Assets\DownloadIcon.png
 Assets\EduactionIcon.png
 Assets\FullScreenExpend.png
 Assets\FullScreenShrink.png
@@ -10,6 +12,13 @@ Assets\GamingIcon.png
 Assets\Logo.scale-240.png
 Assets\MangoTube8Logo.png
 Assets\MangoTube8LogoDark.png
+Assets\MangoTubeIcon106.png
+Assets\MangoTubeIcon1152.png
+Assets\MangoTubeIcon120.png
+Assets\MangoTubeIcon170.png
+Assets\MangoTubeIcon360.png
+Assets\MangoTubeIcon58.png
+Assets\MangoTubeIcon744.png
 Assets\NewsIcon.png
 Assets\PauseIcon.png
 Assets\PlayIcon.png
@@ -26,8 +35,11 @@ Assets\StoreLogo.scale-240.png
 Assets\VideoUnaviable.mp4
 Assets\WideLogo.scale-240.png
 App.xbf
+DownloadsPage.xbf
+DownloadVideoPage.xbf
 MainPage.xbf
 MangoTube8UWP.xr.xml
 SearchPage.xbf
 SettingsPage.xbf
 VideoPage.xbf
+StoreManifest.xml

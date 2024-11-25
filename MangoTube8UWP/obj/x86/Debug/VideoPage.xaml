@@ -11,6 +11,17 @@
     Background="#f1f0ec">
 
 
+    <Page.BottomAppBar>
+        <CommandBar IsSticky="True" x:Name="AppBar" ClosedDisplayMode="Minimal">
+
+                <!-- AppBarButton with the built-in WinRT Download symbol -->
+                <AppBarButton x:ConnectionId='1'                             >
+                    <SymbolIcon Symbol="Download" />
+                </AppBarButton>
+
+        </CommandBar>
+    </Page.BottomAppBar>
+
     <Page.Resources>
 
         <SolidColorBrush x:Key="ProgressBarIndeterminateForegroundThemeBrush" Color="Yellow" />
@@ -76,6 +87,16 @@
                 </DiscreteObjectKeyFrame>
             </ObjectAnimationUsingKeyFrames>
 
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AccountButton" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+
+
+
             <DoubleAnimation
                 Storyboard.TargetName="SearchTextBox"
                 Storyboard.TargetProperty="(UIElement.Opacity)"
@@ -83,11 +104,11 @@
             <DoubleAnimation
                 Storyboard.TargetName="SearchTextBox"
                 Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
-                From="200" To="0" Duration="0:0:0.3"/>
+                From="150" To="0" Duration="0:0:0.3"/>
         </Storyboard>
 
         <Storyboard x:Name="HideSearchBox">
-            <DoubleAnimation x:ConnectionId='1'
+            <DoubleAnimation x:ConnectionId='2'
                 Storyboard.TargetName="SearchTextBox"
                 Storyboard.TargetProperty="(UIElement.Opacity)"
                 From="1" To="0" Duration="0:0:0.3"
@@ -107,6 +128,15 @@
                     </DiscreteObjectKeyFrame.Value>
                 </DiscreteObjectKeyFrame>
             </ObjectAnimationUsingKeyFrames>
+
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AccountButton" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.3">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+
         </Storyboard>
 
         <Storyboard x:Name="ShowControlsAnimation">
@@ -134,6 +164,57 @@
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
+        
+             <Storyboard x:Name="ShowDropDown">
+
+                <DoubleAnimation 
+            Storyboard.TargetName="DropDown" 
+            Storyboard.TargetProperty="Opacity" 
+            From="0" To="1" Duration="0:0:0.3"/>
+
+
+                <DoubleAnimation 
+            Storyboard.TargetName="DropDown"
+            Storyboard.TargetProperty="Height"
+            From="0" To="125" Duration="0:0:0.3"/>
+
+
+                <DoubleAnimation 
+            Storyboard.TargetName="MainContent"
+            Storyboard.TargetProperty="Opacity"
+            From="1" To="0.4" Duration="0:0:0.3"/>
+
+
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="DropDown" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="Visible"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+
+        <Storyboard x:Name="HideDropDown">
+
+                <DoubleAnimation 
+            Storyboard.TargetName="DropDown" 
+            Storyboard.TargetProperty="Opacity" 
+            From="1" To="0" Duration="0:0:0.3"/>
+
+
+                <DoubleAnimation 
+            Storyboard.TargetName="DropDown"
+            Storyboard.TargetProperty="Height"
+            From="125" To="0" Duration="0:0:0.3"/>
+
+
+                <DoubleAnimation 
+            Storyboard.TargetName="MainContent"
+            Storyboard.TargetProperty="Opacity"
+            From="0.4" To="1" Duration="0:0:0.3"/>
+
+
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="DropDown" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.3" Value="Collapsed"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        
 
     </Page.Resources>
 
@@ -148,24 +229,44 @@
 
         <Grid Name="Header" Background="#282828" Height="70" VerticalAlignment="Top" Grid.Row="0">
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
-            <Image x:ConnectionId='6'  
+            <Button x:ConnectionId='8' 
+            x:Name="AccountButton" 
+            Width="62.5" 
+                                       
+            Height="62.5" 
+            Background="Transparent" 
+            BorderThickness="0" 
+            Margin="-22.5,0,0,0"
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Center" 
+            Grid.Column="0">
+                <Image 
+                x:Name="AccountIcon" 
+                Source="/Assets/AccountIcon.png" 
+                Width="62.5" 
+                Height="62.5"
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" />
+            </Button>
+
+            <Image x:ConnectionId='9' 
             x:Name="YouTubeLogo" 
             Source="/Assets/MangoTube8Logo.png" 
             VerticalAlignment="Center" 
             HorizontalAlignment="Center" 
             Grid.Column="1" 
-            Margin="0,0,40,0" 
+            Margin="0,0,6.5,0" 
                                         
             Width="Auto" 
             Height="100" />
 
             <Grid x:Name="SearchContainer" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10,0,55,0" Grid.Column="2">
-                <TextBox x:ConnectionId='8' 
+                <TextBox x:ConnectionId='11' 
                 x:Name="SearchTextBox" 
                 Width="330" Height="50" 
                 VerticalAlignment="Center"
@@ -182,7 +283,7 @@
                 </TextBox>
             </Grid>
 
-            <Button x:ConnectionId='7' 
+            <Button x:ConnectionId='10' 
             x:Name="SearchButton" 
             Width="80" 
             Height="76"
@@ -201,8 +302,18 @@
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center" />
             </Button>
+
         </Grid>
 
+
+        <Canvas Name="DropDown" Visibility="Collapsed" Background="#f1f1f1" Margin="0,70,0,0" Canvas.ZIndex="99" HorizontalAlignment="Stretch" VerticalAlignment="Top" Width="Auto" Height="125">
+            <StackPanel x:ConnectionId='7' HorizontalAlignment="Center"                             VerticalAlignment="Top" Margin="20,15,5,5">
+                <Image Source="/Assets/DownloadIcon.png" Width="65" Height="65" Stretch="UniformToFill"/>
+                <TextBlock Text="downloads" FontSize="12" HorizontalAlignment="Left" Margin="0,5,0,0" FontWeight="Thin" Foreground="#222222"/>
+            </StackPanel>
+
+            <Rectangle Width="Auto" Height="20" Fill="#222222"/>
+        </Canvas>
 
         <Grid Name="MainContent" Height="Auto" VerticalAlignment="Stretch" Margin="0,70,0,0">
             <Grid Name="Part1" Grid.Row="0" Canvas.ZIndex="1">
@@ -213,7 +324,7 @@
                     <Ellipse x:Name="Bubble3Player" Width="15" Height="15" Fill="Gray" Margin="5"/>
                 </StackPanel>
 
-                <pf:MediaPlayer x:ConnectionId='4' 
+                <pf:MediaPlayer x:ConnectionId='5' 
                     x:Name="AudioPlayer"
                     AutoPlay="True"
                     Width="0"
@@ -221,7 +332,7 @@
                                                        
                 />
 
-                <pf:MediaPlayer x:ConnectionId='5' 
+                <pf:MediaPlayer x:ConnectionId='6' 
                     x:Name="VideoPlayer"
                     AutoPlay="True"
                     Height="250"
@@ -247,7 +358,7 @@
             </Grid>
 
             <Grid Grid.Row="1" Name="Part2" Height="Auto" Margin="0,220,0,0" Canvas.ZIndex="0">
-                <Pivot x:ConnectionId='2' Title="" VerticalAlignment="Top" Background="#f0f0ee" Margin="0,0,0,0" BorderThickness="0" Foreground="Black" FontWeight="Thin" x:Name="VideoPivot"                                                                        >
+                <Pivot x:ConnectionId='3' Title="" VerticalAlignment="Top" Background="#f0f0ee" Margin="0,0,0,0" BorderThickness="0" Foreground="Black" FontWeight="Thin" x:Name="VideoPivot"                                                                        >
 
 
                     <Pivot.HeaderTemplate>
@@ -308,7 +419,7 @@
                                 </ItemsControl>
 
 
-                                <Button x:ConnectionId='3' Content="more" 
+                                <Button x:ConnectionId='4' Content="more" 
                         HorizontalAlignment="Stretch" 
                         VerticalAlignment="Center"
                         Background="#de8339"

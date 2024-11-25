@@ -126,7 +126,7 @@
 
             <Pivot.HeaderTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding}"  FontWeight="Thin" FontSize="38" Margin="0,0,0,0" Foreground="#222222" />
+                    <TextBlock Text="{Binding}"  FontWeight="Thin" FontSize="38" Margin="0,0,0,0"  />
                 </DataTemplate>
             </Pivot.HeaderTemplate>
 
@@ -134,6 +134,7 @@
                 <StackPanel Margin="10,-10,10,0">
 
                     <TextBlock Text="Streaming quality" Margin="0,0,0,0" FontSize="16" Foreground="#222222"/>
+
 
                     <ComboBox x:ConnectionId='2' x:Name="cmbCurrFrom"
                       Height="Auto"
@@ -146,7 +147,16 @@
                       Padding="0,0,0,0"
                       BorderBrush="Gray"
                       BorderThickness="0.5"
-                                                                      />
+                                                                     >
+
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding}" Margin="0,5.5,0,0" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+
+                    </ComboBox>
+
 
 
                 </StackPanel>

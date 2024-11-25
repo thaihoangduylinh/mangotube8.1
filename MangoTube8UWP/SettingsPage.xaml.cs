@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Microsoft.PlayerFramework.CaptionSettings.Model;
+using System;
 using System.Diagnostics;
 using Windows.Graphics.Display;
 using Windows.Phone.UI.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 namespace MangoTube8UWP
@@ -19,6 +21,13 @@ namespace MangoTube8UWP
             string savedQuality = Settings.VideoQuality;
             cmbCurrFrom.ItemsSource = Settings.Qualities;
             cmbCurrFrom.SelectedItem = savedQuality;
+
+            ComboBoxItem selectedItem = cmbCurrFrom.SelectedItem as ComboBoxItem;
+            if (selectedItem != null)
+            {
+                selectedItem.Foreground = new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Color.FromArgb(255, 34, 34, 34));
+            }
+
 
             Debug.WriteLine("Initial video quality set to: " + savedQuality);
 
@@ -69,6 +78,12 @@ namespace MangoTube8UWP
             }
         }
 
+        private void Downloads_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(DownloadsPage));
+        }
+
+
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
 
@@ -84,9 +99,9 @@ namespace MangoTube8UWP
 
         private void HideSearchBox_Completed(object sender, object e)
         {
-
-            YouTubeLogo.Visibility = Visibility.Visible;
-            SearchTextBox.Visibility = Visibility.Collapsed;
+            YouTubeLogo.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            AccountButton.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            SearchTextBox.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
         }
 
         private void YouTubeLogo_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
@@ -103,6 +118,22 @@ namespace MangoTube8UWP
             {
 
                 Debug.WriteLine("You must wait before tapping again.");
+            }
+        }
+
+        private void AccountButton_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("AccountButton clicked");
+            if (DropDown.Visibility == Visibility.Collapsed)
+            {
+                Debug.WriteLine("DropDown is currently collapsed. Showing it now.");
+                DropDown.Visibility = Visibility.Visible;
+                ShowDropDown.Begin();
+            }
+            else
+            {
+                Debug.WriteLine("DropDown is currently visible. Hiding it now.");
+                HideDropDown.Begin();
             }
         }
 

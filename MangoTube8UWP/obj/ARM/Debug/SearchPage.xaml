@@ -71,8 +71,10 @@
 
     </Page.Resources>
 
+
     <Grid Background="#f1f0ec">
-        <Grid Background="#282828" Height="70" VerticalAlignment="Top">
+
+          <Grid Background="#282828" Height="70" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto"/>
@@ -129,9 +131,9 @@
             </Button>
         </Grid>
 
-        <Grid Margin="10,90,-10,-114" Height="Auto" VerticalAlignment="Top">
-            <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="-20,-12.5,0,28">
-                <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch">
+        <Grid Margin="10,103,-10,-0" Height="Auto" VerticalAlignment="Top">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="-20,-12.5,0,0">
+                <StackPanel Height="Auto" Orientation="Vertical" HorizontalAlignment="Stretch">
 
                     <StackPanel x:Name="LoadingPanel" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Visibility="Collapsed">
                         <Ellipse x:Name="Bubble1" Width="15" Height="15" Fill="Gray" Margin="5"/>
@@ -157,7 +159,7 @@
                                                 
                     FontSize="18" 
                     FontWeight="Medium"
-                    Margin="25,0,25,85"/>
+                    Margin="20,0,20,0"/>
 
                 </StackPanel>
             </ScrollViewer>

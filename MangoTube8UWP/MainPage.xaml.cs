@@ -128,6 +128,22 @@ namespace MangoTube8UWP
             }
         }
 
+        private void AccountButton_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("AccountButton clicked");
+            if (DropDown.Visibility == Visibility.Collapsed)
+            {
+                Debug.WriteLine("DropDown is currently collapsed. Showing it now.");
+                DropDown.Visibility = Visibility.Visible;
+                ShowDropDown.Begin();
+            }
+            else
+            {
+                Debug.WriteLine("DropDown is currently visible. Hiding it now.");
+                HideDropDown.Begin();
+            }
+        }
+
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
 
@@ -742,6 +758,11 @@ namespace MangoTube8UWP
             }
         }
 
+        private void Downloads_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(DownloadsPage));
+        }
+
         private void AddVideoCard(VideoDetails video, ItemsControl itemsControl)
         {
             var videoCard = CreateVideoCard(video);
@@ -1000,6 +1021,7 @@ namespace MangoTube8UWP
         private void HideSearchBox_Completed(object sender, object e)
         {
             YouTubeLogo.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            AccountButton.Visibility = Windows.UI.Xaml.Visibility.Visible;
             SearchTextBox.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
         }
 

@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots xmlns="clr-namespace:Microsoft.Xaml.Tools.XamlCompiler.RootLog;assembly=Microsoft.Windows.UI.Xaml.81.Build.Tasks">
   <Roots.RootTypes>
-    <RootType FullName="Windows.UI.Xaml.Application" />
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
       <RootProperty Name="Resources" />
@@ -63,9 +68,9 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="HeaderTemplate" />
       <RootProperty Name="Items" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Padding" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Background" />
+      <RootProperty Name="BorderThickness" />
       <RootEvent Name="SelectionChanged" />
       <RootEvent Name="Loaded" />
     </RootType>
@@ -89,11 +94,16 @@
       <RootProperty Name="Tag" />
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="BorderThickness" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="VerticalScrollBarVisibility" />
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="IsHitTestVisible" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
@@ -108,6 +118,7 @@
       <RootProperty Name="Children" />
       <RootProperty Name="Orientation" />
       <RootProperty Name="Visibility" />
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />
@@ -174,11 +185,21 @@
       <RootProperty Name="Padding" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
+      <RootProperty Name="ItemTemplate" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="MangoTube8UWP.SettingsPage" />
+    <RootType FullName="Microsoft.PlayerFramework.BufferingView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.QuadraticEase">
       <RootProperty Name="EasingMode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootMethod Name="GetZIndex" />
@@ -199,22 +220,25 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Margin" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.MediaElement">
-      <RootProperty Name="AutoPlay" />
-      <RootEvent Name="MediaEnded" />
-    </RootType>
     <RootType FullName="Microsoft.PlayerFramework.MediaPlayer">
       <RootProperty Name="AutoPlay" />
-      <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="IsFullScreenVisible" />
+      <RootProperty Name="IsFastForwardVisible" />
+      <RootProperty Name="IsRewindVisible" />
+      <RootProperty Name="IsInteractive" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Stretch" />
-      <RootProperty Name="IsFullScreenEnabled" />
-      <RootProperty Name="IsAudioSelectionEnabled" />
-      <RootProperty Name="IsCaptionSelectionEnabled" />
-      <RootProperty Name="IsSlowMotionEnabled" />
+      <RootProperty Name="IsPlayPauseVisible" />
+      <RootProperty Name="IsThumbnailVisible" />
+      <RootProperty Name="IsZoomVisible" />
+      <RootProperty Name="IsDoubleTapEnabled" />
+      <RootEvent Name="MediaEnded" />
+      <RootEvent Name="VolumeChanged" />
       <RootEvent Name="MediaOpened" />
+      <RootEvent Name="IsFullScreenChanged" />
     </RootType>
     <RootType FullName="MangoTube8UWP.VideoPage" />
   </Roots.RootTypes>

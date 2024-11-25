@@ -27,6 +27,16 @@
                 </DiscreteObjectKeyFrame>
             </ObjectAnimationUsingKeyFrames>
 
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AccountButton" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            
+
+
             <DoubleAnimation
                 Storyboard.TargetName="SearchTextBox"
                 Storyboard.TargetProperty="(UIElement.Opacity)"
@@ -58,6 +68,15 @@
                     </DiscreteObjectKeyFrame.Value>
                 </DiscreteObjectKeyFrame>
             </ObjectAnimationUsingKeyFrames>
+
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AccountButton" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.3">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            
         </Storyboard>
 
         <Storyboard x:Name="BubbleLoadingAnimationRec" RepeatBehavior="Forever">
@@ -86,6 +105,56 @@
             <DoubleAnimation Storyboard.TargetName="Bubble3Spot" Storyboard.TargetProperty="Opacity"
                          From="0.0" To="1.0" Duration="0:0:1.4" AutoReverse="True"/>
         </Storyboard>
+
+        <Storyboard x:Name="ShowDropDown">
+
+                <DoubleAnimation 
+            Storyboard.TargetName="DropDown" 
+            Storyboard.TargetProperty="Opacity" 
+            From="0" To="1" Duration="0:0:0.3"/>
+
+
+                <DoubleAnimation 
+            Storyboard.TargetName="DropDown"
+            Storyboard.TargetProperty="Height"
+            From="0" To="125" Duration="0:0:0.3"/>
+
+
+                <DoubleAnimation 
+            Storyboard.TargetName="MainPivot"
+            Storyboard.TargetProperty="Opacity"
+            From="1" To="0.4" Duration="0:0:0.3"/>
+
+
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="DropDown" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="Visible"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+
+        <Storyboard x:Name="HideDropDown">
+
+                <DoubleAnimation 
+            Storyboard.TargetName="DropDown" 
+            Storyboard.TargetProperty="Opacity" 
+            From="1" To="0" Duration="0:0:0.3"/>
+
+
+                <DoubleAnimation 
+            Storyboard.TargetName="DropDown"
+            Storyboard.TargetProperty="Height"
+            From="125" To="0" Duration="0:0:0.3"/>
+
+
+                <DoubleAnimation 
+            Storyboard.TargetName="MainPivot"
+            Storyboard.TargetProperty="Opacity"
+            From="0.4" To="1" Duration="0:0:0.3"/>
+
+
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="DropDown" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.3" Value="Collapsed"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
         
     </Page.Resources>
 
@@ -97,13 +166,35 @@
         </CommandBar>
     </Page.BottomAppBar>
 
+
     <Grid Background="#f1f0ec">
+
         <Grid Background="#282828" Height="70" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
+
+            <Button 
+            x:Name="AccountButton" 
+            Width="62.5" 
+            Click="AccountButton_Click"
+            Height="62.5" 
+            Background="Transparent" 
+            BorderThickness="0" 
+            Margin="-22.5,0,0,0"
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Center" 
+            Grid.Column="0">
+                <Image 
+                x:Name="AccountIcon" 
+                Source="/Assets/AccountIcon.png" 
+                Width="62.5" 
+                Height="62.5"
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" />
+            </Button>
 
             <Image 
             x:Name="YouTubeLogo" 
@@ -111,7 +202,7 @@
             VerticalAlignment="Center" 
             HorizontalAlignment="Center" 
             Grid.Column="1" 
-            Margin="0,0,40,0" 
+            Margin="0,0,6.5,0" 
             Tapped="YouTubeLogo_Tapped" 
             Width="Auto" 
             Height="100" />
@@ -153,9 +244,19 @@
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center" />
             </Button>
+
         </Grid>
 
-        <Pivot Title="" Foreground="Black" FontWeight="Thin" x:Name="MainPivot" SelectionChanged="MainPivot_SelectionChanged" Loaded="MainPivot_Loaded" Margin="-10,40,0,-20">
+        <Canvas Name="DropDown" Visibility="Collapsed" Background="#f1f1f1" Margin="0,70,0,0" Canvas.ZIndex="99" HorizontalAlignment="Stretch" VerticalAlignment="Top" Width="Auto" Height="125">
+            <StackPanel HorizontalAlignment="Center" Tapped="Downloads_Tapped"  VerticalAlignment="Top" Margin="20,15,5,5">
+                <Image Source="/Assets/DownloadIcon.png" Width="65" Height="65" Stretch="UniformToFill"/>
+                <TextBlock Text="downloads" FontSize="12" HorizontalAlignment="Left" Margin="0,5,0,0" FontWeight="Thin" Foreground="#222222"/>
+            </StackPanel>
+
+            <Rectangle Width="Auto" Height="20" Fill="#222222"/>
+        </Canvas>
+
+        <Pivot Title="" Opacity="1" Foreground="Black" FontWeight="Thin" x:Name="MainPivot" SelectionChanged="MainPivot_SelectionChanged" Loaded="MainPivot_Loaded" Margin="-10,40,0,-20">
             
                 <Pivot.HeaderTemplate>
                     <DataTemplate>
@@ -305,6 +406,6 @@
                 </ScrollViewer>
             </PivotItem>
         </Pivot>
-    </Grid>
+      </Grid>
 
 </Page>

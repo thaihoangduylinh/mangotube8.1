@@ -7,9 +7,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     xmlns:pf="using:Microsoft.PlayerFramework"
+    xmlns:sm="using:SM.Media"
     Background="#f1f0ec">
 
+
     <Page.Resources>
+
+        <SolidColorBrush x:Key="ProgressBarIndeterminateForegroundThemeBrush" Color="Yellow" />
+
+
+
+        <Style x:Key="CustomBufferingViewStyle" TargetType="pf:BufferingView">
+            <Setter Property="Foreground" Value="#DE8339" />
+            <Setter Property="Background" Value="Transparent" />
+        </Style>
 
         <Storyboard x:Name="BubbleLoadingAnimationRel" RepeatBehavior="Forever">
             <DoubleAnimation Storyboard.TargetName="Bubble1Rel" Storyboard.TargetProperty="Opacity"
@@ -126,12 +137,12 @@
 
     </Page.Resources>
 
-    <Grid Grid.Row="0" Background="#f1f0ec">
+        <Grid Grid.Row="0" Name="BobIsYourUncle" Background="#f1f0ec">
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
 
@@ -164,7 +175,11 @@
                 RenderTransformOrigin="0.5,0.5"
                 Visibility="Collapsed"  
                                                
-                Margin="10,0,0,0"/>
+                Margin="10,0,0,0">
+                    <TextBox.RenderTransform>
+                        <TranslateTransform X="0"/>
+                    </TextBox.RenderTransform>
+                </TextBox>
             </Grid>
 
             <Button x:ConnectionId='7' 
@@ -189,131 +204,148 @@
         </Grid>
 
 
-        <Grid Grid.Row="1" Canvas.ZIndex="0">
+        <Grid Name="MainContent" Height="Auto" VerticalAlignment="Stretch" Margin="0,70,0,0">
+            <Grid Name="Part1" Grid.Row="0" Canvas.ZIndex="1">
+
+                <StackPanel x:Name="LoadingPanelPlayer" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Visibility="Collapsed">
+                    <Ellipse x:Name="Bubble1Player" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                    <Ellipse x:Name="Bubble2Player" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                    <Ellipse x:Name="Bubble3Player" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                </StackPanel>
+
+                <pf:MediaPlayer x:ConnectionId='4' 
+                    x:Name="AudioPlayer"
+                    AutoPlay="True"
+                    Width="0"
+                    Height="0"
+                                                       
+                />
+
+                <pf:MediaPlayer x:ConnectionId='5' 
+                    x:Name="VideoPlayer"
+                    AutoPlay="True"
+                    Height="250"
+                    IsFullScreenVisible="True"
+                    IsFastForwardVisible="True"
+                    IsRewindVisible="True"
+                    IsInteractive="True"
+                    Width="Auto"                  
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Top"
+                    Stretch="UniformToFill"
+                    IsPlayPauseVisible="True"
+                    IsThumbnailVisible="True"
+                    IsZoomVisible="True"
+                                                              
+                                                             
+                                                                          
+                    IsDoubleTapEnabled="True"
+                    >
+      
+                </pf:MediaPlayer>
+
+            </Grid>
+
+            <Grid Grid.Row="1" Name="Part2" Height="Auto" Margin="0,220,0,0" Canvas.ZIndex="0">
+                <Pivot x:ConnectionId='2' Title="" VerticalAlignment="Top" Background="#f0f0ee" Margin="0,0,0,0" BorderThickness="0" Foreground="Black" FontWeight="Thin" x:Name="VideoPivot"                                                                        >
 
 
-            <StackPanel x:Name="LoadingPanelPlayer" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Visibility="Collapsed">
-                <Ellipse x:Name="Bubble1Player" Width="15" Height="15" Fill="Gray" Margin="5"/>
-                <Ellipse x:Name="Bubble2Player" Width="15" Height="15" Fill="Gray" Margin="5"/>
-                <Ellipse x:Name="Bubble3Player" Width="15" Height="15" Fill="Gray" Margin="5"/>
-            </StackPanel>
-
-            <MediaElement x:ConnectionId='4' x:Name="AudioPlayer"
-                AutoPlay="False"
-                                                   
-            />
-
-            <pf:MediaPlayer x:ConnectionId='5' 
-                x:Name="VideoPlayer"
-                AutoPlay="True"
-                Height="250"
-                Width="Auto"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Top"
-                Stretch="UniformToFill"
-                                                     
-                IsFullScreenEnabled="True"
-                IsAudioSelectionEnabled="True"
-                IsCaptionSelectionEnabled="True"
-                IsSlowMotionEnabled="True">
-            </pf:MediaPlayer>
-
-        </Grid>
-
-        <Pivot x:ConnectionId='2' Grid.Row="2" Height="Auto" Title="" Foreground="Black" Margin="0,0,0,0" FontWeight="Thin" Padding="0,0,0,0" Background="#f0f0ee" x:Name="VideoPivot"                                                                        >
-
-            <Pivot.HeaderTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding}" FontWeight="Thin" FontSize="32" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="-10,0,0,0" Foreground="#222222"/>
-                </DataTemplate>
-            </Pivot.HeaderTemplate>
+                    <Pivot.HeaderTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}" FontWeight="Thin" FontSize="32" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="-10,0,0,0" />
+                        </DataTemplate>
+                    </Pivot.HeaderTemplate>
 
 
-            <PivotItem Header="details" Tag="details" Margin="14,0,10,0">
-                <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,0,0,0">
-                    <StackPanel Margin="0,-2,0,17">
-                        <TextBlock x:Name="VideoTitle" Margin="2,17,0,0" FontSize="16" TextWrapping="Wrap" FontWeight="Bold" Foreground="Black" Text=""/>
-                        <StackPanel Orientation="Horizontal" Margin="0,0,0,0" HorizontalAlignment="Right">
-                            <TextBlock x:Name="VideoViews" FontSize="11" FontWeight="Normal" Foreground="Gray" Text=""/>
-                        </StackPanel>
-
-                        <StackPanel x:Name="LoadingPanelDel" Margin="0,50,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Visibility="Collapsed">
-                            <Ellipse x:Name="Bubble1Del" Width="15" Height="15" Fill="Gray" Margin="5"/>
-                            <Ellipse x:Name="Bubble2Del" Width="15" Height="15" Fill="Gray" Margin="5"/>
-                            <Ellipse x:Name="Bubble3Del" Width="15" Height="15" Fill="Gray" Margin="5"/>
-                        </StackPanel>
-
-                        <Border Name="StuffPanel" Background="#e5e6e8" Margin="0,10,0,0" Height="62.5" HorizontalAlignment="Stretch">
-                            <StackPanel Orientation="Horizontal" Margin="17,0,-17,0">
-                                <Image x:Name="ProfilePicture" Width="50" Height="50" Margin="0,0,10,0"/>
-                                <StackPanel VerticalAlignment="Center">
-                                    <TextBlock x:Name="Username" FontSize="14" FontWeight="Light" Foreground="Black" Text=""/>
-                                    <TextBlock x:Name="SubscriptionStatus" FontSize="12" Foreground="Gray" Text=""/>
+                    <PivotItem Header="details" Tag="details" BorderThickness="0" Margin="14,0,10,0">
+                        <ScrollViewer  Height="Auto" VerticalAlignment="Stretch" IsHitTestVisible="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="0,0,0,0">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="0,-2,0,17">
+                                <TextBlock x:Name="VideoTitle" Margin="2,17,0,0" FontSize="16" TextWrapping="Wrap" FontWeight="Bold" Foreground="Black" Text=""/>
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,0" HorizontalAlignment="Right">
+                                    <TextBlock x:Name="VideoViews" FontSize="11" FontWeight="Normal" Foreground="Gray" Text=""/>
                                 </StackPanel>
+
+
+                                <StackPanel x:Name="LoadingPanelDel" Margin="0,50,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Visibility="Collapsed">
+                                    <Ellipse x:Name="Bubble1Del" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                                    <Ellipse x:Name="Bubble2Del" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                                    <Ellipse x:Name="Bubble3Del" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                                </StackPanel>
+
+
+                                <Border Name="StuffPanel" Background="#e5e6e8" Margin="0,10,0,0" Height="62.5" HorizontalAlignment="Stretch">
+                                    <StackPanel Orientation="Horizontal" Margin="17,0,-17,0">
+                                        <Image x:Name="ProfilePicture" Width="50" Height="50" Margin="0,0,10,0" Source="/Assets/DefaultAvatar.jpg"/>
+                                        <StackPanel VerticalAlignment="Center">
+                                            <TextBlock x:Name="Username" FontSize="14" FontWeight="Light" Foreground="Black" Text=""/>
+                                            <TextBlock x:Name="SubscriptionStatus" FontSize="12" Foreground="Gray" Text=""/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+
+
+                                <TextBlock x:Name="VideoUploadDate" FontSize="12" FontWeight="ExtraLight" Foreground="Black" Margin="0,10,0,0" Text=""/>
+                                <RichTextBlock x:Name="VideoDescription" FontSize="12" FontFamily="Segoe UI Light" FontWeight="ExtraLight" Foreground="Black" Margin="0,10,0,0"/>
                             </StackPanel>
-                        </Border>
-
-                        <TextBlock x:Name="VideoUploadDate" FontSize="12"  FontWeight="ExtraLight" Foreground="Black" Margin="0,10,0,0" Text=""/>
-                        <RichTextBlock x:Name="VideoDescription" FontSize="12" FontFamily="Segoe UI Light" FontWeight="ExtraLight" Foreground="Black" Margin="0,10,0,0"/>
-                    </StackPanel>
-                </ScrollViewer>
-            </PivotItem>
+                        </ScrollViewer>
+                    </PivotItem>
 
 
-            <PivotItem Header="comments" Tag="comments">
-                <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="-0,-12.5,0,28">
-                    <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch">
+                    <PivotItem Header="comments" Tag="comments">
+                        <ScrollViewer Height="Auto" VerticalAlignment="Stretch" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="0,-12.5,0,28">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch">
+                                <ItemsControl Margin="0,0,0,0" x:Name="CommentsItemControl">
+                                    <StackPanel x:Name="LoadingPanelCom" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Visibility="Collapsed">
+                                        <Ellipse x:Name="Bubble1Com" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                                        <Ellipse x:Name="Bubble2Com" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                                        <Ellipse x:Name="Bubble3Com" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                                    </StackPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
 
-                        <ItemsControl Margin="0,0,0,0" x:Name="CommentsItemControl">
-                            <StackPanel x:Name="LoadingPanelCom" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Visibility="Collapsed">
-                                <Ellipse x:Name="Bubble1Com" Width="15" Height="15" Fill="Gray" Margin="5"/>
-                                <Ellipse x:Name="Bubble2Com" Width="15" Height="15" Fill="Gray" Margin="5"/>
-                                <Ellipse x:Name="Bubble3Com" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+
+
+                                <Button x:ConnectionId='3' Content="more" 
+                        HorizontalAlignment="Stretch" 
+                        VerticalAlignment="Center"
+                        Background="#de8339"
+                        Foreground="White"
+                        Name="LoadMore"
+                        FontSize="18" 
+                        FontWeight="Medium"
+                                                    
+                        Margin="5,0,0,0"/>
                             </StackPanel>
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
+                        </ScrollViewer>
+                    </PivotItem>
 
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                        </ItemsControl>
+                    <PivotItem Header="related videos" Tag="related videos">
 
-                        <Button x:ConnectionId='3' Content="more" 
-                            HorizontalAlignment="Stretch" 
-                            VerticalAlignment="Center"
-                            Background="#de8339"
-                            Foreground="White"
-                            Name="LoadMore"
-                            FontSize="18" 
-                            FontWeight="Medium"
-                                                        
-                            Margin="5,0,0,0"/>
-                    </StackPanel>
-                </ScrollViewer>
-            </PivotItem>
+                        <ScrollViewer Height="Auto" VerticalAlignment="Stretch" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="-20,-12.5,0,28">
+                            <ItemsControl Margin="0,0,0,0" x:Name="RealtedVideoItemControl">
 
+                                <StackPanel x:Name="LoadingPanelRel" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Visibility="Collapsed">
+                                    <Ellipse x:Name="Bubble1Rel" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                                    <Ellipse x:Name="Bubble2Rel" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                                    <Ellipse x:Name="Bubble3Rel" Width="15" Height="15" Fill="Gray" Margin="5"/>
+                                </StackPanel>
 
-            <PivotItem Header="related videos" Tag="related videos">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
 
-                <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="-20,-12.5,0,28">
-                    <ItemsControl Margin="0,0,0,0" x:Name="RealtedVideoItemControl">
-                        <StackPanel x:Name="LoadingPanelRel" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Visibility="Collapsed">
-                            <Ellipse x:Name="Bubble1Rel" Width="15" Height="15" Fill="Gray" Margin="5"/>
-                            <Ellipse x:Name="Bubble2Rel" Width="15" Height="15" Fill="Gray" Margin="5"/>
-                            <Ellipse x:Name="Bubble3Rel" Width="15" Height="15" Fill="Gray" Margin="5"/>
-                        </StackPanel>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
 
-                        <ItemsControl.ItemTemplate>
-                            <DataTemplate>
+                        </ScrollViewer>
+                    </PivotItem>
 
-                            </DataTemplate>
-                        </ItemsControl.ItemTemplate>
-                    </ItemsControl>
-
-                </ScrollViewer>
-            </PivotItem>
-
-
-        </Pivot>
+                </Pivot>
+            </Grid>
+        </Grid>
     </Grid>
 </Page>
 

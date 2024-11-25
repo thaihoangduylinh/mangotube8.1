@@ -4,5 +4,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:MangoTube8UWP">
 
+    <Application.Resources>
+        <SolidColorBrush x:Key="PivotHeaderForegroundUnselectedBrush" Color="#2222" />
+        <SolidColorBrush x:Key="PivotHeaderForegroundSelectedBrush" Color="#282828" />
+    </Application.Resources>
+
 </Application>
 
