@@ -176,7 +176,7 @@
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
-            <Button x:ConnectionId='8' 
+            <Button x:ConnectionId='9' 
             x:Name="AccountButton" 
             Width="62.5" 
                                        
@@ -196,7 +196,7 @@
                 VerticalAlignment="Center" />
             </Button>
 
-            <Image x:ConnectionId='9' 
+            <Image x:ConnectionId='10' 
             x:Name="YouTubeLogo" 
             Source="/Assets/MangoTube8Logo.png" 
             VerticalAlignment="Center" 
@@ -208,7 +208,7 @@
             Height="100" />
 
             <Grid x:Name="SearchContainer" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10,0,55,0" Grid.Column="2">
-                <TextBox x:ConnectionId='11' 
+                <TextBox x:ConnectionId='12' 
                 x:Name="SearchTextBox" 
                 Width="330" Height="50" 
                 VerticalAlignment="Center"
@@ -225,7 +225,7 @@
                 </TextBox>
             </Grid>
 
-            <Button x:ConnectionId='10' 
+            <Button x:ConnectionId='11' 
             x:Name="SearchButton" 
             Width="80" 
             Height="76"
@@ -248,13 +248,23 @@
         </Grid>
 
         <Canvas Name="DropDown" Visibility="Collapsed" Background="#f1f1f1" Margin="0,70,0,0" Canvas.ZIndex="99" HorizontalAlignment="Stretch" VerticalAlignment="Top" Width="Auto" Height="125">
-            <StackPanel x:ConnectionId='7' HorizontalAlignment="Center"                            VerticalAlignment="Top" Margin="20,15,5,5">
-                <Image Source="/Assets/DownloadIcon.png" Width="65" Height="65" Stretch="UniformToFill"/>
-                <TextBlock Text="downloads" FontSize="12" HorizontalAlignment="Left" Margin="0,5,0,0" FontWeight="Thin" Foreground="#222222"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,15,5,5">
+
+                <StackPanel x:ConnectionId='7'                           Margin="5,0,5,0">
+                    <Image Source="/Assets/DownloadIcon.png" Width="75" Height="75" Stretch="UniformToFill"/>
+                    <TextBlock Text="downloads" FontSize="12" HorizontalAlignment="Left" Margin="0,5,0,0" FontWeight="Thin" Foreground="#222222"/>
+                </StackPanel>
+
+
+                <StackPanel x:ConnectionId='8'                         Margin="2.5,0,5,0">
+                    <Image Source="/Assets/HistoryIcon.png" Width="75" Height="75" Stretch="UniformToFill"/>
+                    <TextBlock Text="history" FontSize="12" HorizontalAlignment="Left" Margin="0,5,0,0" FontWeight="Thin" Foreground="#222222"/>
+                </StackPanel>
             </StackPanel>
 
             <Rectangle Width="Auto" Height="20" Fill="#222222"/>
         </Canvas>
+
 
         <Pivot x:ConnectionId='3' Title="" Opacity="1" Foreground="Black" FontWeight="Thin" x:Name="MainPivot"                                                                         Margin="-10,40,0,-20">
             

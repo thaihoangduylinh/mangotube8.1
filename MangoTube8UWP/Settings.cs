@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Windows.Storage;
 using System.Collections.ObjectModel;
 using System.IO;
+using static MangoTube8UWP.YouTubeModal;
 
 namespace MangoTube8UWP
 {
@@ -18,6 +19,89 @@ namespace MangoTube8UWP
 
         public static List<string> Qualities { get; } = new List<string> { "medium (recommended)","SD","low","ultra low","HD1080","HD", "auto"};
         private static List<string> seedVideoIds;
+
+        private const string WatchHistoryKey = "WatchHistory";
+
+        private static List<WatchHistoryItem> watchHistory;
+
+        public static IReadOnlyList<WatchHistoryItem> WatchHistory
+        {
+            get
+            {
+                if (watchHistory == null)
+                {
+                    LoadWatchHistory().Wait();
+                }
+                return new ReadOnlyCollection<WatchHistoryItem>(watchHistory);
+            }
+        }
+
+        public static async void AddToWatchHistory(WatchHistoryItem item)
+        {
+            if (watchHistory == null)
+            {
+                await LoadWatchHistory();
+            }
+
+            watchHistory.Insert(0, item);
+
+            await SaveWatchHistory();
+        }
+
+        public static async void ClearWatchHistory()
+        {
+            watchHistory = new List<WatchHistoryItem>();
+            await SaveWatchHistory();
+        }
+
+        private static async Task LoadWatchHistory()
+        {
+            watchHistory = new List<WatchHistoryItem>();
+
+            try
+            {
+                var localFolder = ApplicationData.Current.LocalFolder;
+                StorageFile file = null;
+
+                try
+                {
+                    file = await localFolder.GetFileAsync(WatchHistoryKey);
+                }
+                catch (FileNotFoundException)
+                {
+                    file = null;
+                }
+
+                if (file != null)
+                {
+                    string historyData = await FileIO.ReadTextAsync(file);
+                    if (!string.IsNullOrEmpty(historyData))
+                    {
+                        watchHistory = Newtonsoft.Json.JsonConvert.DeserializeObject<List<WatchHistoryItem>>(historyData);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Error loading watch history: " + ex.Message);
+            }
+        }
+
+        private static async Task SaveWatchHistory()
+        {
+            try
+            {
+                var localFolder = ApplicationData.Current.LocalFolder;
+                var file = await localFolder.CreateFileAsync(WatchHistoryKey, CreationCollisionOption.ReplaceExisting);
+
+                string historyData = Newtonsoft.Json.JsonConvert.SerializeObject(watchHistory);
+                await FileIO.WriteTextAsync(file, historyData);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Error saving watch history: " + ex.Message);
+            }
+        }
 
         private static readonly List<string> DefaultSeedVideoIds = new List<string>
         {

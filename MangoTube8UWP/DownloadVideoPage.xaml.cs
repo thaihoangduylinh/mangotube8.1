@@ -105,6 +105,11 @@ namespace MangoTube8UWP
             Frame.Navigate(typeof(DownloadsPage));
         }
 
+        private void History_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(WatchHistory));
+        }
+
 
         private async Task SaveDownloadMetadata(string videoId, string title, string videoUrl, string audioUrl,
                                            string videoFilePath, string audioFilePath, string description,
@@ -199,7 +204,6 @@ namespace MangoTube8UWP
                     break;
 
                 default:
-                    SetPortraitMode();
                     Debug.WriteLine("Unknown Orientation");
                     break;
             }
@@ -724,6 +728,8 @@ namespace MangoTube8UWP
         {
             base.OnNavigatedFrom(e);
 
+            syncTimer.Stop();
+
             HardwareButtons.BackPressed -= HardwareButtons_BackPressed;
         }
 
@@ -739,9 +745,6 @@ namespace MangoTube8UWP
                 e.Handled = false;
             }
         }
-
-     
-
       
 
         private void MainPivot_Loaded(object sender, RoutedEventArgs e)

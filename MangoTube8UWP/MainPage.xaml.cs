@@ -22,6 +22,8 @@ using Windows.Graphics.Display;
 using Windows.Foundation;
 using Windows.UI.Xaml.Navigation;
 using Windows.Phone.UI.Input;
+using Windows.UI.Notifications;
+using Windows.Data.Xml.Dom;
 
 namespace MangoTube8UWP
 {
@@ -581,15 +583,15 @@ namespace MangoTube8UWP
 
             catch (HttpRequestException httpEx)
             {
-                var messageDialog = new Windows.UI.Popups.MessageDialog("Error fetching recommended videos");
-                await messageDialog.ShowAsync();
+   
+                ShowToastNotification("Error", "Error fetching recommended videos");
+
                 System.Diagnostics.Debug.WriteLine("HTTP request error details: " +
                     (httpEx.InnerException != null ? httpEx.InnerException.Message : "No inner exception"));
             }
             catch (Exception ex)
             {
-                var messageDialog = new Windows.UI.Popups.MessageDialog("Error fetching recommended videos");
-                await messageDialog.ShowAsync();
+      
             }
             finally
             {
@@ -668,6 +670,63 @@ namespace MangoTube8UWP
             }
         }
 
+        private bool IsAppOffline()
+        {
+            try
+            {
+                var internetConnectionProfile = Windows.Networking.Connectivity.NetworkInformation.GetInternetConnectionProfile();
+
+                return internetConnectionProfile == null ||
+                       internetConnectionProfile.GetNetworkConnectivityLevel() ==
+                       Windows.Networking.Connectivity.NetworkConnectivityLevel.None;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Error checking network status: " + ex.Message);
+                return true;
+            }
+        }
+
+        private void ShowToastNotification(string title, string message)
+        {
+            try
+            {
+
+                ToastTemplateType toastTemplate = ToastTemplateType.ToastText04;
+
+                XmlDocument toastXml = ToastNotificationManager.GetTemplateContent(toastTemplate);
+
+                XmlNodeList toastTextElements = toastXml.GetElementsByTagName("text");
+
+                if (toastTextElements.Length >= 3)
+                {
+
+                    toastTextElements[0].AppendChild(toastXml.CreateTextNode(message));
+
+                    toastTextElements[1].AppendChild(toastXml.CreateTextNode(""));
+
+                }
+                else
+                {
+                    Debug.WriteLine("Error: Not enough text elements in the template.");
+                }
+
+                IXmlNode toastNode = toastXml.SelectSingleNode("/toast");
+
+                ((XmlElement)toastNode).SetAttribute("duration", "long");
+
+                ToastNotification toast = new ToastNotification(toastXml);
+
+                toast.ExpirationTime = DateTimeOffset.UtcNow.AddSeconds(3600);
+
+                ToastNotificationManager.CreateToastNotifier().Show(toast);
+            }
+            catch (Exception ex)
+            {
+
+                Debug.WriteLine($"Error showing toast notification: {ex.Message}");
+            }
+        }
 
         public async Task<LikesDislikesInfo> GetLikeDislikeCounts(string videoId)
         {
@@ -724,6 +783,12 @@ namespace MangoTube8UWP
                         Debug.WriteLine($"Updated Header for PivotItem with Tag {pivotItem.Tag} to: {pivotItem.Tag}");
                     }
 
+                    if (IsAppOffline())
+                    {
+                        ShowToastNotification("App Offline", "Downloads Only");
+                        break;
+                    }
+
                     if (pivotItem.Tag.ToString() == "trending" && !IsTrendingLoaded)
                     {
                         Debug.WriteLine("Loading Trending Videos...");
@@ -731,6 +796,7 @@ namespace MangoTube8UWP
                         FetchVideos(YouTubeFeed.Trending);
                         IsTrendingLoaded = true;
                         hasSelectionChanged = true;
+ 
                     }
 
                     else if (pivotItem.Tag.ToString() == "spotlight" && !IsSpotlightLoaded)
@@ -761,6 +827,11 @@ namespace MangoTube8UWP
         private void Downloads_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
         {
             Frame.Navigate(typeof(DownloadsPage));
+        }
+
+        private void History_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(WatchHistory));
         }
 
         private void AddVideoCard(VideoDetails video, ItemsControl itemsControl)
@@ -858,7 +929,19 @@ namespace MangoTube8UWP
                     return;
                 }
 
-                string videoId = border.Tag.ToString();
+                string tagData = border.Tag.ToString();
+                string[] parts = tagData.Split(',');
+
+                if (parts.Length < 4)
+                {
+                    Debug.WriteLine("Tag data is in an unexpected format.");
+                    return;
+                }
+
+                string videoId = parts[0];
+                string title = parts[1];
+                string author = parts[2];
+                string thumbnailURL = parts[3];
 
                 if (string.IsNullOrEmpty(videoId))
                 {
@@ -870,19 +953,26 @@ namespace MangoTube8UWP
 
                 Settings.AddSeedVideoId(videoId);
 
-                // Construct query string directly
+                var watchHistoryItem = new WatchHistoryItem
+                {
+                    VideoId = videoId,
+                    Title = title,
+                    Author = author,
+                    ThumbnailURL = thumbnailURL
+                };
+
+                Settings.AddToWatchHistory(watchHistoryItem); 
+
                 string queryString = "?videoId=" + Uri.EscapeDataString(videoId);
                 Debug.WriteLine("Navigating to: /VideoPage.xaml" + queryString);
 
-                // Pass just the query string part in Frame.Navigate
-                Frame.Navigate(typeof(VideoPage), queryString);  // Passing query string only
+                Frame.Navigate(typeof(VideoPage), queryString);
             }
             catch (Exception ex)
             {
                 Debug.WriteLine($"Exception caught in Border_Tapped: {ex.Message}");
             }
         }
-
 
         private Border CreateVideoCard(VideoDetails video)
         {
@@ -896,7 +986,7 @@ namespace MangoTube8UWP
                 Width = double.NaN
             };
 
-            border.Tag = video.VideoId;
+            border.Tag = $"{video.VideoId},{video.Title},{video.Author},{video.Thumbnail}";
 
             border.Tapped += Border_Tapped;
 

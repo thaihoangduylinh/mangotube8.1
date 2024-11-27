@@ -158,6 +158,9 @@
     <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\DefaultAvatar.png">
       <PackagePath>Assets\DefaultAvatar.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\DefaultBanner.png">
+      <PackagePath>Assets\DefaultBanner.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\DefaultThumbnail.png">
       <PackagePath>Assets\DefaultThumbnail.png</PackagePath>
     </AppxPackagedFile>
@@ -175,6 +178,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\GamingIcon.png">
       <PackagePath>Assets\GamingIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\HistoryIcon.png">
+      <PackagePath>Assets\HistoryIcon.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
@@ -266,6 +272,9 @@
     <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\ChannelPage.xbf">
+      <PackagePath>ChannelPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\DownloadsPage.xbf">
       <PackagePath>DownloadsPage.xbf</PackagePath>
     </AppxPackagedFile>
@@ -283,6 +292,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\VideoPage.xbf">
       <PackagePath>VideoPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\WatchHistoryPage.xbf">
+      <PackagePath>WatchHistoryPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

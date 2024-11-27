@@ -326,6 +326,10 @@ namespace MangoTube8UWP
             Frame.Navigate(typeof(DownloadsPage));
         }
 
+        private void History_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(WatchHistory));
+        }
 
         private void Border_Tap(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
         {
@@ -339,7 +343,19 @@ namespace MangoTube8UWP
                     return;
                 }
 
-                string videoId = border.Tag.ToString();
+                string tagData = border.Tag.ToString();
+                string[] parts = tagData.Split(',');
+
+                if (parts.Length < 4)
+                {
+                    Debug.WriteLine("Tag data is in an unexpected format.");
+                    return;
+                }
+
+                string videoId = parts[0];
+                string title = parts[1];
+                string author = parts[2];
+                string thumbnailURL = parts[3];
 
                 if (string.IsNullOrEmpty(videoId))
                 {
@@ -351,11 +367,20 @@ namespace MangoTube8UWP
 
                 Settings.AddSeedVideoId(videoId);
 
+                var watchHistoryItem = new WatchHistoryItem
+                {
+                    VideoId = videoId,
+                    Title = title,
+                    Author = author,
+                    ThumbnailURL = thumbnailURL
+                };
+
+                Settings.AddToWatchHistory(watchHistoryItem); 
+                
                 string queryString = "?videoId=" + Uri.EscapeDataString(videoId);
                 Debug.WriteLine("Navigating to: /VideoPage.xaml" + queryString);
 
-                // Pass just the query string part in Frame.Navigate
-                Frame.Navigate(typeof(VideoPage), queryString);  // Passing query string only
+                Frame.Navigate(typeof(VideoPage), queryString);
             }
             catch (Exception ex)
             {
@@ -459,7 +484,7 @@ namespace MangoTube8UWP
                 BorderBrush = new SolidColorBrush(Colors.Transparent),
                 BorderThickness = new Thickness(0),
                 Background = new SolidColorBrush(Colors.Transparent),
-                Tag = video.VideoId
+                Tag = $"{video.VideoId},{video.Title},{video.Author},{video.Thumbnail}"
             };
 
             videoCardBorder.Tapped += Border_Tap;

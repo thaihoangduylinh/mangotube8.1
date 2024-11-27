@@ -72,6 +72,8 @@ namespace MangoTube8UWP
         private static string Aurthor;
         private static string Date;
 
+        private static string BrowserID;
+
         private FolderPicker picker;
 
 
@@ -115,6 +117,11 @@ namespace MangoTube8UWP
         {
 
             ShowToastNotification("Download Started", "Your download has begun, you'll get a notification when done...");
+
+            if(isUsingSeparateAudio)
+            {
+                ShowMessage("Warning This Will Take A Long Time To Download (Blame YouTube)! Try Mediuim For MUCH Faster Downloads.");
+            }
 
             await StartDownloadAsync(localVideoId, Title, videoURL, audioURL);
 
@@ -216,8 +223,6 @@ namespace MangoTube8UWP
                     var progress = operation.Progress;
                     Debug.WriteLine($"Video download progress: {progress.BytesReceived} bytes downloaded of {progress.TotalBytesToReceive} bytes.");
                 });
-
-
 
 
                 var videoDownloadTask = videoDownloadOperation.StartAsync().AsTask();
@@ -352,7 +357,18 @@ namespace MangoTube8UWP
             Frame.Navigate(typeof(DownloadsPage));
         }
 
+        private void History_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(WatchHistory));
+        }
 
+        private void Profile_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            string queryString = $"browseId={BrowserID}";
+            Frame.Navigate(typeof(ChannelPage), queryString);
+        }
+
+        
         private async Task SaveDownloadMetadata(string videoId, string title, string videoUrl, string audioUrl,
                                            string videoFilePath, string audioFilePath, string description,
                                            string subs, string views, string authorPFPURL, string thumbnailURL, string aurthor)
@@ -426,28 +442,31 @@ namespace MangoTube8UWP
                 case DisplayOrientations.Portrait:
                     SetPortraitMode();
                     DisplayInformation.AutoRotationPreferences = DisplayOrientations.Portrait | DisplayOrientations.Landscape;
+                    AppBar.Visibility = Visibility.Visible;
                     Debug.WriteLine("Current Orientation: Portrait");
                     break;
 
                 case DisplayOrientations.Landscape:        
                     SetLandscapeMode();
                     VideoPlayer.IsFullScreen = true;
+                    AppBar.Visibility = Visibility.Collapsed;
                     Debug.WriteLine("Current Orientation: Landscape");
                     break;
 
                 case DisplayOrientations.PortraitFlipped:
                     SetPortraitMode();
                     DisplayInformation.AutoRotationPreferences = DisplayOrientations.Portrait | DisplayOrientations.Landscape;
+                    AppBar.Visibility = Visibility.Visible;
                     Debug.WriteLine("Current Orientation: Flipped Portrait");
                     break;
 
                 case DisplayOrientations.LandscapeFlipped:
                     SetLandscapeMode();
+                    AppBar.Visibility = Visibility.Collapsed;
                     VideoPlayer.IsFullScreen = true;
                     break;
 
                 default:
-                    SetPortraitMode();
                     Debug.WriteLine("Unknown Orientation");
                     break;
             }
@@ -807,47 +826,51 @@ namespace MangoTube8UWP
             {
                 try
                 {
-
                     string videoUrl = $"https://www.youtube.com/youtubei/v1/player?key={Settings.InnerTubeApiKey}";
-
                     DateTime currentUtcDateTime = DateTime.UtcNow;
                     long signatureTimestamp = (long)(currentUtcDateTime - new DateTime(1970, 1, 1)).TotalSeconds;
-
                     var contextData = new
                     {
-                        videoId = videoId,
                         context = new
                         {
                             client = new
                             {
                                 hl = "en",
                                 gl = "US",
-                                clientName = "ANDROID_VR",
-                                clientVersion = "1.57.29",
-                                deviceMake = "Oculus",
-                                deviceModel = "Quest 3",
-                                androidSdkVersion = "32",
-                                userAgent = "com.google.android.apps.youtube.vr.oculus/1.57.29 (Linux; U; Android 12L; eureka-user Build/SQ3A.220605.009.A1) gzip",
-                                osName = "Android",
-                                osVersion = "12L"
+                                clientName = "ANDROID",
+                                clientVersion = "19.02.39",
+                                androidSdkVersion = 34,
+                                mainAppWebInfo = new
+                                {
+                                    graftUrl = $"/watch?v={videoId}"
+                                }
                             }
                         },
                         playbackContext = new
                         {
-                            contentPlaybackContext = new
-                            {
-                                signatureTimestamp = signatureTimestamp
-                            }
-                        }
+                            vis = 0,
+                            lactMilliseconds = "1"
+                        },
+                        videoId = videoId,
+                        racyCheckOk = true,
+                        contentCheckOk = true
                     };
-
                     string jsonRequestBody = Newtonsoft.Json.JsonConvert.SerializeObject(contextData);
                     var content = new StringContent(jsonRequestBody, Encoding.UTF8, "application/json");
-
-                    HttpResponseMessage videoResponse = await _httpClient.PostAsync(videoUrl, content);
+                    var requestHeaders = new Dictionary<string, string>
+                    {
+                        { "User-Agent", "com.google.android.youtube/19.02.39 (Linux; U; Android 14) gzip" },
+                        { "Referer", "https://www.youtube.com/" },
+                        { "Referrer-Policy", "strict-origin-when-cross-origin" }
+                    };
+                    var client = new HttpClient();
+                    foreach (var header in requestHeaders)
+                    {
+                        client.DefaultRequestHeaders.Add(header.Key, header.Value);
+                    }
+                    HttpResponseMessage videoResponse = await client.PostAsync(videoUrl, content);
                     videoResponse.EnsureSuccessStatusCode();
                     string videoStreamJson = await videoResponse.Content.ReadAsStringAsync();
-
                     return videoStreamJson;
                 }
                 catch (Exception ex)
@@ -1776,7 +1799,7 @@ namespace MangoTube8UWP
                 Subs = videoDetailsTab.Subcribers;
                 ThumbnailURL = $"https://i.ytimg.com/vi/{videoId}/hqdefault.jpg";
                 AurthorPFPURL = authorDetails.AvatarUrl;
-                Aurthor = authorDetails.Name;
+                Aurthor = authorDetails.Name;           
 
                 VideoTitle.Text = videoDetailsTab.Title;
 
@@ -1809,6 +1832,22 @@ namespace MangoTube8UWP
                 Debug.WriteLine($"Name {authorDetails.Name}");
 
                 Debug.WriteLine($"Author Avatar URL: {authorDetails.AvatarUrl}");
+
+                var browseId = authorJsonResponse
+                       .SelectToken("..videoSecondaryInfoRenderer.owner.videoOwnerRenderer.title.runs[0].navigationEndpoint.browseEndpoint.browseId")?.ToString();
+
+
+                if (!string.IsNullOrEmpty(browseId))
+                {
+                    Debug.WriteLine("Found browseId: " + browseId);
+                }
+                else
+                {
+                    Debug.WriteLine("browseId not found.");
+                }
+
+                BrowserID = browseId;
+
             }
             catch (Exception ex)
             {
@@ -1823,6 +1862,41 @@ namespace MangoTube8UWP
                 AdjustGridHeight();
 
             }
+        }
+
+        private string FindBrowseId(JObject jsonObject)
+        {
+
+            foreach (var property in jsonObject.Properties())
+            {
+                if (property.Value is JObject)
+                {
+                    JObject nestedObject = property.Value as JObject;
+                    if (nestedObject != null)
+                    {
+                        string browseId = FindBrowseId(nestedObject);
+                        if (!string.IsNullOrEmpty(browseId))
+                        {
+                            return browseId; 
+                        }
+                    }
+                }
+
+                if (property.Name.Equals("browseEndpoint", StringComparison.OrdinalIgnoreCase))
+                {
+                    JObject browseEndpoint = property.Value as JObject;
+                    if (browseEndpoint != null)
+                    {
+                        var browseIdToken = browseEndpoint["browseId"];
+                        if (browseIdToken != null)
+                        {
+                            return browseIdToken.ToString();
+                        }
+                    }
+                }
+            }
+
+            return null;
         }
 
         private void SetVideoDescriptionWithLinks(string description)
@@ -2320,6 +2394,8 @@ namespace MangoTube8UWP
         {
             base.OnNavigatedFrom(e);
 
+            syncTimer.Stop();
+
             HardwareButtons.BackPressed -= HardwareButtons_BackPressed;
         }
 
@@ -2335,7 +2411,19 @@ namespace MangoTube8UWP
                     return;
                 }
 
-                string videoId = border.Tag.ToString();
+                string tagData = border.Tag.ToString();
+                string[] parts = tagData.Split(',');
+
+                if (parts.Length < 4)
+                {
+                    Debug.WriteLine("Tag data is in an unexpected format.");
+                    return;
+                }
+
+                string videoId = parts[0];
+                string title = parts[1];
+                string author = parts[2];
+                string thumbnailURL = parts[3];
 
                 if (string.IsNullOrEmpty(videoId))
                 {
@@ -2347,10 +2435,20 @@ namespace MangoTube8UWP
 
                 Settings.AddSeedVideoId(videoId);
 
+                var watchHistoryItem = new WatchHistoryItem
+                {
+                    VideoId = videoId,
+                    Title = title,
+                    Author = author,
+                    ThumbnailURL = thumbnailURL
+                };
+
+                Settings.AddToWatchHistory(watchHistoryItem);
+
                 string queryString = "?videoId=" + Uri.EscapeDataString(videoId);
                 Debug.WriteLine("Navigating to: /VideoPage.xaml" + queryString);
 
-                Frame.Navigate(typeof(VideoPage), queryString); 
+                Frame.Navigate(typeof(VideoPage), queryString);
             }
             catch (Exception ex)
             {
@@ -2479,7 +2577,7 @@ namespace MangoTube8UWP
                 BorderBrush = new SolidColorBrush(Colors.Transparent),
                 BorderThickness = new Thickness(0),
                 Background = new SolidColorBrush(Colors.Transparent),
-                Tag = video.VideoId
+                Tag = $"{video.VideoId},{video.Title},{video.Author},{video.Thumbnail}"
             };
 
             videoCardBorder.Tapped += Border_Tap;

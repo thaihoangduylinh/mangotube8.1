@@ -133,6 +133,10 @@ namespace MangoTube8UWP
             Frame.Navigate(typeof(DownloadsPage));
         }
 
+        private void History_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(WatchHistory));
+        }
 
         private void AddVideoCard(DownloadVideoDetail video, ItemsControl itemsControl)
         {

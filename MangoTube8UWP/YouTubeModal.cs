@@ -130,6 +130,23 @@ namespace MangoTube8UWP
             public string AudioFilePath { get; set; }
         }
 
+        public class WatchHistoryItem
+        {
+            public string ThumbnailURL { get; set; }
+            public string Title { get; set; }
+            public string Author { get; set; }
+            public string VideoId { get; set; }
+        }
+
+        public class ChannelsDetails
+        {          
+            public string BannerURL { get; set; }
+            public string Title { get; set; }
+            public string Subs { get; set; }
+            public string ProfilePictureURL { get; set; }
+            public string TotalViews { get; set; }
+        }
+
 
     }
 }

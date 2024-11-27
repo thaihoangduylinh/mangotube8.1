@@ -144,3 +144,13 @@ C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UW
 C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\obj\x86\Debug\DownloadVideoPage.g.cs
 C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\obj\x86\Debug\DownloadVideoPage.xaml
 C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\obj\x86\Debug\DownloadVideoPage.xbf
+C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\WatchHistoryPage.xbf
+C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\obj\x86\Debug\WatchHistoryPage.g.i.cs
+C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\obj\x86\Debug\WatchHistoryPage.g.cs
+C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\obj\x86\Debug\WatchHistoryPage.xaml
+C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\obj\x86\Debug\WatchHistoryPage.xbf
+C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\ChannelPage.xbf
+C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\obj\x86\Debug\ChannelPage.g.i.cs
+C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\obj\x86\Debug\ChannelPage.g.cs
+C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\obj\x86\Debug\ChannelPage.xaml
+C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\obj\x86\Debug\ChannelPage.xbf

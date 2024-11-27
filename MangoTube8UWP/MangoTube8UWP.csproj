@@ -84,6 +84,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ChannelPage.xaml.cs">
+      <DependentUpon>ChannelPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DownloadsPage.xaml.cs">
       <DependentUpon>DownloadsPage.xaml</DependentUpon>
     </Compile>
@@ -105,6 +108,9 @@
     <Compile Include="VideoPage.xaml.cs">
       <DependentUpon>VideoPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WatchHistoryPage.xaml.cs">
+      <DependentUpon>WatchHistoryPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="YouTubeFeed.cs" />
     <Compile Include="YouTubeModal.cs" />
   </ItemGroup>
@@ -119,12 +125,14 @@
     <Content Include="Assets\BadgeLogo.scale-240.png" />
     <Content Include="Assets\BaseCircle.png" />
     <Content Include="Assets\DefaultAvatar.png" />
+    <Content Include="Assets\DefaultBanner.png" />
     <Content Include="Assets\DefaultThumbnail.png" />
     <Content Include="Assets\DownloadIcon.png" />
     <Content Include="Assets\EduactionIcon.png" />
     <Content Include="Assets\FullScreenExpend.png" />
     <Content Include="Assets\FullScreenShrink.png" />
     <Content Include="Assets\GamingIcon.png" />
+    <Content Include="Assets\HistoryIcon.png" />
     <Content Include="Assets\Logo.scale-240.png" />
     <Content Include="Assets\MangoTube8Logo.png" />
     <Content Include="Assets\MangoTube8LogoDark.png" />
@@ -157,6 +165,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="ChannelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DownloadsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -178,6 +190,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="VideoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WatchHistoryPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

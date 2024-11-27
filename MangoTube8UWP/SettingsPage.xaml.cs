@@ -83,6 +83,10 @@ namespace MangoTube8UWP
             Frame.Navigate(typeof(DownloadsPage));
         }
 
+        private void History_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(WatchHistory));
+        }
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {

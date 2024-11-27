@@ -148,133 +148,137 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[62];
-            _typeNameTable[0] = "MangoTube8UWP.MainPage";
+            _typeNameTable = new string[64];
+            _typeNameTable[0] = "MangoTube8UWP.DownloadsPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "MangoTube8UWP.SearchPage";
-            _typeNameTable[4] = "MangoTube8UWP.SettingsPage";
-            _typeNameTable[5] = "Microsoft.PlayerFramework.BufferingView";
-            _typeNameTable[6] = "Windows.UI.Xaml.Controls.Control";
-            _typeNameTable[7] = "Microsoft.PlayerFramework.IInteractiveViewModel";
-            _typeNameTable[8] = "Microsoft.PlayerFramework.MediaPlayer";
-            _typeNameTable[9] = "Boolean";
-            _typeNameTable[10] = "Windows.UI.Xaml.Media.Stretch";
-            _typeNameTable[11] = "System.Collections.Generic.IList`1<System.Type>";
-            _typeNameTable[12] = "System.Type";
-            _typeNameTable[13] = "Object";
-            _typeNameTable[14] = "String";
-            _typeNameTable[15] = "Int32";
-            _typeNameTable[16] = "System.Type[]";
-            _typeNameTable[17] = "System.Array";
-            _typeNameTable[18] = "System.RuntimeTypeHandle";
-            _typeNameTable[19] = "System.ValueType";
-            _typeNameTable[20] = "System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.IPlugin>";
-            _typeNameTable[21] = "System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.IPlugin>";
-            _typeNameTable[22] = "Microsoft.PlayerFramework.IPlugin";
-            _typeNameTable[23] = "Windows.UI.Xaml.Data.IValueConverter";
-            _typeNameTable[24] = "System.Nullable`1<TimeSpan>";
-            _typeNameTable[25] = "System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.VisualMarker>";
-            _typeNameTable[26] = "System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.VisualMarker>";
-            _typeNameTable[27] = "Microsoft.PlayerFramework.VisualMarker";
-            _typeNameTable[28] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[29] = "TimeSpan";
-            _typeNameTable[30] = "Windows.UI.Xaml.Style";
-            _typeNameTable[31] = "Windows.UI.Xaml.Media.TimelineMarkerCollection";
-            _typeNameTable[32] = "Double";
-            _typeNameTable[33] = "Microsoft.PlayerFramework.MediaQuality";
-            _typeNameTable[34] = "System.Enum";
-            _typeNameTable[35] = "Microsoft.PlayerFramework.AdvertisingState";
-            _typeNameTable[36] = "Microsoft.PlayerFramework.MediaEndedBehavior";
-            _typeNameTable[37] = "System.Collections.Generic.List`1<Microsoft.PlayerFramework.Caption>";
-            _typeNameTable[38] = "Microsoft.PlayerFramework.Caption";
-            _typeNameTable[39] = "Windows.UI.Xaml.FrameworkElement";
-            _typeNameTable[40] = "System.Uri";
-            _typeNameTable[41] = "System.Collections.Generic.List`1<Microsoft.PlayerFramework.AudioStream>";
-            _typeNameTable[42] = "Microsoft.PlayerFramework.AudioStream";
-            _typeNameTable[43] = "Windows.UI.Xaml.Media.ImageSource";
-            _typeNameTable[44] = "Windows.Media.MediaExtensionManager";
-            _typeNameTable[45] = "Windows.UI.Xaml.Media.AudioCategory";
-            _typeNameTable[46] = "Windows.UI.Xaml.Media.AudioDeviceType";
-            _typeNameTable[47] = "Windows.Media.PlayTo.PlayToSource";
-            _typeNameTable[48] = "Windows.UI.Xaml.Media.Stereo3DVideoPackingMode";
-            _typeNameTable[49] = "Windows.UI.Xaml.Media.Stereo3DVideoRenderMode";
-            _typeNameTable[50] = "Windows.Media.Protection.MediaProtectionManager";
-            _typeNameTable[51] = "System.Nullable`1<Int32>";
-            _typeNameTable[52] = "Windows.UI.Xaml.Duration";
-            _typeNameTable[53] = "Windows.UI.Xaml.Media.MediaElementState";
-            _typeNameTable[54] = "System.Collections.Generic.IList`1<Double>";
-            _typeNameTable[55] = "Windows.UI.Xaml.Controls.ControlTemplate";
-            _typeNameTable[56] = "System.Collections.Generic.IList`1<Windows.UI.Xaml.UIElement>";
-            _typeNameTable[57] = "Windows.UI.Xaml.UIElement";
-            _typeNameTable[58] = "Microsoft.PlayerFramework.InteractionType";
-            _typeNameTable[59] = "Microsoft.PlayerFramework.AutoHideBehavior";
-            _typeNameTable[60] = "Microsoft.PlayerFramework.PlayerState";
-            _typeNameTable[61] = "MangoTube8UWP.VideoPage";
+            _typeNameTable[3] = "MangoTube8UWP.MainPage";
+            _typeNameTable[4] = "MangoTube8UWP.SearchPage";
+            _typeNameTable[5] = "MangoTube8UWP.SettingsPage";
+            _typeNameTable[6] = "Microsoft.PlayerFramework.BufferingView";
+            _typeNameTable[7] = "Windows.UI.Xaml.Controls.Control";
+            _typeNameTable[8] = "Microsoft.PlayerFramework.IInteractiveViewModel";
+            _typeNameTable[9] = "Microsoft.PlayerFramework.MediaPlayer";
+            _typeNameTable[10] = "Boolean";
+            _typeNameTable[11] = "Windows.UI.Xaml.Media.Stretch";
+            _typeNameTable[12] = "System.Collections.Generic.IList`1<System.Type>";
+            _typeNameTable[13] = "System.Type";
+            _typeNameTable[14] = "Object";
+            _typeNameTable[15] = "String";
+            _typeNameTable[16] = "Int32";
+            _typeNameTable[17] = "System.Type[]";
+            _typeNameTable[18] = "System.Array";
+            _typeNameTable[19] = "System.RuntimeTypeHandle";
+            _typeNameTable[20] = "System.ValueType";
+            _typeNameTable[21] = "System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.IPlugin>";
+            _typeNameTable[22] = "System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.IPlugin>";
+            _typeNameTable[23] = "Microsoft.PlayerFramework.IPlugin";
+            _typeNameTable[24] = "Windows.UI.Xaml.Data.IValueConverter";
+            _typeNameTable[25] = "System.Nullable`1<TimeSpan>";
+            _typeNameTable[26] = "System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.VisualMarker>";
+            _typeNameTable[27] = "System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.VisualMarker>";
+            _typeNameTable[28] = "Microsoft.PlayerFramework.VisualMarker";
+            _typeNameTable[29] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[30] = "TimeSpan";
+            _typeNameTable[31] = "Windows.UI.Xaml.Style";
+            _typeNameTable[32] = "Windows.UI.Xaml.Media.TimelineMarkerCollection";
+            _typeNameTable[33] = "Double";
+            _typeNameTable[34] = "Microsoft.PlayerFramework.MediaQuality";
+            _typeNameTable[35] = "System.Enum";
+            _typeNameTable[36] = "Microsoft.PlayerFramework.AdvertisingState";
+            _typeNameTable[37] = "Microsoft.PlayerFramework.MediaEndedBehavior";
+            _typeNameTable[38] = "System.Collections.Generic.List`1<Microsoft.PlayerFramework.Caption>";
+            _typeNameTable[39] = "Microsoft.PlayerFramework.Caption";
+            _typeNameTable[40] = "Windows.UI.Xaml.FrameworkElement";
+            _typeNameTable[41] = "System.Uri";
+            _typeNameTable[42] = "System.Collections.Generic.List`1<Microsoft.PlayerFramework.AudioStream>";
+            _typeNameTable[43] = "Microsoft.PlayerFramework.AudioStream";
+            _typeNameTable[44] = "Windows.UI.Xaml.Media.ImageSource";
+            _typeNameTable[45] = "Windows.Media.MediaExtensionManager";
+            _typeNameTable[46] = "Windows.UI.Xaml.Media.AudioCategory";
+            _typeNameTable[47] = "Windows.UI.Xaml.Media.AudioDeviceType";
+            _typeNameTable[48] = "Windows.Media.PlayTo.PlayToSource";
+            _typeNameTable[49] = "Windows.UI.Xaml.Media.Stereo3DVideoPackingMode";
+            _typeNameTable[50] = "Windows.UI.Xaml.Media.Stereo3DVideoRenderMode";
+            _typeNameTable[51] = "Windows.Media.Protection.MediaProtectionManager";
+            _typeNameTable[52] = "System.Nullable`1<Int32>";
+            _typeNameTable[53] = "Windows.UI.Xaml.Duration";
+            _typeNameTable[54] = "Windows.UI.Xaml.Media.MediaElementState";
+            _typeNameTable[55] = "System.Collections.Generic.IList`1<Double>";
+            _typeNameTable[56] = "Windows.UI.Xaml.Controls.ControlTemplate";
+            _typeNameTable[57] = "System.Collections.Generic.IList`1<Windows.UI.Xaml.UIElement>";
+            _typeNameTable[58] = "Windows.UI.Xaml.UIElement";
+            _typeNameTable[59] = "Microsoft.PlayerFramework.InteractionType";
+            _typeNameTable[60] = "Microsoft.PlayerFramework.AutoHideBehavior";
+            _typeNameTable[61] = "Microsoft.PlayerFramework.PlayerState";
+            _typeNameTable[62] = "MangoTube8UWP.VideoDownloadPage";
+            _typeNameTable[63] = "MangoTube8UWP.VideoPage";
 
-            _typeTable = new global::System.Type[62];
-            _typeTable[0] = typeof(global::MangoTube8UWP.MainPage);
+            _typeTable = new global::System.Type[64];
+            _typeTable[0] = typeof(global::MangoTube8UWP.DownloadsPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::MangoTube8UWP.SearchPage);
-            _typeTable[4] = typeof(global::MangoTube8UWP.SettingsPage);
-            _typeTable[5] = typeof(global::Microsoft.PlayerFramework.BufferingView);
-            _typeTable[6] = typeof(global::Windows.UI.Xaml.Controls.Control);
-            _typeTable[7] = typeof(global::Microsoft.PlayerFramework.IInteractiveViewModel);
-            _typeTable[8] = typeof(global::Microsoft.PlayerFramework.MediaPlayer);
-            _typeTable[9] = typeof(global::System.Boolean);
-            _typeTable[10] = typeof(global::Windows.UI.Xaml.Media.Stretch);
-            _typeTable[11] = typeof(global::System.Collections.Generic.IList<global::System.Type>);
-            _typeTable[12] = typeof(global::System.Type);
-            _typeTable[13] = typeof(global::System.Object);
-            _typeTable[14] = typeof(global::System.String);
-            _typeTable[15] = typeof(global::System.Int32);
-            _typeTable[16] = typeof(global::System.Type[]);
-            _typeTable[17] = typeof(global::System.Array);
-            _typeTable[18] = typeof(global::System.RuntimeTypeHandle);
-            _typeTable[19] = typeof(global::System.ValueType);
-            _typeTable[20] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.PlayerFramework.IPlugin>);
-            _typeTable[21] = typeof(global::System.Collections.ObjectModel.Collection<global::Microsoft.PlayerFramework.IPlugin>);
-            _typeTable[22] = typeof(global::Microsoft.PlayerFramework.IPlugin);
-            _typeTable[23] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
-            _typeTable[24] = typeof(global::System.Nullable<global::System.TimeSpan>);
-            _typeTable[25] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.PlayerFramework.VisualMarker>);
-            _typeTable[26] = typeof(global::System.Collections.ObjectModel.Collection<global::Microsoft.PlayerFramework.VisualMarker>);
-            _typeTable[27] = typeof(global::Microsoft.PlayerFramework.VisualMarker);
-            _typeTable[28] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[29] = typeof(global::System.TimeSpan);
-            _typeTable[30] = typeof(global::Windows.UI.Xaml.Style);
-            _typeTable[31] = typeof(global::Windows.UI.Xaml.Media.TimelineMarkerCollection);
-            _typeTable[32] = typeof(global::System.Double);
-            _typeTable[33] = typeof(global::Microsoft.PlayerFramework.MediaQuality);
-            _typeTable[34] = typeof(global::System.Enum);
-            _typeTable[35] = typeof(global::Microsoft.PlayerFramework.AdvertisingState);
-            _typeTable[36] = typeof(global::Microsoft.PlayerFramework.MediaEndedBehavior);
-            _typeTable[37] = typeof(global::System.Collections.Generic.List<global::Microsoft.PlayerFramework.Caption>);
-            _typeTable[38] = typeof(global::Microsoft.PlayerFramework.Caption);
-            _typeTable[39] = typeof(global::Windows.UI.Xaml.FrameworkElement);
-            _typeTable[40] = typeof(global::System.Uri);
-            _typeTable[41] = typeof(global::System.Collections.Generic.List<global::Microsoft.PlayerFramework.AudioStream>);
-            _typeTable[42] = typeof(global::Microsoft.PlayerFramework.AudioStream);
-            _typeTable[43] = typeof(global::Windows.UI.Xaml.Media.ImageSource);
-            _typeTable[44] = typeof(global::Windows.Media.MediaExtensionManager);
-            _typeTable[45] = typeof(global::Windows.UI.Xaml.Media.AudioCategory);
-            _typeTable[46] = typeof(global::Windows.UI.Xaml.Media.AudioDeviceType);
-            _typeTable[47] = typeof(global::Windows.Media.PlayTo.PlayToSource);
-            _typeTable[48] = typeof(global::Windows.UI.Xaml.Media.Stereo3DVideoPackingMode);
-            _typeTable[49] = typeof(global::Windows.UI.Xaml.Media.Stereo3DVideoRenderMode);
-            _typeTable[50] = typeof(global::Windows.Media.Protection.MediaProtectionManager);
-            _typeTable[51] = typeof(global::System.Nullable<global::System.Int32>);
-            _typeTable[52] = typeof(global::Windows.UI.Xaml.Duration);
-            _typeTable[53] = typeof(global::Windows.UI.Xaml.Media.MediaElementState);
-            _typeTable[54] = typeof(global::System.Collections.Generic.IList<global::System.Double>);
-            _typeTable[55] = typeof(global::Windows.UI.Xaml.Controls.ControlTemplate);
-            _typeTable[56] = typeof(global::System.Collections.Generic.IList<global::Windows.UI.Xaml.UIElement>);
-            _typeTable[57] = typeof(global::Windows.UI.Xaml.UIElement);
-            _typeTable[58] = typeof(global::Microsoft.PlayerFramework.InteractionType);
-            _typeTable[59] = typeof(global::Microsoft.PlayerFramework.AutoHideBehavior);
-            _typeTable[60] = typeof(global::Microsoft.PlayerFramework.PlayerState);
-            _typeTable[61] = typeof(global::MangoTube8UWP.VideoPage);
+            _typeTable[3] = typeof(global::MangoTube8UWP.MainPage);
+            _typeTable[4] = typeof(global::MangoTube8UWP.SearchPage);
+            _typeTable[5] = typeof(global::MangoTube8UWP.SettingsPage);
+            _typeTable[6] = typeof(global::Microsoft.PlayerFramework.BufferingView);
+            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.Control);
+            _typeTable[8] = typeof(global::Microsoft.PlayerFramework.IInteractiveViewModel);
+            _typeTable[9] = typeof(global::Microsoft.PlayerFramework.MediaPlayer);
+            _typeTable[10] = typeof(global::System.Boolean);
+            _typeTable[11] = typeof(global::Windows.UI.Xaml.Media.Stretch);
+            _typeTable[12] = typeof(global::System.Collections.Generic.IList<global::System.Type>);
+            _typeTable[13] = typeof(global::System.Type);
+            _typeTable[14] = typeof(global::System.Object);
+            _typeTable[15] = typeof(global::System.String);
+            _typeTable[16] = typeof(global::System.Int32);
+            _typeTable[17] = typeof(global::System.Type[]);
+            _typeTable[18] = typeof(global::System.Array);
+            _typeTable[19] = typeof(global::System.RuntimeTypeHandle);
+            _typeTable[20] = typeof(global::System.ValueType);
+            _typeTable[21] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.PlayerFramework.IPlugin>);
+            _typeTable[22] = typeof(global::System.Collections.ObjectModel.Collection<global::Microsoft.PlayerFramework.IPlugin>);
+            _typeTable[23] = typeof(global::Microsoft.PlayerFramework.IPlugin);
+            _typeTable[24] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
+            _typeTable[25] = typeof(global::System.Nullable<global::System.TimeSpan>);
+            _typeTable[26] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.PlayerFramework.VisualMarker>);
+            _typeTable[27] = typeof(global::System.Collections.ObjectModel.Collection<global::Microsoft.PlayerFramework.VisualMarker>);
+            _typeTable[28] = typeof(global::Microsoft.PlayerFramework.VisualMarker);
+            _typeTable[29] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[30] = typeof(global::System.TimeSpan);
+            _typeTable[31] = typeof(global::Windows.UI.Xaml.Style);
+            _typeTable[32] = typeof(global::Windows.UI.Xaml.Media.TimelineMarkerCollection);
+            _typeTable[33] = typeof(global::System.Double);
+            _typeTable[34] = typeof(global::Microsoft.PlayerFramework.MediaQuality);
+            _typeTable[35] = typeof(global::System.Enum);
+            _typeTable[36] = typeof(global::Microsoft.PlayerFramework.AdvertisingState);
+            _typeTable[37] = typeof(global::Microsoft.PlayerFramework.MediaEndedBehavior);
+            _typeTable[38] = typeof(global::System.Collections.Generic.List<global::Microsoft.PlayerFramework.Caption>);
+            _typeTable[39] = typeof(global::Microsoft.PlayerFramework.Caption);
+            _typeTable[40] = typeof(global::Windows.UI.Xaml.FrameworkElement);
+            _typeTable[41] = typeof(global::System.Uri);
+            _typeTable[42] = typeof(global::System.Collections.Generic.List<global::Microsoft.PlayerFramework.AudioStream>);
+            _typeTable[43] = typeof(global::Microsoft.PlayerFramework.AudioStream);
+            _typeTable[44] = typeof(global::Windows.UI.Xaml.Media.ImageSource);
+            _typeTable[45] = typeof(global::Windows.Media.MediaExtensionManager);
+            _typeTable[46] = typeof(global::Windows.UI.Xaml.Media.AudioCategory);
+            _typeTable[47] = typeof(global::Windows.UI.Xaml.Media.AudioDeviceType);
+            _typeTable[48] = typeof(global::Windows.Media.PlayTo.PlayToSource);
+            _typeTable[49] = typeof(global::Windows.UI.Xaml.Media.Stereo3DVideoPackingMode);
+            _typeTable[50] = typeof(global::Windows.UI.Xaml.Media.Stereo3DVideoRenderMode);
+            _typeTable[51] = typeof(global::Windows.Media.Protection.MediaProtectionManager);
+            _typeTable[52] = typeof(global::System.Nullable<global::System.Int32>);
+            _typeTable[53] = typeof(global::Windows.UI.Xaml.Duration);
+            _typeTable[54] = typeof(global::Windows.UI.Xaml.Media.MediaElementState);
+            _typeTable[55] = typeof(global::System.Collections.Generic.IList<global::System.Double>);
+            _typeTable[56] = typeof(global::Windows.UI.Xaml.Controls.ControlTemplate);
+            _typeTable[57] = typeof(global::System.Collections.Generic.IList<global::Windows.UI.Xaml.UIElement>);
+            _typeTable[58] = typeof(global::Windows.UI.Xaml.UIElement);
+            _typeTable[59] = typeof(global::Microsoft.PlayerFramework.InteractionType);
+            _typeTable[60] = typeof(global::Microsoft.PlayerFramework.AutoHideBehavior);
+            _typeTable[61] = typeof(global::Microsoft.PlayerFramework.PlayerState);
+            _typeTable[62] = typeof(global::MangoTube8UWP.VideoDownloadPage);
+            _typeTable[63] = typeof(global::MangoTube8UWP.VideoPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -309,72 +313,74 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::MangoTube8UWP.MainPage(); }
-        private object Activate_3_SearchPage() { return new global::MangoTube8UWP.SearchPage(); }
-        private object Activate_4_SettingsPage() { return new global::MangoTube8UWP.SettingsPage(); }
-        private object Activate_5_BufferingView() { return new global::Microsoft.PlayerFramework.BufferingView(); }
-        private object Activate_8_MediaPlayer() { return new global::Microsoft.PlayerFramework.MediaPlayer(); }
-        private object Activate_20_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.PlayerFramework.IPlugin>(); }
-        private object Activate_21_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Microsoft.PlayerFramework.IPlugin>(); }
-        private object Activate_25_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.PlayerFramework.VisualMarker>(); }
-        private object Activate_26_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Microsoft.PlayerFramework.VisualMarker>(); }
-        private object Activate_27_VisualMarker() { return new global::Microsoft.PlayerFramework.VisualMarker(); }
-        private object Activate_37_List() { return new global::System.Collections.Generic.List<global::Microsoft.PlayerFramework.Caption>(); }
-        private object Activate_38_Caption() { return new global::Microsoft.PlayerFramework.Caption(); }
-        private object Activate_41_List() { return new global::System.Collections.Generic.List<global::Microsoft.PlayerFramework.AudioStream>(); }
-        private object Activate_42_AudioStream() { return new global::Microsoft.PlayerFramework.AudioStream(); }
-        private object Activate_44_MediaExtensionManager() { return new global::Windows.Media.MediaExtensionManager(); }
-        private object Activate_50_MediaProtectionManager() { return new global::Windows.Media.Protection.MediaProtectionManager(); }
-        private object Activate_61_VideoPage() { return new global::MangoTube8UWP.VideoPage(); }
-        private void VectorAdd_11_IList(object instance, object item)
+        private object Activate_0_DownloadsPage() { return new global::MangoTube8UWP.DownloadsPage(); }
+        private object Activate_3_MainPage() { return new global::MangoTube8UWP.MainPage(); }
+        private object Activate_4_SearchPage() { return new global::MangoTube8UWP.SearchPage(); }
+        private object Activate_5_SettingsPage() { return new global::MangoTube8UWP.SettingsPage(); }
+        private object Activate_6_BufferingView() { return new global::Microsoft.PlayerFramework.BufferingView(); }
+        private object Activate_9_MediaPlayer() { return new global::Microsoft.PlayerFramework.MediaPlayer(); }
+        private object Activate_21_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.PlayerFramework.IPlugin>(); }
+        private object Activate_22_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Microsoft.PlayerFramework.IPlugin>(); }
+        private object Activate_26_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Microsoft.PlayerFramework.VisualMarker>(); }
+        private object Activate_27_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Microsoft.PlayerFramework.VisualMarker>(); }
+        private object Activate_28_VisualMarker() { return new global::Microsoft.PlayerFramework.VisualMarker(); }
+        private object Activate_38_List() { return new global::System.Collections.Generic.List<global::Microsoft.PlayerFramework.Caption>(); }
+        private object Activate_39_Caption() { return new global::Microsoft.PlayerFramework.Caption(); }
+        private object Activate_42_List() { return new global::System.Collections.Generic.List<global::Microsoft.PlayerFramework.AudioStream>(); }
+        private object Activate_43_AudioStream() { return new global::Microsoft.PlayerFramework.AudioStream(); }
+        private object Activate_45_MediaExtensionManager() { return new global::Windows.Media.MediaExtensionManager(); }
+        private object Activate_51_MediaProtectionManager() { return new global::Windows.Media.Protection.MediaProtectionManager(); }
+        private object Activate_62_VideoDownloadPage() { return new global::MangoTube8UWP.VideoDownloadPage(); }
+        private object Activate_63_VideoPage() { return new global::MangoTube8UWP.VideoPage(); }
+        private void VectorAdd_12_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Type>)instance;
             var newItem = (global::System.Type)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_20_ObservableCollection(object instance, object item)
+        private void VectorAdd_21_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.PlayerFramework.IPlugin>)instance;
             var newItem = (global::Microsoft.PlayerFramework.IPlugin)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_21_Collection(object instance, object item)
+        private void VectorAdd_22_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.PlayerFramework.IPlugin>)instance;
             var newItem = (global::Microsoft.PlayerFramework.IPlugin)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_25_ObservableCollection(object instance, object item)
+        private void VectorAdd_26_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.PlayerFramework.VisualMarker>)instance;
             var newItem = (global::Microsoft.PlayerFramework.VisualMarker)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_26_Collection(object instance, object item)
+        private void VectorAdd_27_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.PlayerFramework.VisualMarker>)instance;
             var newItem = (global::Microsoft.PlayerFramework.VisualMarker)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_37_List(object instance, object item)
+        private void VectorAdd_38_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.PlayerFramework.Caption>)instance;
             var newItem = (global::Microsoft.PlayerFramework.Caption)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_41_List(object instance, object item)
+        private void VectorAdd_42_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.PlayerFramework.AudioStream>)instance;
             var newItem = (global::Microsoft.PlayerFramework.AudioStream)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_54_IList(object instance, object item)
+        private void VectorAdd_55_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Double>)instance;
             var newItem = (global::System.Double)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_56_IList(object instance, object item)
+        private void VectorAdd_57_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.UIElement>)instance;
             var newItem = (global::Windows.UI.Xaml.UIElement)item;
@@ -391,9 +397,9 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  MangoTube8UWP.MainPage
+            case 0:   //  MangoTube8UWP.DownloadsPage
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_DownloadsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -406,40 +412,47 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  MangoTube8UWP.SearchPage
+            case 3:   //  MangoTube8UWP.MainPage
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_SearchPage;
+                userType.Activator = Activate_3_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  MangoTube8UWP.SettingsPage
+            case 4:   //  MangoTube8UWP.SearchPage
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_SettingsPage;
+                userType.Activator = Activate_4_SearchPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  Microsoft.PlayerFramework.BufferingView
+            case 5:   //  MangoTube8UWP.SettingsPage
+                userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_SettingsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  Microsoft.PlayerFramework.BufferingView
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_5_BufferingView;
+                userType.Activator = Activate_6_BufferingView;
                 userType.AddMemberName("ViewModel");
                 xamlType = userType;
                 break;
 
-            case 6:   //  Windows.UI.Xaml.Controls.Control
+            case 7:   //  Windows.UI.Xaml.Controls.Control
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 7:   //  Microsoft.PlayerFramework.IInteractiveViewModel
+            case 8:   //  Microsoft.PlayerFramework.IInteractiveViewModel
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 8:   //  Microsoft.PlayerFramework.MediaPlayer
+            case 9:   //  Microsoft.PlayerFramework.MediaPlayer
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_8_MediaPlayer;
+                userType.Activator = Activate_9_MediaPlayer;
                 userType.AddMemberName("AutoPlay");
                 userType.AddMemberName("IsFullScreenVisible");
                 userType.AddMemberName("IsFastForwardVisible");
@@ -596,22 +609,22 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 9:   //  Boolean
+            case 10:   //  Boolean
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 10:   //  Windows.UI.Xaml.Media.Stretch
+            case 11:   //  Windows.UI.Xaml.Media.Stretch
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  System.Collections.Generic.IList`1<System.Type>
+            case 12:   //  System.Collections.Generic.IList`1<System.Type>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_11_IList;
+                userType.CollectionAdd = VectorAdd_12_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 12:   //  System.Type
+            case 13:   //  System.Type
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("AssemblyQualifiedName");
                 userType.AddMemberName("FullName");
@@ -631,87 +644,87 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 13:   //  Object
+            case 14:   //  Object
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 14:   //  String
+            case 15:   //  String
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 15:   //  Int32
+            case 16:   //  Int32
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 16:   //  System.Type[]
+            case 17:   //  System.Type[]
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Array"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 17:   //  System.Array
+            case 18:   //  System.Array
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 18:   //  System.RuntimeTypeHandle
+            case 19:   //  System.RuntimeTypeHandle
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 19:   //  System.ValueType
+            case 20:   //  System.ValueType
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 20:   //  System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.IPlugin>
+            case 21:   //  System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.IPlugin>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.IPlugin>"));
-                userType.CollectionAdd = VectorAdd_20_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_21_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 21:   //  System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.IPlugin>
+            case 22:   //  System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.IPlugin>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_21_Collection;
-                userType.CollectionAdd = VectorAdd_21_Collection;
+                userType.Activator = Activate_22_Collection;
+                userType.CollectionAdd = VectorAdd_22_Collection;
                 xamlType = userType;
                 break;
 
-            case 22:   //  Microsoft.PlayerFramework.IPlugin
+            case 23:   //  Microsoft.PlayerFramework.IPlugin
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.AddMemberName("MediaPlayer");
                 xamlType = userType;
                 break;
 
-            case 23:   //  Windows.UI.Xaml.Data.IValueConverter
+            case 24:   //  Windows.UI.Xaml.Data.IValueConverter
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 24:   //  System.Nullable`1<TimeSpan>
+            case 25:   //  System.Nullable`1<TimeSpan>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 25:   //  System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.VisualMarker>
+            case 26:   //  System.Collections.ObjectModel.ObservableCollection`1<Microsoft.PlayerFramework.VisualMarker>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.VisualMarker>"));
-                userType.CollectionAdd = VectorAdd_25_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_26_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 26:   //  System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.VisualMarker>
+            case 27:   //  System.Collections.ObjectModel.Collection`1<Microsoft.PlayerFramework.VisualMarker>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_26_Collection;
-                userType.CollectionAdd = VectorAdd_26_Collection;
+                userType.Activator = Activate_27_Collection;
+                userType.CollectionAdd = VectorAdd_27_Collection;
                 xamlType = userType;
                 break;
 
-            case 27:   //  Microsoft.PlayerFramework.VisualMarker
+            case 28:   //  Microsoft.PlayerFramework.VisualMarker
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_27_VisualMarker;
+                userType.Activator = Activate_28_VisualMarker;
                 userType.AddMemberName("Text");
                 userType.AddMemberName("Time");
                 userType.AddMemberName("IsSeekable");
@@ -719,41 +732,41 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 28:   //  Windows.UI.Xaml.DependencyObject
+            case 29:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 29:   //  TimeSpan
+            case 30:   //  TimeSpan
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 30:   //  Windows.UI.Xaml.Style
+            case 31:   //  Windows.UI.Xaml.Style
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 31:   //  Windows.UI.Xaml.Media.TimelineMarkerCollection
+            case 32:   //  Windows.UI.Xaml.Media.TimelineMarkerCollection
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 32:   //  Double
+            case 33:   //  Double
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 33:   //  Microsoft.PlayerFramework.MediaQuality
+            case 34:   //  Microsoft.PlayerFramework.MediaQuality
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("StandardDefinition", global::Microsoft.PlayerFramework.MediaQuality.StandardDefinition);
                 userType.AddEnumValue("HighDefinition", global::Microsoft.PlayerFramework.MediaQuality.HighDefinition);
                 xamlType = userType;
                 break;
 
-            case 34:   //  System.Enum
+            case 35:   //  System.Enum
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 35:   //  Microsoft.PlayerFramework.AdvertisingState
+            case 36:   //  Microsoft.PlayerFramework.AdvertisingState
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Microsoft.PlayerFramework.AdvertisingState.None);
                 userType.AddEnumValue("Loading", global::Microsoft.PlayerFramework.AdvertisingState.Loading);
@@ -762,7 +775,7 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 36:   //  Microsoft.PlayerFramework.MediaEndedBehavior
+            case 37:   //  Microsoft.PlayerFramework.MediaEndedBehavior
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Manual", global::Microsoft.PlayerFramework.MediaEndedBehavior.Manual);
                 userType.AddEnumValue("Stop", global::Microsoft.PlayerFramework.MediaEndedBehavior.Stop);
@@ -770,16 +783,16 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 37:   //  System.Collections.Generic.List`1<Microsoft.PlayerFramework.Caption>
+            case 38:   //  System.Collections.Generic.List`1<Microsoft.PlayerFramework.Caption>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_37_List;
+                userType.CollectionAdd = VectorAdd_38_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 38:   //  Microsoft.PlayerFramework.Caption
+            case 39:   //  Microsoft.PlayerFramework.Caption
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
-                userType.Activator = Activate_38_Caption;
+                userType.Activator = Activate_39_Caption;
                 userType.AddMemberName("Id");
                 userType.AddMemberName("Description");
                 userType.AddMemberName("Payload");
@@ -787,106 +800,106 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 39:   //  Windows.UI.Xaml.FrameworkElement
+            case 40:   //  Windows.UI.Xaml.FrameworkElement
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 40:   //  System.Uri
+            case 41:   //  System.Uri
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 41:   //  System.Collections.Generic.List`1<Microsoft.PlayerFramework.AudioStream>
+            case 42:   //  System.Collections.Generic.List`1<Microsoft.PlayerFramework.AudioStream>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_41_List;
+                userType.CollectionAdd = VectorAdd_42_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 42:   //  Microsoft.PlayerFramework.AudioStream
+            case 43:   //  Microsoft.PlayerFramework.AudioStream
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_42_AudioStream;
+                userType.Activator = Activate_43_AudioStream;
                 userType.AddMemberName("Name");
                 userType.AddMemberName("Language");
                 xamlType = userType;
                 break;
 
-            case 43:   //  Windows.UI.Xaml.Media.ImageSource
+            case 44:   //  Windows.UI.Xaml.Media.ImageSource
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 44:   //  Windows.Media.MediaExtensionManager
+            case 45:   //  Windows.Media.MediaExtensionManager
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 45:   //  Windows.UI.Xaml.Media.AudioCategory
+            case 46:   //  Windows.UI.Xaml.Media.AudioCategory
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 46:   //  Windows.UI.Xaml.Media.AudioDeviceType
+            case 47:   //  Windows.UI.Xaml.Media.AudioDeviceType
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 47:   //  Windows.Media.PlayTo.PlayToSource
+            case 48:   //  Windows.Media.PlayTo.PlayToSource
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 48:   //  Windows.UI.Xaml.Media.Stereo3DVideoPackingMode
+            case 49:   //  Windows.UI.Xaml.Media.Stereo3DVideoPackingMode
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 49:   //  Windows.UI.Xaml.Media.Stereo3DVideoRenderMode
+            case 50:   //  Windows.UI.Xaml.Media.Stereo3DVideoRenderMode
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 50:   //  Windows.Media.Protection.MediaProtectionManager
+            case 51:   //  Windows.Media.Protection.MediaProtectionManager
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 51:   //  System.Nullable`1<Int32>
+            case 52:   //  System.Nullable`1<Int32>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 52:   //  Windows.UI.Xaml.Duration
+            case 53:   //  Windows.UI.Xaml.Duration
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 53:   //  Windows.UI.Xaml.Media.MediaElementState
+            case 54:   //  Windows.UI.Xaml.Media.MediaElementState
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 54:   //  System.Collections.Generic.IList`1<Double>
+            case 55:   //  System.Collections.Generic.IList`1<Double>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_54_IList;
+                userType.CollectionAdd = VectorAdd_55_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 55:   //  Windows.UI.Xaml.Controls.ControlTemplate
+            case 56:   //  Windows.UI.Xaml.Controls.ControlTemplate
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 56:   //  System.Collections.Generic.IList`1<Windows.UI.Xaml.UIElement>
+            case 57:   //  System.Collections.Generic.IList`1<Windows.UI.Xaml.UIElement>
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_56_IList;
+                userType.CollectionAdd = VectorAdd_57_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 57:   //  Windows.UI.Xaml.UIElement
+            case 58:   //  Windows.UI.Xaml.UIElement
                 xamlType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 58:   //  Microsoft.PlayerFramework.InteractionType
+            case 59:   //  Microsoft.PlayerFramework.InteractionType
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Microsoft.PlayerFramework.InteractionType.None);
                 userType.AddEnumValue("Soft", global::Microsoft.PlayerFramework.InteractionType.Soft);
@@ -895,7 +908,7 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 59:   //  Microsoft.PlayerFramework.AutoHideBehavior
+            case 60:   //  Microsoft.PlayerFramework.AutoHideBehavior
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Microsoft.PlayerFramework.AutoHideBehavior.None);
                 userType.AddEnumValue("AllowDuringPlaybackOnly", global::Microsoft.PlayerFramework.AutoHideBehavior.AllowDuringPlaybackOnly);
@@ -904,7 +917,7 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 60:   //  Microsoft.PlayerFramework.PlayerState
+            case 61:   //  Microsoft.PlayerFramework.PlayerState
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Unloaded", global::Microsoft.PlayerFramework.PlayerState.Unloaded);
                 userType.AddEnumValue("Pending", global::Microsoft.PlayerFramework.PlayerState.Pending);
@@ -918,9 +931,16 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 61:   //  MangoTube8UWP.VideoPage
+            case 62:   //  MangoTube8UWP.VideoDownloadPage
                 userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_61_VideoPage;
+                userType.Activator = Activate_62_VideoDownloadPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 63:   //  MangoTube8UWP.VideoPage
+                userType = new global::MangoTube8UWP.MangoTube8UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_63_VideoPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -946,8 +966,6 @@ namespace MangoTube8UWP.MangoTube8UWP_XamlTypeInfo
                     provider = new global::Microsoft.PlayerFramework.CaptionSettings.Microsoft_PlayerFramework_Phone_CaptionSettings_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     _otherProviders.Add(provider); 
                     provider = new global::Microsoft.PlayerFramework.Microsoft_PlayerFramework_Universal_Core_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::MyToolkit.MyToolkit_Extended_WinRT_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     _otherProviders.Add(provider); 
                 }
                 return _otherProviders;

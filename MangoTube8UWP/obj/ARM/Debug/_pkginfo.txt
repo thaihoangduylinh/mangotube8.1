@@ -1,1 +1,1 @@
-C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\AppPackages\MangoTube8UWP_1.0.0.0_ARM_Debug_Test\MangoTube8UWP_1.0.0.0_ARM_Debug.appx
+C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\AppPackages\MangoTube8UWP_1.0.0.1_ARM_Debug_Test\MangoTube8UWP_1.0.0.1_ARM_Debug.appx

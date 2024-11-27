@@ -7,6 +7,13 @@
     <Application.Resources>
         <SolidColorBrush x:Key="PivotHeaderForegroundUnselectedBrush" Color="#2222" />
         <SolidColorBrush x:Key="PivotHeaderForegroundSelectedBrush" Color="#282828" />
+        <SolidColorBrush x:Key="HighlightBrush" Color="#de8339" />
+
+        <Style TargetType="Slider">
+            <Setter Property="Foreground" Value="#de8339" />
+            <Setter Property="Background" Value="Transparent" />
+        </Style>
+
     </Application.Resources>
 
 </Application>

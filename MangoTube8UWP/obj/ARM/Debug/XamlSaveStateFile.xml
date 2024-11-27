@@ -1,6 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\nicholas bryan brook\documents\visual studio 2015\projects\mangotube8uwp\mangotube8uwp\obj\arm\debug\intermediatexaml\mangotube8uwp.exe" HashGuid="2ac9020a-907a-ef0a-aaf8-05c38c06171c" />
+    <LocalAssembly PathName="c:\users\nicholas bryan brook\documents\visual studio 2015\projects\mangotube8uwp\mangotube8uwp\obj\arm\debug\intermediatexaml\mangotube8uwp.exe" HashGuid="44c93159-1ce5-af66-caa5-5c6c1d591039" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.playerframework.xaml.analytics.wp81\3.0.0.4\references\commonconfiguration\arm\microsoft.media.adaptivestreaming.analytics.winmd" HashGuid="70bf71fa-7d50-b973-15dd-4250c7a00de7" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.playerframework.dash.wp81\3.0.0.4\references\commonconfiguration\arm\microsoft.media.adaptivestreaming.dash.winmd" HashGuid="14160b84-ddf4-e11c-69d5-37ed5a0e9b82" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.playerframework.xaml.adaptive.wp81\3.0.0.4\references\commonconfiguration\arm\microsoft.media.adaptivestreaming.helper.winmd" HashGuid="7f0bdf56-2dfb-ad62-9b6b-e50126dde2f9" />
@@ -22,13 +22,14 @@
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.playerframework.xaml.webvtt.settings.wp81\3.0.0.4\references\commonconfiguration\neutral\microsoft.playerframework.webvtt.settings.dll" HashGuid="685c069f-ede8-fd6e-5d14-2336d44bbed8" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
     <ReferenceAssembly PathName="c:\users\nicholas bryan brook\documents\visual studio 2015\projects\mangotube8uwp\packages\autofac.3.5.0\lib\portable-net4+sl5+netcore45+wpa81+wp8+monoandroid1+monotouch1\autofac.dll" HashGuid="f2121202-af3e-33e5-f81a-d2ef4ddcb1a5" />
-    <ReferenceAssembly PathName="c:\users\nicholas bryan brook\documents\visual studio 2015\projects\mangotube8uwp\packages\mytoolkit.2.5.16\lib\portable-net45+wp8+win8+wpa81\mytoolkit.dll" HashGuid="e089a389-f046-8c35-0aaf-dfe6046b89a8" />
-    <ReferenceAssembly PathName="c:\users\nicholas bryan brook\documents\visual studio 2015\projects\mangotube8uwp\packages\mytoolkit.extended.2.5.16\lib\portable-wpa81+win8\mytoolkit.extended.dll" HashGuid="673bbf2d-c269-751a-279a-3be23e03514b" />
-    <ReferenceAssembly PathName="c:\users\nicholas bryan brook\documents\visual studio 2015\projects\mangotube8uwp\packages\newtonsoft.json.6.0.8\lib\portable-net45+wp80+win8+wpa81+aspnetcore50\newtonsoft.json.dll" HashGuid="a6815119-bde8-2bdd-8acf-133f32c00b94" />
+    <ReferenceAssembly PathName="c:\users\nicholas bryan brook\documents\visual studio 2015\projects\mangotube8uwp\packages\newtonsoft.json.12.0.3\lib\portable-net45+win8+wp8+wpa81\newtonsoft.json.dll" HashGuid="b4d39e5f-5a76-ba48-e4b0-ee705f802492" />
     <ReferenceAssembly PathName="c:\users\nicholas bryan brook\documents\phonesm-1.5.3-beta\bin\release\sm.media.builder.dll" HashGuid="ec00e91d-872d-a94e-ded2-c0de1cda42ed" />
     <ReferenceAssembly PathName="c:\users\nicholas bryan brook\documents\phonesm-1.5.3-beta\bin\release\sm.media.dll" HashGuid="d669c07f-4a7e-546e-4e4e-d76188e83e6c" />
     <ReferenceAssembly PathName="c:\users\nicholas bryan brook\documents\fcwsf\sm.media.mediaplayer.win81.dll" HashGuid="16fa7ef3-0c7e-6d55-a102-e5586f37eb6d" />
     <ReferenceAssembly PathName="c:\users\nicholas bryan brook\documents\phonesm-1.5.3-beta\bin\release\winrt\sm.media.platform.winrt.dll" HashGuid="8330f4f1-838f-ffdb-3fb8-b852aef583eb" />
     <ReferenceAssembly PathName="c:\users\nicholas bryan brook\documents\phonesm-1.5.3-beta\bin\release\sm.media.web.httpclientreader.dll" HashGuid="d88f624d-4e11-dbec-c2ec-5dece89071c8" />
+    <ReferenceAssembly PathName="c:\users\nicholas bryan brook\documents\visual studio 2015\projects\mangotube8uwp\packages\system.componentmodel.primitives.4.3.0\lib\netstandard1.0\system.componentmodel.primitives.dll" HashGuid="28089d85-cb33-2904-70b1-ec0ef44b2ca6" />
+    <ReferenceAssembly PathName="c:\users\nicholas bryan brook\documents\visual studio 2015\projects\mangotube8uwp\packages\system.componentmodel.typeconverter.4.3.0\lib\netstandard1.0\system.componentmodel.typeconverter.dll" HashGuid="08b99511-c07e-5b17-e83a-bed2f1a20b61" />
+    <ReferenceAssembly PathName="c:\users\nicholas bryan brook\documents\visual studio 2015\projects\mangotube8uwp\packages\system.runtime.interopservices.runtimeinformation.4.3.0\lib\wpa81\system.runtime.interopservices.runtimeinformation.dll" HashGuid="6560d00f-0bb0-0755-5423-c4e1bf779127" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>
