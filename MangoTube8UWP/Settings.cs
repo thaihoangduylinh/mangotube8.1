@@ -17,7 +17,7 @@ namespace MangoTube8UWP
         private const string SeedVideoIdsKey = "SeedVideoIds";
         private const string VideoQualityKey = "VideoQuality";
 
-        public static List<string> Qualities { get; } = new List<string> { "medium (recommended)","SD","low","ultra low","HD1080","HD", "auto"};
+        public static List<string> Qualities { get; } = new List<string> { "medium (recommended)", "SD", "low", "ultra low", "HD1080", "HD", "Audio", "auto"};
         private static List<string> seedVideoIds;
 
         private const string WatchHistoryKey = "WatchHistory";
