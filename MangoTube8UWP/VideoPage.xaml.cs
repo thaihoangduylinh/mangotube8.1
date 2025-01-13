@@ -1355,8 +1355,8 @@ namespace MangoTube8UWP
             Debug.WriteLine($"SelectFormatBasedOnQuality called with videoQuality: {videoQuality}");
 
             JObject streamingData = JObject.Parse(streamingDataJson);
-            var adaptiveFormats = streamingData.SelectToken("..adaptiveFormats");
-            var formats = streamingData.SelectToken("..formats");
+            JToken adaptiveFormats = streamingData.SelectToken("streamingData.adaptiveFormats");
+            JToken formats = streamingData.SelectToken("streamingData.formats");
 
             if (adaptiveFormats != null && adaptiveFormats.HasValues)
             {
@@ -1366,7 +1366,7 @@ namespace MangoTube8UWP
                 {
                     Debug.WriteLine("Looking for Medium quality format...");
 
-                    var mediumQualityFormat = formats.FirstOrDefault(f => f["itag"].ToString() == "18");
+                    JToken mediumQualityFormat = formats.FirstOrDefault(f => f["itag"].ToString() == "18");
 
                     if (mediumQualityFormat != null)
                     {
@@ -1379,7 +1379,7 @@ namespace MangoTube8UWP
                 {
                     Debug.WriteLine("Looking for Low quality format (240p)...");
 
-                    var lowQualityFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == "240p" || f["qualityLabel"].ToString() == "240");
+                    JToken lowQualityFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == "240p" || f["qualityLabel"].ToString() == "240");
 
                     if (lowQualityFormat != null)
                     {
@@ -1392,7 +1392,7 @@ namespace MangoTube8UWP
                 {
                     Debug.WriteLine("Looking for Ultra Low quality format (144p)...");
 
-                    var ultraLowQualityFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == "144p" || f["qualityLabel"].ToString() == "144");
+                    JToken ultraLowQualityFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == "144p" || f["qualityLabel"].ToString() == "144");
 
                     if (ultraLowQualityFormat != null)
                     {
@@ -1405,7 +1405,7 @@ namespace MangoTube8UWP
                 {
                     Debug.WriteLine("Looking for HD1080 quality format (1080p)...");
 
-                    var hd1080QualityFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == "1080p" || f["qualityLabel"].ToString() == "1080");
+                    JToken hd1080QualityFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == "1080p" || f["qualityLabel"].ToString() == "1080");
 
                     if (hd1080QualityFormat != null)
                     {
@@ -1418,7 +1418,7 @@ namespace MangoTube8UWP
                 {
                     Debug.WriteLine("Looking for SD quality format (480p)...");
 
-                    var sdQualityFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == "480p" || f["qualityLabel"].ToString() == "480");
+                    JToken sdQualityFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == "480p" || f["qualityLabel"].ToString() == "480");
 
                     if (sdQualityFormat != null)
                     {
@@ -1431,7 +1431,7 @@ namespace MangoTube8UWP
                 {
                     Debug.WriteLine("Looking for HD quality format (720p)...");
 
-                    var hdFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == "720p" || f["qualityLabel"].ToString() == "hd720");
+                    JToken hdFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == "720p" || f["qualityLabel"].ToString() == "hd720");
                     if (hdFormat != null)
                     {
                         Debug.WriteLine("HD format found.");
@@ -1444,7 +1444,7 @@ namespace MangoTube8UWP
                 {
                     Debug.WriteLine("Looking for Audio format...");
 
-                    var audioFormat = adaptiveFormats.FirstOrDefault(f => f["itag"].ToString() == "140");
+                    JToken audioFormat = adaptiveFormats.FirstOrDefault(f => f["itag"].ToString() == "140");
                     if (audioFormat != null)
                     {
                         Debug.WriteLine("Audio format found.");
@@ -1460,7 +1460,7 @@ namespace MangoTube8UWP
                 {
                     Debug.WriteLine($"Looking for {label} format...");
 
-                    var fallbackFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == label);
+                    JToken fallbackFormat = adaptiveFormats.FirstOrDefault(f => f["qualityLabel"].ToString() == label);
                     if (fallbackFormat != null)
                     {
                         Debug.WriteLine($"{label} format found.");
@@ -1470,7 +1470,7 @@ namespace MangoTube8UWP
                 }
 
                 Debug.WriteLine("No specific quality found, defaulting to Medium quality.");
-                var defaultFormat = formats.FirstOrDefault(f => f["itag"].ToString() == "18") ?? adaptiveFormats.FirstOrDefault(f => f["itag"].ToString() == "134");
+                JToken defaultFormat = formats.FirstOrDefault(f => f["itag"].ToString() == "18") ?? adaptiveFormats.FirstOrDefault(f => f["itag"].ToString() == "134");
                 if (defaultFormat != null)
                 {
                     Debug.WriteLine($"URL: {defaultFormat["url"]}");
