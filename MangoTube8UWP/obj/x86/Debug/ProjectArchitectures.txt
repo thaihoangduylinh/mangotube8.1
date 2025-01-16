@@ -1,1 +1,1 @@
-C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\MangoTube8UWP.csproj;x86
+D:\Git\mangotube81\MangoTube8UWP\MangoTube8UWP.csproj;x86

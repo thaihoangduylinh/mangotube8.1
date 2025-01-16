@@ -39,6 +39,7 @@ using Windows.Networking.BackgroundTransfer;
 using Windows.Storage.Pickers;
 using Autofac.Core;
 using Windows.ApplicationModel.Activation;
+using Windows.ApplicationModel.Background;
 
 namespace MangoTube8UWP
 {
@@ -838,7 +839,7 @@ namespace MangoTube8UWP
                                 hl = "en",
                                 gl = "US",
                                 clientName = "ANDROID",
-                                clientVersion = "19.02.39",
+                                clientVersion = "19.44.39",
                                 androidSdkVersion = 34,
                                 mainAppWebInfo = new
                                 {
@@ -859,7 +860,7 @@ namespace MangoTube8UWP
                     var content = new StringContent(jsonRequestBody, Encoding.UTF8, "application/json");
                     var requestHeaders = new Dictionary<string, string>
                     {
-                        { "User-Agent", "com.google.android.youtube/19.02.39 (Linux; U; Android 14) gzip" },
+                        { "User-Agent", "com.google.android.youtube/19.44.39 (Linux; U; Android 14) gzip" },
                         { "Referer", "https://www.youtube.com/" },
                         { "Referrer-Policy", "strict-origin-when-cross-origin" }
                     };

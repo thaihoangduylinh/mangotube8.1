@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="271847c4-6b7f-4974-8ed4-2dedaf76c75c" Publisher="CN=Nicholas Bryan Brook" Version="1.0.0.1" />
+  <Identity Name="271847c4-6b7f-4974-8ed4-2dedaf76c75c" Publisher="CN=Nicholas Bryan Brook" Version="1.0.0.3" />
   <mp:PhoneIdentity PhoneProductId="271847c4-6b7f-4974-8ed4-2dedaf76c75c" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>MangoTube8UWP</DisplayName>
@@ -26,6 +26,7 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClientServer" />
+    <Capability Name="internetClient" />
     <Capability Name="removableStorage" />
     <Capability Name="videosLibrary" />
     <Capability Name="picturesLibrary" />

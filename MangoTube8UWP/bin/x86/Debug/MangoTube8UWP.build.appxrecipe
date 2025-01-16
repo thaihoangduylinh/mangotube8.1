@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-66NPKKN</Machine>
-    <WindowsUser>Nicholas Bryan Brook</WindowsUser>
+    <Machine>DELLINPS</Machine>
+    <WindowsUser>thaihoangduylinh</WindowsUser>
     <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
     <TargetOsVersion>6.3</TargetOsVersion>
     <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>271847c4-6b7f-4974-8ed4-2dedaf76c75c</PackageIdentityName>
     <PackageIdentityPublisher>CN=Nicholas Bryan Brook</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Git\mangotube81\MangoTube8UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\AppxManifest.xml">
+    <AppXManifest Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\MangoTube8UWP.exe">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\MangoTube8UWP.exe">
       <PackagePath>MangoTube8UWP.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\MangoTube8UWP.exe.config">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\MangoTube8UWP.exe.config">
       <PackagePath>MangoTube8UWP.exe.config</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.PlayerFramework.Xaml.Analytics.WP81\3.0.0.4\References\CommonConfiguration\x86\Microsoft.Media.AdaptiveStreaming.Analytics.winmd">
@@ -85,34 +85,34 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.PlayerFramework.Xaml.WebVTT.Settings.WP81\3.0.0.4\References\CommonConfiguration\neutral\Microsoft.PlayerFramework.WebVTT.Settings.dll">
       <PackagePath>Microsoft.PlayerFramework.WebVTT.Settings.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\packages\Autofac.3.5.0\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll">
+    <AppxPackagedFile Include="D:\Git\mangotube81\packages\Autofac.3.5.0\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll">
       <PackagePath>Autofac.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\packages\Newtonsoft.Json.12.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="D:\Git\mangotube81\packages\Newtonsoft.Json.12.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\phonesm-1.5.3-beta\bin\Release\SM.Media.Builder.dll">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\SM.Media.Builder.dll">
       <PackagePath>SM.Media.Builder.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\phonesm-1.5.3-beta\bin\Release\SM.Media.dll">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\SM.Media.dll">
       <PackagePath>SM.Media.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\fcwsf\SM.Media.MediaPlayer.Win81.dll">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\SM.Media.MediaPlayer.Win81.dll">
       <PackagePath>SM.Media.MediaPlayer.Win81.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\phonesm-1.5.3-beta\bin\Release\WinRT\SM.Media.Platform.WinRT.dll">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\SM.Media.Platform.WinRT.dll">
       <PackagePath>SM.Media.Platform.WinRT.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\phonesm-1.5.3-beta\bin\Release\SM.Media.Web.HttpClientReader.dll">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\SM.Media.Web.HttpClientReader.dll">
       <PackagePath>SM.Media.Web.HttpClientReader.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\packages\System.ComponentModel.Primitives.4.3.0\lib\netstandard1.0\System.ComponentModel.Primitives.dll">
+    <AppxPackagedFile Include="D:\Git\mangotube81\packages\System.ComponentModel.Primitives.4.3.0\lib\netstandard1.0\System.ComponentModel.Primitives.dll">
       <PackagePath>System.ComponentModel.Primitives.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\packages\System.ComponentModel.TypeConverter.4.3.0\lib\netstandard1.0\System.ComponentModel.TypeConverter.dll">
+    <AppxPackagedFile Include="D:\Git\mangotube81\packages\System.ComponentModel.TypeConverter.4.3.0\lib\netstandard1.0\System.ComponentModel.TypeConverter.dll">
       <PackagePath>System.ComponentModel.TypeConverter.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\wpa81\System.Runtime.InteropServices.RuntimeInformation.dll">
+    <AppxPackagedFile Include="D:\Git\mangotube81\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\wpa81\System.Runtime.InteropServices.RuntimeInformation.dll">
       <PackagePath>System.Runtime.InteropServices.RuntimeInformation.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.PlayerFramework.Xaml.WP81\3.0.0.4\Redist\CommonConfiguration\neutral\Microsoft.PlayerFramework\Themes\Classic.xbf">
@@ -142,161 +142,161 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Media.AdaptiveStreamingClient\1.0\Redist\CommonConfiguration\x86\Microsoft.Media.AdaptiveStreaming.dll">
       <PackagePath>Microsoft.Media.AdaptiveStreaming.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\AccountIcon.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\AccountIcon.png">
       <PackagePath>Assets\AccountIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\ApplicationIcon.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\ApplicationIcon.png">
       <PackagePath>Assets\ApplicationIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\BadgeLogo.scale-240.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\BadgeLogo.scale-240.png">
       <PackagePath>Assets\BadgeLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\BaseCircle.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\BaseCircle.png">
       <PackagePath>Assets\BaseCircle.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\DefaultAvatar.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\DefaultAvatar.png">
       <PackagePath>Assets\DefaultAvatar.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\DefaultBanner.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\DefaultBanner.png">
       <PackagePath>Assets\DefaultBanner.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\DefaultThumbnail.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\DefaultThumbnail.png">
       <PackagePath>Assets\DefaultThumbnail.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\DownloadIcon.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\DownloadIcon.png">
       <PackagePath>Assets\DownloadIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\EduactionIcon.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\EduactionIcon.png">
       <PackagePath>Assets\EduactionIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\FullScreenExpend.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\FullScreenExpend.png">
       <PackagePath>Assets\FullScreenExpend.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\FullScreenShrink.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\FullScreenShrink.png">
       <PackagePath>Assets\FullScreenShrink.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\GamingIcon.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\GamingIcon.png">
       <PackagePath>Assets\GamingIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\HistoryIcon.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\HistoryIcon.png">
       <PackagePath>Assets\HistoryIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\MangoTube8Logo.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\MangoTube8Logo.png">
       <PackagePath>Assets\MangoTube8Logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\MangoTube8LogoDark.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\MangoTube8LogoDark.png">
       <PackagePath>Assets\MangoTube8LogoDark.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\MangoTubeIcon106.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\MangoTubeIcon106.png">
       <PackagePath>Assets\MangoTubeIcon106.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\MangoTubeIcon1152.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\MangoTubeIcon1152.png">
       <PackagePath>Assets\MangoTubeIcon1152.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\MangoTubeIcon120.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\MangoTubeIcon120.png">
       <PackagePath>Assets\MangoTubeIcon120.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\MangoTubeIcon170.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\MangoTubeIcon170.png">
       <PackagePath>Assets\MangoTubeIcon170.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\MangoTubeIcon360.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\MangoTubeIcon360.png">
       <PackagePath>Assets\MangoTubeIcon360.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\MangoTubeIcon58.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\MangoTubeIcon58.png">
       <PackagePath>Assets\MangoTubeIcon58.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\MangoTubeIcon744.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\MangoTubeIcon744.png">
       <PackagePath>Assets\MangoTubeIcon744.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\NewsIcon.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\NewsIcon.png">
       <PackagePath>Assets\NewsIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\PauseIcon.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\PauseIcon.png">
       <PackagePath>Assets\PauseIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\PlayIcon.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\PlayIcon.png">
       <PackagePath>Assets\PlayIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\PodcastIcon.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\PodcastIcon.png">
       <PackagePath>Assets\PodcastIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\PopularIcon.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\PopularIcon.png">
       <PackagePath>Assets\PopularIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\RefreshIcon.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\RefreshIcon.png">
       <PackagePath>Assets\RefreshIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\SearchIcon.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\SearchIcon.png">
       <PackagePath>Assets\SearchIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\ShareIcon.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\ShareIcon.png">
       <PackagePath>Assets\ShareIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\SportsIcon.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\SportsIcon.png">
       <PackagePath>Assets\SportsIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\Assets\VideoUnaviable.mp4">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\Assets\VideoUnaviable.mp4">
       <PackagePath>Assets\VideoUnaviable.mp4</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\StoreManifest.xml">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\StoreManifest.xml">
       <PackagePath>StoreManifest.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\MangoTube8UWP.xr.xml">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\MangoTube8UWP.xr.xml">
       <PackagePath>MangoTube8UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\ChannelPage.xbf">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\ChannelPage.xbf">
       <PackagePath>ChannelPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\DownloadsPage.xbf">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\DownloadsPage.xbf">
       <PackagePath>DownloadsPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\SearchPage.xbf">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\SearchPage.xbf">
       <PackagePath>SearchPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\SettingsPage.xbf">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\SettingsPage.xbf">
       <PackagePath>SettingsPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\DownloadVideoPage.xbf">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\DownloadVideoPage.xbf">
       <PackagePath>DownloadVideoPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\VideoPage.xbf">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\VideoPage.xbf">
       <PackagePath>VideoPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\WatchHistoryPage.xbf">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\WatchHistoryPage.xbf">
       <PackagePath>WatchHistoryPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicholas Bryan Brook\documents\visual studio 2015\Projects\MangoTube8UWP\MangoTube8UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Git\mangotube81\MangoTube8UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>

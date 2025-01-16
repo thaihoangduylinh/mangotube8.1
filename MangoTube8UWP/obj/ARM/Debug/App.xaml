@@ -6,7 +6,7 @@
 
     <Application.Resources>
         <SolidColorBrush x:Key="PivotHeaderForegroundUnselectedBrush" Color="#2222" />
-        <SolidColorBrush x:Key="PivotHeaderForegroundSelectedBrush" Color="#282828" />
+        <SolidColorBrush x:Key="PivotHeaderForegroundSelectedBrush" Color="#222222" />
         <SolidColorBrush x:Key="HighlightBrush" Color="#de8339" />
 
         <Style TargetType="Slider">
