@@ -1,11 +1,9 @@
 ﻿
-using Microsoft.PlayerFramework;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Globalization;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -13,7 +11,6 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using Windows.Data.Xml.Dom;
-using Windows.Foundation;
 using Windows.Graphics.Display;
 using Windows.Phone.UI.Input;
 using Windows.UI;
@@ -25,21 +22,15 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Documents;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using static MangoTube8UWP.YouTubeModal;
-using System.Xml;
 using System.Net;
 using System.IO;
-using Windows.UI.Xaml.Shapes;
 using Windows.UI.Notifications;
 using Windows.Storage;
 using Windows.Networking.BackgroundTransfer;
 using Windows.Storage.Pickers;
-using Autofac.Core;
-using Windows.ApplicationModel.Activation;
-using Windows.ApplicationModel.Background;
 
 namespace MangoTube8UWP
 {
@@ -1742,8 +1733,8 @@ namespace MangoTube8UWP
                     return;
                 }
 
-                var videoJsonResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<JObject>(result.VideoDetailsJson);
-                var authorJsonResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<JObject>(result.AuthorDetailsJson);
+                var videoJsonResponse = JsonConvert.DeserializeObject<JObject>(result.VideoDetailsJson);
+                var authorJsonResponse = JsonConvert.DeserializeObject<JObject>(result.AuthorDetailsJson);
 
 
                 Debug.WriteLine("Full  videoJsonResponse JSON: " + videoJsonResponse?.ToString());
